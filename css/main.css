@@ -52,7 +52,7 @@ h1, h3, h4, h5, h6 {
 	color: #364347;
 }
 
-h2, p, span { 
+h2, p, span, a { 
 	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
 	font-size-adjust:0.508;
 	font-weight:normal;
@@ -83,18 +83,25 @@ h3 {
 	line-height: 32px;
 }
 
+h4 {
+	font-size: 18px;
+	line-height: 32px;
+	padding-bottom: 24px;
+}
+
 p {
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 28px;
 	padding-bottom: 24px;
 }
 
-span.sub-header {
+.sub-header {
 	display: block;
 	font-size: 24px;
 	line-height: 24px;
 	color: #5e696d;
 }
+
 .project-type {
 	display: block;
 	font-size: 14px;
@@ -105,19 +112,32 @@ span.sub-header {
 	color: #93a4aa;
 }
 
+/* ==== Navigation ==== */
+nav ul li {
+	display: inline;
+	margin-right: 28px;
+}
+
+nav ul li:last-child { margin-right: 0; }
+
+header nav { float: right; }
+
+header {
+	padding: 30px 40px 70px 40px;
+	background-color: #fff;
+}
+
 /* ==== Buttons ==== */
 .btn {
   display: inline-block;
-  font-family: "Apercu Bold", "Source Sans Pro", Arial, sans-serif !important;
-  border: 1px solid transparent;
-  font-size: 16px;
-  line-height: 40px;
+  padding: 0 15px;
   height: 40px;
-  font-weight: bold;
+  font-family: "Apercu Regular", "Source Sans Pro", Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 39px;
+  font-weight: normal;
   text-transform: uppercase;
   border-radius: 5px;
-  padding: 0 15px;
-  text-transform: uppercase;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-transition: all .25s linear;
   transition: all .25s linear;
@@ -133,34 +153,21 @@ span.sub-header {
 	background-color: #fac739;
 }
 
-/* ==== Navigation ==== */
-header nav {
-	float: right;
-}
-
-header nav ul li {
-	display: inline;
-	margin-right: 28px;
-}
-
-header nav ul li:last-child { margin-right: 0; }
-
-header {
-	padding: 36px 40px 70px 40px;
-	background-color: #fff;
-}
-
-/* ==== Quizzly ==== */
-section.quizzly { 
-	height: 580px;
-	background-color: #fff;
-}
-article.summary {
-	width: 380px;
-}
-
+/* ==== Sections ==== */
 section.contrast {
 	background-color: #eef2f5;
+}
+
+article.summary {
+	width: 360px;
+	margin-left: 40px;
+}
+
+section.quizzly {
+	height: 580px;
+	padding-top: 140px;
+	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly.png) right bottom no-repeat;
+	background-size: 540px 592px;
 }
 
 section.solstice {
@@ -169,3 +176,65 @@ section.solstice {
 	background: #eef2f5 url(https://github.com/jlitchfield/jlitchfield.github.io/blob/update/images/solstice-initiative@2x.png?raw=true) 80px bottom no-repeat;
 	background-size: 328px 469px;
 }
+
+section.wego {
+	height: 640px;
+	padding-top: 140px;
+	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-health%402x.png) right no-repeat;
+	background-size: 526px 531px;
+}
+
+section.bio {
+	height: 551px;
+	padding-top: 140px;
+	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/joshua-litchfield-ux-ui-designer.png) center center no-repeat;
+	background-size: 980px 551px;
+}
+
+section.bio article {
+	margin-left: 510px;
+}
+
+/* ==== Footer ==== */
+footer {
+	padding: 50px 0;
+	background-color: #1e4ca5;	
+}
+
+footer h4, footer a {
+	color: #fff;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+footer a:hover {
+	color: #0b1d40;
+}
+
+footer a.contact {
+	display: block;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+footer nav {
+	width: 291px;
+	margin-top: 24px !important; 
+}
+
+/* ==== Quizzly ==== */
+header.quizzly {
+	background-color: #d4390f;
+}
+
+header.quizzly h1, h2, .subheader {
+	color: #fff;
+}
+
+
+

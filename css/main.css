@@ -90,7 +90,7 @@ h4 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 28px;
 	padding-bottom: 24px;
 }
@@ -159,7 +159,7 @@ section.contrast {
 }
 
 article.summary {
-	width: 360px;
+	width: 380px;
 	margin-left: 40px;
 }
 
@@ -192,7 +192,7 @@ section.bio {
 }
 
 section.bio article {
-	margin-left: 510px;
+	margin-left: 530px;
 }
 
 /* ==== Footer ==== */
@@ -229,12 +229,15 @@ footer nav {
 
 /* ==== Quizzly ==== */
 header.quizzly {
-	background-color: #d4390f;
+	height: 530px;
+	background: #d4390f url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly-login.png) bottom center no-repeat;
+	background-size: 511px 346px;
 }
 
-header.quizzly h1, h2, .subheader {
+header.quizzly h1, header.quizzly h2, header.quizzly .sub-header {
 	color: #fff;
 }
+
 
 
 

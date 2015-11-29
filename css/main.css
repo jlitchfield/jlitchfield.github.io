@@ -1,3 +1,5 @@
+/* ==== Containers ==== */
+.container-12 { width: 980px; background-color: #fff; }
 /* ==== Grid >> Global ==== */
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 { display:inline; float: left; position: relative; }
 .offset-1, .pull-1, .offset-2, .pull-2, .offset-3, .pull-3, .offset-4, .pull-4, .offset-5, .pull-5, .offset-6, .pull-6, .offset-7, .pull-7, .offset-8, .pull-8, .offset-9, .pull-9, .offset-10, .pull-10, .offset-11, .pull-11 { position:relative; }
@@ -16,7 +18,7 @@
 .container-12 .grid-9 { width:700px; }
 .container-12 .grid-10 { width:780px; }
 .container-12 .grid-11 { width:860px; }
-.container-12 .grid-12 { width:940px; }
+.container-12 .grid-12 { width:940px;  }
 /* ==== Margin Space >> 12 Columns ==== */
 .container-12 .offset-1 { margin-left:100px; }
 .container-12 .offset-2 { margin-left:180px; }
@@ -31,41 +33,48 @@
 .container-12 .offset-11 { margin-left:900px; }
 
 /* ==== Helper Classes  ==== */
-.brand-content * { box-sizing: border-box; }
-.brand-content .float-left { float: left; }
-.brand-content .float-right { float: right; }
-.brand-content .content-center { display: block; margin: 0 auto; }
+* { box-sizing: border-box; }
+.float-left { float: left; }
+.float-right { float: right; }
+.content-center { display: block; margin: 0 auto; }
+.houdini { display: none; }
 
 /* ==== Layout ==== */
-body { 
-	background-color: #e1eef3;
+body { background-color: #e1eef3; }
+div#wrapper { background-color: #fff !important; }
+
+/* ==== Typography ==== */
+h1, h3, h4, h5, h6 { 
+	font-family:"Apercu Bold", "Source Sans Pro", sans-serif !important;
+	font-size-adjust:0.508;
+	font-weight:bold;
+	font-style:normal;
+	color: #364347;
 }
 
-body #wrapper {
-	width: 980px;
-	background-color: #fff;
-	margin: 0 auto;
-
-}
-
-/* ==== type ==== */
-* { font-family:"Apercu Regular", Calibri, Roboto, sans-serif; 
+h2, p, span { 
+	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
 	font-size-adjust:0.508;
 	font-weight:normal;
 	font-style:normal;
 	color: #364347;
 }
 
-
 h1 {
+	display: inline-block;
 	font-size: 24px;
 	line-height: 24px;
+	margin-bottom: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
 	color: #e96300;
 }
 
 h2 {
+	display: block;
 	font-size: 36px;
-	line-height: 24px;
+	line-height: 42px;
+	text-align: center;
 	color: #5e696d;
 }
 
@@ -77,9 +86,17 @@ h3 {
 p {
 	font-size: 16px;
 	line-height: 28px;
+	padding-bottom: 24px;
 }
 
+span.sub-header {
+	display: block;
+	font-size: 24px;
+	line-height: 24px;
+	color: #5e696d;
+}
 .project-type {
+	display: block;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
@@ -87,9 +104,68 @@ p {
 	padding-bottom: 24px;
 	color: #93a4aa;
 }
-/* ==== nav ==== */
 
+/* ==== Buttons ==== */
+.btn {
+  display: inline-block;
+  font-family: "Apercu Bold", "Source Sans Pro", Arial, sans-serif !important;
+  border: 1px solid transparent;
+  font-size: 16px;
+  line-height: 40px;
+  height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+}
 
+.btn-yellow {
+	color: #364347;
+	background-color: #fad46b;
+	text-decoration: none;
+}
 
+.btn-yellow:hover {
+	background-color: #fac739;
+}
 
+/* ==== Navigation ==== */
+header nav {
+	float: right;
+}
 
+header nav ul li {
+	display: inline;
+	margin-right: 28px;
+}
+
+header nav ul li:last-child { margin-right: 0; }
+
+header {
+	padding: 36px 40px 70px 40px;
+	background-color: #fff;
+}
+
+/* ==== Quizzly ==== */
+section.quizzly { 
+	height: 580px;
+	background-color: #fff;
+}
+article.summary {
+	width: 380px;
+}
+
+section.contrast {
+	background-color: #eef2f5;
+}
+
+section.solstice {
+	height: 550px;
+	padding-top: 140px;
+	background: #eef2f5 url(https://github.com/jlitchfield/jlitchfield.github.io/blob/update/images/solstice-initiative@2x.png?raw=true) 80px bottom no-repeat;
+	background-size: 328px 469px;
+}

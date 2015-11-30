@@ -92,7 +92,7 @@ h4 {
 p {
 	font-size: 16px;
 	line-height: 28px;
-	padding-bottom: 24px;
+	padding: 24px 0;
 }
 
 .sub-header {
@@ -108,7 +108,7 @@ p {
 	line-height: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-bottom: 24px;
+	/*padding-bottom: 24px;*/
 	color: #93a4aa;
 }
 
@@ -152,6 +152,17 @@ header {
 .btn-yellow:hover {
 	background-color: #fac739;
 }
+
+.btn-blue {
+	color: #fff;
+	background-color: #02baf2;
+	text-decoration: none;
+}
+
+.btn-blue:hover {
+	background-color: #02a7d9;
+}
+
 
 /* ==== Sections ==== */
 section.contrast {
@@ -238,6 +249,30 @@ header.quizzly h1, header.quizzly h2, header.quizzly .sub-header {
 	color: #fff;
 }
 
+.background {
+	padding: 40px 0;
+	background: #fff url(https://github.com/jlitchfield/jlitchfield.github.io/blob/update/images/gradient.png?raw=true) top center no-repeat;	
+}
 
+.brainstorm {
+	height: 390px;
+	padding-top: 90px;
+	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/brainstorm.png) center center no-repeat;
+	background-size: 980px 390px;
+}
 
+.filters {
+	padding: 60px 0;
+}
+
+.filters img {
+	padding-top: 24px;
+}
+
+.details {
+	height: 390px;
+	padding-top: 90px;
+	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/brainstorm.png) center center no-repeat;
+	background-size: 980px 390px;
+}
 

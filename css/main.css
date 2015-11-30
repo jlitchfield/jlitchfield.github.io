@@ -113,6 +113,10 @@ p, ul li {
 }
 
 /* ==== Navigation ==== */
+nav ul {
+	padding: 0;
+}
+
 nav ul li {
 	display: inline;
 	margin-right: 28px;
@@ -234,7 +238,7 @@ footer a.contact {
 }
 
 footer nav {
-	width: 291px;
+	width: 288px;
 	margin-top: 24px !important; 
 }
 
@@ -313,14 +317,14 @@ header.wego-header {
 
 .before {
 	height: 816px;
-	padding-top: 60px;
+	padding-top: 152px;
 	background: #dedede url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-before.png) bottom right no-repeat;
 	background-size: 494px 772px;
 }
 
 .after {
 	height: 883px;
-	padding-top: 60px;
+	padding-top: 102px;
 	background: #78a8cd url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-after.png) bottom right no-repeat;
 	background-size: 494px 842px;
 }
@@ -332,3 +336,17 @@ header.wego-header {
 .before article ul li, .after article ul li {
 	padding-bottom: 0;
 }
+
+.scroll {
+	color: #fff;
+}
+
+.scroll img {
+	margin-right: 5px;
+}
+
+.contrast {
+	padding: 60px 0;
+}
+
+

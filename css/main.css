@@ -52,7 +52,7 @@ h1, h3, h4, h5, h6 {
 	color: #364347;
 }
 
-h2, p, span, a { 
+h2, p, span, ul, a { 
 	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
 	font-size-adjust:0.508;
 	font-weight:normal;
@@ -89,7 +89,7 @@ h4 {
 	padding-bottom: 24px;
 }
 
-p {
+p, ul li {
 	font-size: 16px;
 	line-height: 28px;
 	padding: 24px 0;
@@ -307,6 +307,18 @@ header.knockout h1, header.knockout h2, header.knockout .sub-header {
 /* ==== Wego ==== */
 header.wego-header {
 	height: 566px;
-	background: #764673 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly-login.png) bottom center no-repeat;
-	background-size: 511px 346px;
+	background: #764673 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-header.png) bottom center no-repeat;
+	background-size: 881px 422px;
 }
+
+.before {
+	height: 800px;
+	padding-top: 60px;
+	background: #dedede url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-before.png) bottom right no-repeat;
+	background-size: 980px 588px;
+}
+
+.after {
+	background-color: #78a8cd;
+}
+

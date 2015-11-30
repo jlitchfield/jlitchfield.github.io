@@ -312,13 +312,23 @@ header.wego-header {
 }
 
 .before {
-	height: 800px;
+	height: 816px;
 	padding-top: 60px;
 	background: #dedede url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-before.png) bottom right no-repeat;
-	background-size: 980px 588px;
+	background-size: 494px 772px;
 }
 
 .after {
-	background-color: #78a8cd;
+	height: 883px;
+	padding-top: 60px;
+	background: #78a8cd url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-after.png) bottom right no-repeat;
+	background-size: 494px 842px;
 }
 
+.before article, .after article {
+	padding-left: 20px;
+}
+
+.before article ul li, .after article ul li {
+	padding-bottom: 0;
+}

@@ -253,7 +253,7 @@ header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knoc
 }
 
 .background {
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	background: #fff url(https://github.com/jlitchfield/jlitchfield.github.io/blob/update/images/gradient.png?raw=true) top center no-repeat;	
 }
 

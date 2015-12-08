@@ -426,5 +426,5 @@ h1 a {
 }
 
 h1 a.knockout {
-	color: #fff;
+	color: #fff !important;
 }

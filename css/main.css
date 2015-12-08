@@ -325,8 +325,8 @@ header.wego-header {
 .after {
 	height: 883px;
 	padding-top: 102px;
-	background: #ef3e36 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/solstice-header.png) bottom right no-repeat;
-	background-size: 480px 442px;
+	background: #78a8cd url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/wego-after.png) bottom right no-repeat;
+	background-size: 494px 842px;
 }
 
 .before article, .after article {
@@ -349,14 +349,13 @@ header.wego-header {
 	padding: 60px 0;
 }
 
-<<<<<<< HEAD
 /* ==== Solstice ==== */
 header.solstice-header {
 	height: 536px;
 	background: #764673 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-header.png) bottom center no-repeat;
 	background-size: 881px 422px;
-=======
-/* ==== Wego ==== */
+}
+
 header.solstice-header {
 	height: 536px;
 	background: #ef3e36 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/solstice-header.png) bottom right no-repeat;

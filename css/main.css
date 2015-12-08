@@ -126,7 +126,7 @@ nav ul li:last-child { margin-right: 0; }
 header nav { float: right; }
 
 header {
-	padding: 30px 40px 70px 40px;
+	padding: 30px 40px 30px 40px;
 	background-color: #fff;
 }
 
@@ -376,10 +376,14 @@ header.solstice-header h2 { text-align: left; }
 	background-size: 973px 583px;
 }
 
+.pain-points {
+	padding: 48px 0;
+}
+
 .news-feed {
 	height: 637px;
 	padding-top: 440px;
-	padding-left: 140px;
+	padding-left: 155px;
 	background: #f9f9f9 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/solstice-newsfeed.png) center center no-repeat;
 	background-size: 705px 637px;
 }

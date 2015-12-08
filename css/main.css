@@ -64,14 +64,29 @@ h1 {
 	display: inline-block;
 	font-size: 24px;
 	line-height: 24px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #e96300;
+}
+
+h1 {
+	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 40px;
+	font-weight: bold;
 	text-decoration: none;
+	color: #e96300;
 }
 
 h1 a.knockout {
+	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-decoration: none;
 	color: #fff;
 }
 
@@ -389,6 +404,10 @@ header.solstice-header h2 { text-align: left; }
 	padding-top: 84px;
 	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/solstice-badge.png) center center no-repeat;
 	background-size: 980px 637px;
+}
+
+.badge article {
+	padding-left: 10px;
 }
 
 .dashboard {

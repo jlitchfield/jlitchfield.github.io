@@ -349,4 +349,9 @@ header.wego-header {
 	padding: 60px 0;
 }
 
-
+/* ==== Solstice ==== */
+header.solstice-header {
+	height: 536px;
+	background: #764673 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-header.png) bottom center no-repeat;
+	background-size: 881px 422px;
+}

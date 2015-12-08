@@ -272,6 +272,8 @@ header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knoc
 	background-size: 980px 390px;
 }
 
+.wires { padding: 48px 0; }
+
 .filters {
 	padding: 60px 0;
 }
@@ -286,7 +288,6 @@ header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knoc
 	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly-question-details.png) bottom center no-repeat;
 	background-size: 980px 572px;
 }
-
 
 .create-question {
 	height: 640px;
@@ -418,13 +419,13 @@ header.solstice-header h2 { text-align: left; }
 
 /* ==== Overrides ==== */
 h1 a {
-	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
-	font-size: 24px;
-	line-height: 24px;
+	font-family: "Apercu Bold", "Source Sans Pro", sans-serif !important;
 	font-weight: bold;
+	text-decoration: none;
 	color: #e96300;
 }
 
 h1 a.knockout {
+	text-decoration: none;
 	color: #fff !important;
 }

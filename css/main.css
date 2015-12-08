@@ -257,11 +257,11 @@ header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knoc
 	background: #fff url(https://github.com/jlitchfield/jlitchfield.github.io/blob/update/images/gradient.png?raw=true) top center no-repeat;	
 }
 
-.background article:first-of-type {
+.background article:first-of-type, .wires article:first-of-type {
 	padding-right: 30px;
 }
 
-.background article:last-of-type {
+.background article:last-of-type, .wires article:last-of-type {
 	padding-left: 30px;
 }
 

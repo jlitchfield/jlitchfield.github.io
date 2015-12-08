@@ -319,6 +319,11 @@ header.wego-header {
 	background-size: 881px 422px;
 }
 
+
+.info {
+	padding: 48px 0;
+}
+
 .before {
 	height: 816px;
 	padding-top: 152px;
@@ -374,10 +379,6 @@ header.solstice-header h2 { text-align: left; }
 	padding-top: 60px;
 	background: #f6e766 url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/solstice-create-account.png) bottom center no-repeat;
 	background-size: 973px 583px;
-}
-
-.pain-points {
-	padding: 48px 0;
 }
 
 .news-feed {

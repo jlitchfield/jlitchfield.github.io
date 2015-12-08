@@ -70,26 +70,6 @@ h1 {
 	color: #e96300;
 }
 
-h1 {
-	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
-	font-size: 24px;
-	line-height: 24px;
-	margin-bottom: 40px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #e96300;
-}
-
-h1 a.knockout {
-	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
-	font-size: 24px;
-	line-height: 24px;
-	margin-bottom: 40px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #fff;
-}
-
 h2 {
 	display: block;
 	font-size: 36px;
@@ -264,7 +244,7 @@ footer nav {
 /* ==== Quizzly ==== */
 header.quizzly {
 	height: 530px;
-	background: #d4390f url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly-login.png) bottom right no-repeat;
+	background: #d4390f url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly-login.png) bottom center no-repeat;
 	background-size: 511px 346px;
 }
 
@@ -434,4 +414,17 @@ header.solstice-header h2 { text-align: left; }
 	font-size: 12px;
 	padding-top: 0;
 	color: #5e696d;
+}
+
+/* ==== Overrides ==== */
+h1 a {
+	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #e96300;
+}
+
+h1 a.knockout {
+	color: #fff;
 }

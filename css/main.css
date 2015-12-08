@@ -438,3 +438,7 @@ h1 a.knockout {
 	text-decoration: none;
 	color: #fff !important;
 }
+
+.info {
+	padding: 48px 0;
+}

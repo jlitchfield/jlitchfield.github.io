@@ -48,13 +48,13 @@ form.wufoo {
 	min-height:40px;
 	height:40px;
 	display:block;
-	background:url(/images/wflogo.png) no-repeat left top;
+	background:url(http://joshualitchfield.com/legacy-portfolio/images/wflogo.png) no-repeat left top;
 	overflow:hidden;
 }
 
 * html #logo a {
 	_background-image:none;
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/wflogo.png",  sizingMethod="crop");
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://joshualitchfield.com/legacy-portfolio/images/wflogo.png",  sizingMethod="crop");
 }
 
 img, a img {
@@ -1866,7 +1866,7 @@ form li.invoice {
 }
 
 * html #ccSection img, * html #ppSection img {
-	_behavior:url(/images/iepngfix.htc);
+	_behavior:url(http://joshualitchfield.com/legacy-portfolio/images/iepngfix.htc);
 }
 
 #cvc {
@@ -1879,7 +1879,7 @@ form li.invoice {
 	min-width:0 !important;
 	float:none;
 	border:1px solid #000;
-	background:#222 url(/images/ttclose.png) no-repeat 95% 9px;
+	background:#222 url(http://joshualitchfield.com/legacy-portfolio/images/ttclose.png) no-repeat 95% 9px;
 	color:#fff;
 	text-align:justify;
 	padding:12px 15px 12px 12px;
@@ -1923,7 +1923,7 @@ form li.invoice {
 
 #stripe a {
 	text-indent:-9000px;
-	background:url(/images/payment/stripe.png) no-repeat;
+	background:url(http://joshualitchfield.com/legacy-portfolio/images/payment/stripe.png) no-repeat;
 	width:49px;
 	height:20px;
 	display:inline-block;

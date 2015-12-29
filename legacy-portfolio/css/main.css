@@ -7,12 +7,12 @@
 }
 
 body {
-	background: gray url("../images/bg-texture.jpg");
+	background: gray url("..http://joshualitchfield.com/legacy-portfolio/images/bg-texture.jpg");
 	
 }
 body #wrapper {
 	width: 1024px;
-	background: #gray url("../images/bg-texture.jpg");
+	background: #gray url("..http://joshualitchfield.com/legacy-portfolio/images/bg-texture.jpg");
 	margin: 0 auto;
 
 }

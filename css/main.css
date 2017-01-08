@@ -2,7 +2,7 @@
 .container-12 { width: 980px; background-color: #fff; overflow: auto; }
 /* ==== Grid >> Global ==== */
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 { display:inline; float: left; position: relative; }
-.offset-1, .pull-1, .offset-2, .pull-2, .offset-3, .pull-3, .offset-4, .pull-4, .offset-5, .pull-5, .offset-6, .pull-6, .offset-7, .pull-7, .offset-8, .pull-8, .offset-9, .pull-9, .offset-10, .pull-10, .offset-11, .pull-11 { position:relative; }
+.offset-1, .offset-2, .offset-3, .offset-4, .offset-5, .offset-6, .offset-7, .offset-8, .pull-8, .offset-9, .offset-10, .offset-11 { position:relative; }
 /* ==== Grid >> Children ==== */
 .alpha { margin-left: 0; }
 .omega { margin-right: 0; }
@@ -34,11 +34,7 @@
 
 /* ==== Helper Classes  ==== */
 * { box-sizing: border-box; }
-<<<<<<< HEAD
-.clearfix { content: â€˜â€™; display: block; clear: both; }
-=======
 .clearfix { content: ‘’; display: block; clear: both; }
->>>>>>> 6552df314dbafb57a6614f685b20909dca1a2722
 .float-left { float: left; }
 .float-right { float: right; }
 .content-center { display: block; margin: 0 auto; }
@@ -451,11 +447,6 @@ header.profile p {
 	line-height: 24px;
 }
 
-.date {
-	font-size: 15px;
-}
-
-
 .resume h3 {
 	font-size: 24px;
 	
@@ -465,6 +456,10 @@ header.profile p {
 
 .resume h4 {
 	padding-bottom: 0;
+}
+
+.resume main a {
+	font-weight: inherit;
 }
 
 .resume p {
@@ -480,6 +475,9 @@ header.profile p {
 	padding: 0;
 }
 
+.resume .date {
+	font-size: 15px;
+}
 
 /* ==== Overrides ==== */
 h1 a {
@@ -488,6 +486,14 @@ h1 a {
 	text-decoration: none;
 	color: #e96300;
 }
+
+h1 a:hover {
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	color: #E81300;
+}
+
+
 
 h1 a.knockout {
 	text-decoration: none;

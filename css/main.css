@@ -87,9 +87,12 @@ h4 {
 	padding-bottom: 24px;
 }
 
-p {
+p, ul {
 	font-size: 16px;
 	line-height: 28px;
+}
+
+p {
 	padding: 24px 0;
 }
 
@@ -319,7 +322,7 @@ header.quizzly {
 	background-size: 511px 346px;
 }
 
-header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knockout p {
+header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knockout p, .after.knockout h3, .after.knockout ul, p.knockout {
 	color: #fff;
 } 
 
@@ -406,14 +409,21 @@ header.wego-header {
 	padding-top: 102px;
 	background: #78a8cd url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/master/images/wego-after.png) bottom right no-repeat;
 	background-size: 494px 842px;
+	color: #fff;
 }
 
 .before article, .after article {
 	padding-left: 20px;
 }
 
-.before article ul li, .after article ul li {
-	padding-bottom: 0;
+
+.before h3, .after h3 {
+	padding-bottom: 18px;
+}
+
+.before ul li,
+.after ul li {
+	padding: 12px 0;
 }
 
 .scroll {

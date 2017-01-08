@@ -116,7 +116,8 @@ nav ul {
 }
 
 nav ul li {
-	display: inline;
+	display: inline-block;
+	line-height: 24px;
 	margin-right: 28px;
 }
 
@@ -129,7 +130,7 @@ header {
 	background-color: #fff;
 }
 
-nav.main a {
+header nav a {
 	text-decoration: none;
 }
 
@@ -138,8 +139,21 @@ nav.main a {
 	height: 24px;
 }
 
+.nav-fill {
+	fill: #a2afb4;
+}
 
+.nav-fill:hover {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	fill: #E81300;
 
+}
+
+.gray-1 { fill: #d0d2d3; }
+.gray-2 { fill: #a6a8ab; }
+.gray-3 { fill: #808184; }
+.gray-4 { fill: #58595b; }
 
 /* ==== Buttons ==== */
 .btn {
@@ -153,8 +167,8 @@ nav.main a {
   text-transform: uppercase;
   border-radius: 5px;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: all .12s linear;
-  transition: all .12s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .btn-yellow {
@@ -233,8 +247,8 @@ footer h4, footer a {
 
 footer a {
 	text-decoration: none;
-	-webkit-transition: all .12s linear;
-	transition: all .12s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
 }
 
 footer a:hover {
@@ -473,8 +487,8 @@ header.profile p {
 }
 
 .resume main a:hover {
-	-webkit-transition: all .12s linear;
-	transition: all .12s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
 	color: #fac739;
 }
 
@@ -504,8 +518,8 @@ h1 a {
 }
 
 h1 a:hover {
-	-webkit-transition: all .12s linear;
-	transition: all .12s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
 	color: #E81300;
 }
 
@@ -515,8 +529,8 @@ h1 a.knockout {
 }
 
 h1 a.knockout:hover {
-	-webkit-transition: all .12s linear;
-	transition: all .12s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
 	color: #000 !important;
 }
 

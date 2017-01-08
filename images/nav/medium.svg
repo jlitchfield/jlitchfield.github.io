@@ -1,24 +1,5 @@
 <svg id="primary_Logo" data-name="primary Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.71 48">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #d0d2d3;
-      }
 
-      .cls-2 {
-        fill: #a6a8ab;
-      }
-
-      .cls-3 {
-        fill: #808184;
-      }
-
-      .cls-4 {
-        fill: #58595b;
-      }
-    </style>
-  </defs>
-  <title>Portfolio Nav Icons</title>
   <g id="medium">
     <path id="gray-4" class="cls-1" d="M39.38,0.19a1,1,0,0,0-1.57,1V39.58l15.76,7.88c1.73,0.87,3.14.26,3.14-1.36v-37a0.41,0.41,0,0,0-.23-0.37Z"/>
     <path id="gray-3" class="cls-2" d="M18.9,30.13l18-29.22A2,2,0,0,1,39.38.19L56.51,8.76a0.21,0.21,0,0,1,.09.3L37.81,39.58Z"/>

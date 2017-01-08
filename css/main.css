@@ -170,32 +170,32 @@ header .nav-fill:hover,
 }
 
 .wego header .nav-fill:hover,
-.wego header #medium:hover .gray-1,
+/*.wego header #medium:hover .gray-1,
 .wego header #medium:hover .gray-2,
 .wego header #medium:hover .gray-3,
 .wego header #medium:hover .gray-4,
 .wego footer #medium:hover .gray-1,
 .wego footer #medium:hover .gray-2,
 .wego footer #medium:hover .gray-3,
-.wego footer #medium:hover .gray-4,
+.wego footer #medium:hover .gray-4,*/
 .solstice header .nav-fill:hover,
-.solstice header #medium:hover .gray-1,
+/*.solstice header #medium:hover .gray-1,
 .solstice header #medium:hover .gray-2,
 .solstice header #medium:hover .gray-3,
 .solstice header #medium:hover .gray-4,
 .solstice footer #medium:hover .gray-1,
 .solstice footer #medium:hover .gray-2,
 .solstice footer #medium:hover .gray-3,
-.solstice footer #medium:hover .gray-4,
+.solstice footer #medium:hover .gray-4,*/
 .quizzly header .nav-fill:hover,
-.quizzly header #medium:hover .gray-1,
+/*.quizzly header #medium:hover .gray-1,
 .quizzly header #medium:hover .gray-2,
 .quizzly header #medium:hover .gray-3,
 .quizzly header #medium:hover .gray-4,
 .quizzly footer #medium:hover .gray-1,
 .quizzly footer #medium:hover .gray-2,
 .quizzly footer #medium:hover .gray-3,
-.quizzly footer #medium:hover .gray-4,
+.quizzly footer #medium:hover .gray-4,*/
 footer .nav-fill:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;

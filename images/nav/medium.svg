@@ -1,1 +1,28 @@
-<svg id="primary_Logo" data-name="primary Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.71 48"><defs><style>.cls-1{fill:#d0d2d3;}.cls-2{fill:#a6a8ab;}.cls-3{fill:#808184;}.cls-4{fill:#58595b;}</style></defs><title>quizzly-create-question</title><g id="_Group_" data-name="&lt;Group&gt;"><g id="_Group_2" data-name="&lt;Group&gt;"><path id="_Path_" data-name="&lt;Path&gt;" class="cls-1" d="M39.38,0.19a1,1,0,0,0-1.57,1V39.58l15.76,7.88c1.73,0.87,3.14.26,3.14-1.36v-37a0.41,0.41,0,0,0-.23-0.37Z"/><path id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" d="M18.9,30.13l18-29.22A2,2,0,0,1,39.38.19L56.51,8.76a0.21,0.21,0,0,1,.09.3L37.81,39.58Z"/><path id="_Path_3" data-name="&lt;Path&gt;" class="cls-3" d="M2.62,0.72C1.18,0,.69.53,1.53,1.9L18.9,30.13l18.9,9.45L18.94,8.93a0.27,0.27,0,0,0-.11-0.1Z"/><path id="_Path_4" data-name="&lt;Path&gt;" class="cls-4" d="M18.9,46.1a1.67,1.67,0,0,1-2.62,1.62L1.57,40.36A3.12,3.12,0,0,1,0,37.82V1.75A1.33,1.33,0,0,1,2.09.45L18.8,8.81a0.18,0.18,0,0,1,.1.16V46.1Z"/></g></g></svg>
+<svg id="primary_Logo" data-name="primary Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.71 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d0d2d3;
+      }
+
+      .cls-2 {
+        fill: #a6a8ab;
+      }
+
+      .cls-3 {
+        fill: #808184;
+      }
+
+      .cls-4 {
+        fill: #58595b;
+      }
+    </style>
+  </defs>
+  <title>Portfolio Nav Icons</title>
+  <g id="medium">
+    <path id="gray-4" class="cls-1" d="M39.38,0.19a1,1,0,0,0-1.57,1V39.58l15.76,7.88c1.73,0.87,3.14.26,3.14-1.36v-37a0.41,0.41,0,0,0-.23-0.37Z"/>
+    <path id="gray-3" class="cls-2" d="M18.9,30.13l18-29.22A2,2,0,0,1,39.38.19L56.51,8.76a0.21,0.21,0,0,1,.09.3L37.81,39.58Z"/>
+    <path id="gray-2" class="cls-3" d="M2.62,0.72C1.18,0,.69.53,1.53,1.9L18.9,30.13l18.9,9.45L18.94,8.93a0.27,0.27,0,0,0-.11-0.1Z"/>
+    <path id="gray-1" class="cls-4" d="M18.9,46.1a1.67,1.67,0,0,1-2.62,1.62L1.57,40.36A3.12,3.12,0,0,1,0,37.82V1.75A1.33,1.33,0,0,1,2.09.45L18.8,8.81a0.18,0.18,0,0,1,.1.16V46.1Z"/>
+  </g>
+</svg>

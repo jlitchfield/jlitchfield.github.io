@@ -449,11 +449,11 @@ header.wego-header {
 }
 
 /* ==== Solstice ==== */
-header.solstice-header {
+/*header.solstice-header {
 	height: 536px;
 	background: #764673 url("http://joshualitchfield.com/images/wego-header.png") bottom center no-repeat;
 	background-size: 881px 422px;
-}
+}*/
 
 header.solstice-header {
 	height: 536px;

@@ -129,6 +129,10 @@ header {
 	background-color: #fff;
 }
 
+header.knockout a {
+	fill: #fff;
+}
+
 /* ==== Buttons ==== */
 .btn {
   display: inline-block;

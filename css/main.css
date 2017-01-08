@@ -462,6 +462,12 @@ header.profile p {
 	font-weight: inherit;
 }
 
+.resume main a:hover {
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	color: #fac739;
+}
+
 .resume p {
 	padding-top: 0;
 }
@@ -493,11 +499,15 @@ h1 a:hover {
 	color: #E81300;
 }
 
-
-
 h1 a.knockout {
 	text-decoration: none;
 	color: #fff !important;
+}
+
+h1 a.knockout:hover {
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	color: #000;
 }
 
 .info {

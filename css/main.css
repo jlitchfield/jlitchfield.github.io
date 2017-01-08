@@ -157,15 +157,11 @@ header .nav-fill:hover {
 footer .nav-fill:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
-<<<<<<< HEAD
-	fill: #E81300;
-=======
 	fill: #0b1d40;
 }
 
 footer a:hover {
 	color: #0b1d40;
->>>>>>> origin/master
 }
 
 .gray-1 { fill: #d0d2d3; }

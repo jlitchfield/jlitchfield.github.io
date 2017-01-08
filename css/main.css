@@ -164,6 +164,11 @@ footer .nav-fill {
 	fill: #fff;
 }
 
+.gray-1 { fill: #d0d2d3; }
+.gray-2 { fill: #a6a8ab; }
+.gray-3 { fill: #808184; }
+.gray-4 { fill: #58595b; }
+
 div.wego header .nav-fill:hover,
 div.wego header #medium:hover .gray-1,
 div.wego header #medium:hover .gray-2,
@@ -184,11 +189,6 @@ footer .nav-fill:hover {
 	transition: all .2s linear;
 	fill: #0b1d40; /*dark blue*/
 }
-
-.gray-1 { fill: #d0d2d3; }
-.gray-2 { fill: #a6a8ab; }
-.gray-3 { fill: #808184; }
-.gray-4 { fill: #58595b; }
 
 /* === Header ===*/
 header {

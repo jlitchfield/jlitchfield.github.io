@@ -143,8 +143,8 @@ header {
   text-transform: uppercase;
   border-radius: 5px;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: all .25s linear;
-  transition: all .25s linear;
+  -webkit-transition: all .12s linear;
+  transition: all .12s linear;
 }
 
 .btn-yellow {
@@ -223,8 +223,8 @@ footer h4, footer a {
 
 footer a {
 	text-decoration: none;
-	-webkit-transition: all .25s linear;
-	transition: all .25s linear;
+	-webkit-transition: all .12s linear;
+	transition: all .12s linear;
 }
 
 footer a:hover {
@@ -463,8 +463,8 @@ header.profile p {
 }
 
 .resume main a:hover {
-	-webkit-transition: all .25s linear;
-	transition: all .25s linear;
+	-webkit-transition: all .12s linear;
+	transition: all .12s linear;
 	color: #fac739;
 }
 
@@ -494,8 +494,8 @@ h1 a {
 }
 
 h1 a:hover {
-	-webkit-transition: all .25s linear;
-	transition: all .25s linear;
+	-webkit-transition: all .12s linear;
+	transition: all .12s linear;
 	color: #E81300;
 }
 
@@ -505,9 +505,9 @@ h1 a.knockout {
 }
 
 h1 a.knockout:hover {
-	-webkit-transition: all .25s linear;
-	transition: all .25s linear;
-	color: #000;
+	-webkit-transition: all .12s linear;
+	transition: all .12s linear;
+	color: #000 !important;
 }
 
 .info {

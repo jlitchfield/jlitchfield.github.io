@@ -88,7 +88,7 @@ h4 {
 	padding-bottom: 24px;
 }
 
-p, ul li {
+p {
 	font-size: 16px;
 	line-height: 28px;
 	padding: 24px 0;
@@ -115,10 +115,10 @@ nav ul {
 	padding: 0;
 }
 
-nav ul li {
+header nav ul li {
 	display: inline-block;
-	line-height: 24px;
 	margin-right: 28px;
+	padding: 0;
 }
 
 nav ul li:last-child { margin-right: 0; }

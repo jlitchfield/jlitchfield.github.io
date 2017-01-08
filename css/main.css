@@ -150,11 +150,7 @@ header .nav-fill.white {
 	fill: #fff;
 }
 
-header .nav-fill:hover,
-#medium:hover .gray-1,
-#medium:hover .gray-2,
-#medium:hover .gray-3,
-#medium:hover .gray-4 {
+header .nav-fill:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
 	fill: #E81300;
@@ -167,6 +163,10 @@ footer .nav-fill {
 div.wego header .nav-fill:hover,
 div.solstice header .nav-fill:hover,
 div.quizzly header .nav-fill:hover,
+#medium:hover .gray-1,
+#medium:hover .gray-2,
+#medium:hover .gray-3,
+#medium:hover .gray-4,
 footer .nav-fill:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;

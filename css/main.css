@@ -307,7 +307,7 @@ section.wego {
 section.bio {
 	height: 551px;
 	padding-top: 140px;
-	background: #fff url(http://joshualitchfield.com/images/joshua-litchfield-ux-ui-designer.png") center center no-repeat;
+	background: #fff url("http://joshualitchfield.com/images/joshua-litchfield-ux-ui-designer.png") center center no-repeat;
 	background-size: 980px 551px;
 }
 

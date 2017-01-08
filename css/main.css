@@ -322,9 +322,19 @@ header.quizzly {
 	background-size: 511px 346px;
 }
 
-header.knockout h1, header.knockout h2, header.knockout .sub-header, header.knockout p, .after.knockout h3, .after.knockout ul, p.knockout {
+header.knockout h1,
+header.knockout h2,
+header.knockout .sub-header,
+header.knockout p,
+.after.knockout h3,
+.after.knockout ul,
+p.knockout {
 	color: #fff;
 } 
+
+p.knockout {
+	font-size: 18px;
+}
 
 .background {
 	padding: 40px 0 0 0;

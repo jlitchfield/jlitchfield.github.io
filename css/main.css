@@ -1,5 +1,5 @@
 /* ==== Containers ==== */
-.container-12 { width: 980px; background-color: #fff; }
+.container-12 { width: 980px; background-color: #fff; overflow: auto; }
 /* ==== Grid >> Global ==== */
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 { display:inline; float: left; position: relative; }
 .offset-1, .pull-1, .offset-2, .pull-2, .offset-3, .pull-3, .offset-4, .pull-4, .offset-5, .pull-5, .offset-6, .pull-6, .offset-7, .pull-7, .offset-8, .pull-8, .offset-9, .pull-9, .offset-10, .pull-10, .offset-11, .pull-11 { position:relative; }
@@ -34,6 +34,7 @@
 
 /* ==== Helper Classes  ==== */
 * { box-sizing: border-box; }
+.clearfix { content: ‘’; display: block; clear: both; }
 .float-left { float: left; }
 .float-right { float: right; }
 .content-center { display: block; margin: 0 auto; }
@@ -45,7 +46,7 @@ div#wrapper { background-color: #fff !important; }
 
 /* ==== Typography ==== */
 h1, h3, h4, h5, h6 { 
-	font-family:"Apercu Bold", "Source Sans Pro", sans-serif !important;
+	font-family: "Source Sans Pro", sans-serif !important;
 	font-size-adjust:0.508;
 	font-weight:bold;
 	font-style:normal;
@@ -53,7 +54,7 @@ h1, h3, h4, h5, h6 {
 }
 
 h2, p, span, ul, a { 
-	font-family: "Apercu Regular", "Source Sans Pro", sans-serif !important;
+	font-family: "Source Sans Pro", sans-serif !important;
 	font-size-adjust:0.508;
 	font-weight:normal;
 	font-style:normal;
@@ -135,7 +136,7 @@ header {
   display: inline-block;
   padding: 0 15px;
   height: 40px;
-  font-family: "Apercu Regular", "Source Sans Pro", Arial, sans-serif !important;
+  font-family: "Source Sans Pro", Arial, sans-serif !important;
   font-size: 16px;
   line-height: 39px;
   font-weight: normal;
@@ -426,9 +427,59 @@ header.solstice-header h2 { text-align: left; }
 	color: #5e696d;
 }
 
+/* ==== Resume ==== */
+.resume main {
+	margin-bottom: 40px;
+	padding: 0 40px;
+	border-right: 1px dashed #000;
+}
+
+.resume aside {
+	padding-left: 40px;
+}
+
+header.profile {
+	padding-top: 0;
+}
+
+header.profile p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.date {
+	font-size: 15px;
+}
+
+
+.resume h3 {
+	font-size: 24px;
+	
+	text-transform: uppercase;
+	color: #64B3DF;
+}
+
+.resume h4 {
+	padding-bottom: 0;
+}
+
+.resume p {
+	padding-top: 0;
+}
+
+.resume ul {
+	padding: 0 0 32px 0;
+}
+
+.resume ul li {
+	list-style-type: none;
+	padding: 0;
+}
+
+
 /* ==== Overrides ==== */
 h1 a {
-	font-family: "Apercu Bold", "Source Sans Pro", sans-serif !important;
+	font-family: "Source Sans Pro", sans-serif !important;
 	font-weight: bold;
 	text-decoration: none;
 	color: #e96300;

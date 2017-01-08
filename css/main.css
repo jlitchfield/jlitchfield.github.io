@@ -178,10 +178,6 @@ footer .nav-fill:hover {
 .gray-3 { fill: #808184; }
 .gray-4 { fill: #58595b; }
 
-/*#medium:hover .gray-2,
-#medium:hover .gray-3,
-#medium:hover .gray-4 { fill: #0b1d40; }*/
-
 /* === Header ===*/
 header {
 	padding: 30px 40px 30px 40px;

@@ -286,28 +286,28 @@ article.summary {
 section.quizzly {
 	height: 580px;
 	padding-top: 140px;
-	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/quizzly.png) right bottom no-repeat;
+	background: #fff url('jlitchfield.github.io/images/quizzly.png') right bottom no-repeat;
 	background-size: 540px 592px;
 }
 
 section.solstice {
 	height: 550px;
 	padding-top: 140px;
-	background: #eef2f5 url(https://github.com/jlitchfield/jlitchfield.github.io/blob/update/images/solstice-initiative@2x.png?raw=true) 80px bottom no-repeat;
+	background: #eef2f5 url('jlitchfield.github.io/images/solstice-initiative@2x.png') 80px bottom no-repeat;
 	background-size: 328px 469px;
 }
 
 section.wego {
 	height: 640px;
 	padding-top: 140px;
-	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/wego-health%402x.png) right no-repeat;
+	background: #fff url('jlitchfield.github.io/images/wego-health@2x.png') right no-repeat;
 	background-size: 526px 531px;
 }
 
 section.bio {
 	height: 551px;
 	padding-top: 140px;
-	background: #fff url(https://raw.githubusercontent.com/jlitchfield/jlitchfield.github.io/update/images/joshua-litchfield-ux-ui-designer.png) center center no-repeat;
+	background: #fff url('jlitchfield.github.io/images/joshua-litchfield-ux-ui-designer.png') center center no-repeat;
 	background-size: 980px 551px;
 }
 

@@ -160,6 +160,9 @@ footer .nav-fill {
 	fill: #fff;
 }
 
+div.wego header .nav-fill:hover,
+div.solstice header .nav-fill:hover,
+div.quizzly header .nav-fill:hover,
 footer .nav-fill:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;

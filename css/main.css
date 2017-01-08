@@ -576,7 +576,7 @@ h1 a.knockout {
 h1 a.knockout:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
-	color: #000 !important;
+	color: #0b1d40 !important;
 }
 
 .info {

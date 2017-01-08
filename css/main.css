@@ -34,7 +34,11 @@
 
 /* ==== Helper Classes  ==== */
 * { box-sizing: border-box; }
+<<<<<<< HEAD
 .clearfix { content: â€˜â€™; display: block; clear: both; }
+=======
+.clearfix { content: ‘’; display: block; clear: both; }
+>>>>>>> 6552df314dbafb57a6614f685b20909dca1a2722
 .float-left { float: left; }
 .float-right { float: right; }
 .content-center { display: block; margin: 0 auto; }

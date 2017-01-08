@@ -261,9 +261,15 @@ footer a.contact {
 	line-height: 36px;
 }
 
-footer nav {
+footer ul {
 	width: 310px;
 	margin-top: 24px !important; 
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 
+	list-style-type: none;
 }
 
 /* ==== Quizzly ==== */

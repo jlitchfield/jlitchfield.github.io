@@ -129,9 +129,17 @@ header {
 	background-color: #fff;
 }
 
-header.knockout .cls-1 {
-	fill: #fff;
+nav.main a {
+	text-decoration: none;
 }
+
+.nav-icon {
+	width: 24px;
+	height: 24px;
+}
+
+
+
 
 /* ==== Buttons ==== */
 .btn {

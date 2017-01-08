@@ -169,10 +169,10 @@ header .nav-fill:hover,
 	fill: #E81300; /*red*/
 }
 
-footer #medium:hover .gray-1,
-footer #medium:hover .gray-2,
-footer #medium:hover .gray-3,
-footer #medium:hover .gray-4,
+div.index footer #medium:hover .gray-1,
+div.index footer #medium:hover .gray-2,
+div.index footer #medium:hover .gray-3,
+div.index footer #medium:hover .gray-4,
 div.wego header .nav-fill:hover,
 div.wego header #medium:hover .gray-1,
 div.wego header #medium:hover .gray-2,

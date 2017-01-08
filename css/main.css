@@ -146,12 +146,15 @@ header .nav-fill {
 	fill: #a2afb4;
 }
 
-footer .nav-fill {
-	fill: #fff;
-}
 
 header .nav-fill:hover {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
 	fill: #E81300;
+}
+
+footer .nav-fill {
+	fill: #fff;
 }
 
 footer .nav-fill:hover {

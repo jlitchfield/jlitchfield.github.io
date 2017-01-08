@@ -160,10 +160,10 @@ footer .nav-fill {
 .gray-4 { fill: #58595b; }
 
 header .nav-fill:hover,
-#medium:hover .gray-1,
+/*#medium:hover .gray-1,
 #medium:hover .gray-2,
 #medium:hover .gray-3,
-#medium:hover .gray-4 {
+#medium:hover .gray-4*/ {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
 	fill: #E81300; /*red*/

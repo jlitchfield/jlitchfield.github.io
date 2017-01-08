@@ -146,6 +146,10 @@ header .nav-fill {
 	fill: #a2afb4;
 }
 
+header .nav-fill.white {
+	fill: #fff;
+}
+
 header .nav-fill:hover {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;

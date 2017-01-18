@@ -37,7 +37,7 @@
 .clearfix { content: ‘’; display: block; clear: both; }
 .float-left { float: left; }
 .float-right { float: right; }
-.content-center { display: block; margin: 0 auto; }
+.content-center { display:block; margin: 0 auto; }
 .houdini { display: none; }
 
 /* ==== Layout ==== */

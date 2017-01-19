@@ -574,6 +574,54 @@ header.profile p {
 	font-size: 15px;
 }
 
+/* ==== Next Project Nav ==== */
+.footer-nav {
+	height: 190px;
+	background-color: #2e74ff;
+}
+
+.footer-nav .nav-item {
+	width: 50%;
+	height: 190px;
+}
+
+.footer-nav h4, .footer-nav span.project-type {
+	padding: 0;
+	font-weight: 400;
+	color: #fff;
+}
+
+.footer-nav a {
+	display: block;
+	padding: 40px 50px 40px 70px;
+	text-decoration: none;
+}
+
+.footer-nav a:hover h4, .footer-nav a:hover span.project-type {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	color: #0b1d40;
+}
+
+.footer-nav a:hover .btn-yellow {
+	background-color: #fac020;
+}
+
+.footer-nav h4 {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.footer-nav .btn {
+	margin-top: 18px;
+}
+
+.footer-nav .last {
+  background-image: -moz-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+}
+
 /* ==== Overrides ==== */
 h1 a {
 	font-family: "Source Sans Pro", sans-serif !important;

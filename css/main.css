@@ -34,7 +34,7 @@
 
 /* ==== Helper Classes  ==== */
 * { box-sizing: border-box; }
-.clearfix { content: ''; display: block; clear: both; }
+.clearfix { overflow: auto; content: ''; display: block; clear: both; }
 .float-left { float: left; }
 .float-right { float: right; }
 .content-center { display:block; margin: 0 auto; }
@@ -298,6 +298,26 @@ section.solstice {
 	background-size: 328px 469px;
 }
 
+section.dribbble {
+	height: 340px;
+	padding: 60px 0;
+	background-color: #ea4c89;
+}
+
+section.dribbble article {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+section.dribbble h3, section.dribbble p {
+	color: #fff;
+}
+
+#logo-dribbble {
+	height: 28px;
+}
+
 section.wego {
 	height: 640px;
 	padding-top: 140px;
@@ -450,12 +470,6 @@ header.wego-header {
 }
 
 /* ==== Solstice ==== */
-/*header.solstice-header {
-	height: 536px;
-	background: #764673 url("http://joshualitchfield.com/images/wego-header.png") bottom center no-repeat;
-	background-size: 881px 422px;
-}*/
-
 header.solstice-header {
 	height: 536px;
 	background: #ef3e36 url("http://joshualitchfield.com/images/solstice-header.png") bottom right no-repeat;

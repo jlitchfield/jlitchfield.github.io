@@ -305,9 +305,7 @@ section.dribbble {
 }
 
 section.dribbble article {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	padding-top: 22px;
 }
 
 section.dribbble h3, section.dribbble p {

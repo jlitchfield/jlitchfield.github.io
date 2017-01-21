@@ -301,6 +301,7 @@ section.solstice {
 section.dribbble {
 	height: 340px;
 	padding: 60px 0;
+	overflow-y: hidden;
 	background-color: #ea4c89;
 }
 

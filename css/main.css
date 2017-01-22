@@ -260,7 +260,9 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.btn-yellow:hover {`
+.btn-yellow:hover {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
 	background-color: #fac020;
 	
 }

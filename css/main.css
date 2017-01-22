@@ -39,6 +39,8 @@
 .float-right { float: right; }
 .content-center { display:block; margin: 0 auto; }
 .houdini { display: none; }
+.no-padding-top { padding-top: 0; }
+.no-padding-bottom {padding-bottom: 0; }
 
 /* ==== Layout ==== */
 body { background-color: #e1eef3; }
@@ -285,7 +287,8 @@ article.summary {
 }
 
 section.twine-site {
-	background: url("");
+	background: #eef2f5 url("http://joshualitchfield.com/images/twine-site@2x.png") left bottom no-repeat;
+	background-size: 364px 328px;
 }
 
 section.dribbble {

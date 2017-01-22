@@ -293,6 +293,10 @@ section.twine-site {
 	background-size: 504px 390px;
 }
 
+section.twine-site h4 {
+	padding-top: 24px;
+}
+
 section.dribbble {
 	height: 340px;
 	padding: 60px 0;

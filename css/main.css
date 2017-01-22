@@ -327,8 +327,12 @@ section.solstice {
 	height: 550px;
 	padding-top: 140px;
 	background: #eef2f5 url("http://joshualitchfield.com/images/solstice-initiative@2x.png") 80px bottom no-repeat;
-	background: #fff url("http://joshualitchfield.com/images/solstice-initiative@2x.png") 80px bottom no-repeat;
+	background: #fff url("http://joshualitchfield.com/images/solstice-initiative@2x.png") right 130px bottom no-repeat;
 	background-size: 328px 469px;
+}
+
+section.solstice article {
+	margin-left: 40px;
 }
 
 
@@ -583,7 +587,8 @@ header.solstice-header h2 { text-align: left; }
 
 .footer-nav .nav-item {
 	width: 50%;
-	height: 100%;
+	height: 190px;
+	float: left;
 }
 
 .footer-nav h4, .footer-nav span.project-type {

@@ -287,10 +287,10 @@ article.summary {
 }
 
 section.twine-site {
-	padding: 80px 0;
-	background: #eef2f5 url("http://joshualitchfield.com/images/twine-site@2x.png") bottom 10px left no-repeat;
-	background-size: 506px 452px;
-
+	height: 450px;
+	padding-top: 100px;
+	background: #eef2f5 url("http://joshualitchfield.com/images/twine-site@2x.png") top 55px left no-repeat;
+	background-size: 504px 390px;
 }
 
 section.dribbble {

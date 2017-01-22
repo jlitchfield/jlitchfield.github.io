@@ -361,9 +361,14 @@ header.twine-site-redesign {
 }
 
 .twine-site-colors {
-	height: 
-	background: url("");
-	background-size: ;
+	height: 570px;
+	padding: 80px 0;
+	background: #eef2f5 url("http://joshualitchfield.com/images/twine-site-colors@2x.png") bottom left 100px no-repeat;
+	background-size: 405px 487px;
+}
+
+.twine-site-colors p:last-of-type {
+	padding-top: 0;	
 }
 
 

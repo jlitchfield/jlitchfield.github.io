@@ -349,6 +349,12 @@ section.bio article {
 	margin-left: 530px;
 }
 
+/* === Twine Site Redesign ===*/
+header.twine-site-redesign {
+	height: 590px;
+	background: #63bcdd url("") bottom center no-repeat;
+}
+
 /* ==== Quizzly ==== */
 header.quizzly {
 	height: 530px;

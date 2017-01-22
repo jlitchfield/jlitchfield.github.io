@@ -352,8 +352,20 @@ section.bio article {
 /* === Twine Site Redesign ===*/
 header.twine-site-redesign {
 	height: 590px;
-	background: #63bcdd url("") bottom center no-repeat;
+	background: #63bcdd url("http://joshualitchfield.com/images/twine-site-header.png") bottom center no-repeat;
 }
+
+.twine-site-font svg {
+	position: relative;
+	top: 10px;
+}
+
+.twine-site-colors {
+	height: 
+	background: url("");
+	background-size: ;
+}
+
 
 /* ==== Quizzly ==== */
 header.quizzly {
@@ -377,7 +389,7 @@ p.knockout {
 }
 
 .background {
-	padding: 40px 0 0 0;
+	padding: 40px 0;
 	background: #fff url("http://joshualitchfield.com/images/gradient.png") top center no-repeat;	
 }
 

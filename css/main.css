@@ -284,18 +284,8 @@ article.summary {
 	margin-left: 40px;
 }
 
-section.quizzly {
-	height: 580px;
-	padding-top: 140px;
-	background: #fff url("http://joshualitchfield.com/images/quizzly.png") right bottom no-repeat;
-	background-size: 540px 592px;
-}
-
-section.solstice {
-	height: 550px;
-	padding-top: 140px;
-	background: #eef2f5 url("http://joshualitchfield.com/images/solstice-initiative@2x.png") 80px bottom no-repeat;
-	background-size: 328px 469px;
+section.twine-site {
+	background: url("");
 }
 
 section.dribbble {
@@ -316,6 +306,21 @@ section.dribbble h3, section.dribbble p {
 #logo-dribbble {
 	height: 28px;
 }
+
+section.quizzly {
+	height: 580px;
+	padding-top: 140px;
+	background: #fff url("http://joshualitchfield.com/images/quizzly.png") right bottom no-repeat;
+	background-size: 540px 592px;
+}
+
+section.solstice {
+	height: 550px;
+	padding-top: 140px;
+	background: #eef2f5 url("http://joshualitchfield.com/images/solstice-initiative@2x.png") 80px bottom no-repeat;
+	background-size: 328px 469px;
+}
+
 
 section.wego {
 	height: 640px;

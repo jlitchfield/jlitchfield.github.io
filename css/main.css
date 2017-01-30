@@ -300,7 +300,6 @@ section.solstice article {
 	margin-left: 40px;
 }
 
-
 section.wego {
 	height: 640px;
 	padding-top: 140px;
@@ -318,6 +317,7 @@ section.bio {
 section.bio article {
 	margin-left: 530px;
 }
+
 
 /* === Twine Site Redesign ===*/
 header.twine-site-redesign {
@@ -678,4 +678,9 @@ h1 a.knockout:hover {
 
 .info {
 	padding: 48px 0;
+}
+
+.old-portfolio {
+	margin-top: 24px;
+	color: rgba(255,255,255,0.5);
 }

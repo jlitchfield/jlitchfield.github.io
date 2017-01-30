@@ -2,13 +2,13 @@ jQuery(document).ready(function() {
    
     $(".client1").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-cc-lg-11.png',
-            '/images/full-size/fs-mmo-cc-flyer-11.jpg',
-            '/images/full-size/fs-mmo-cc-tee1-11.png',
-            '/images/full-size/fs-mmo-cc-tee2-11.png',
-            '/images/full-size/fs-mmo-cc-coaster-11.png',
-            '/images/full-size/fs-mmo-cc-bannner1-11.png',
-            '/images/full-size/fs-mmo-cc-bannner2-11.png',
+            './images/full-size/fs-mmo-cc-lg-11.png',
+            './images/full-size/fs-mmo-cc-flyer-11.jpg',
+            './images/full-size/fs-mmo-cc-tee1-11.png',
+            './images/full-size/fs-mmo-cc-tee2-11.png',
+            './images/full-size/fs-mmo-cc-coaster-11.png',
+            './images/full-size/fs-mmo-cc-bannner1-11.png',
+            './images/full-size/fs-mmo-cc-bannner2-11.png',
         ], {
             'padding'           : 0,
             'title'         : 'Mike McNeil Crawl for a Cure 2011 Brand Campaign',
@@ -21,10 +21,10 @@ jQuery(document).ready(function() {
 
     $(".client2").click(function() {
         $.fancybox([
-            '/images/full-size/fs-hpn-kssc-1.jpg',
-            '/images/full-size/fs-hpn-kssc-2.jpg',
-            '/images/full-size/fs-hpn-kssc-3.jpg',
-            '/images/full-size/fs-hpn-kssc-4.jpg',
+            './images/full-size/fs-hpn-kssc-1.jpg',
+            './images/full-size/fs-hpn-kssc-2.jpg',
+            './images/full-size/fs-hpn-kssc-3.jpg',
+            './images/full-size/fs-hpn-kssc-4.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Harpoon Brewery Killington Snow Sculpture Competition',
@@ -37,10 +37,10 @@ jQuery(document).ready(function() {
 
     $(".client3").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-cc-lg-10.png',
-            '/images/full-size/fs-mmo-cc-br-10a.png',
-            '/images/full-size/fs-mmo-cc-br-10b.png',
-            '/images/full-size/fs-mmo-cc-flyer-10.jpg',
+            './images/full-size/fs-mmo-cc-lg-10.png',
+            './images/full-size/fs-mmo-cc-br-10a.png',
+            './images/full-size/fs-mmo-cc-br-10b.png',
+            './images/full-size/fs-mmo-cc-flyer-10.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Mike McNeil Crawl for a Cure 2010 Brand Campaign',
@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-brainstorm.png',
+            'href'          : './images/full-size/fs-brainstorm.png',
             'title'         : 'Brainstorm ID Supply Logo Design',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -64,9 +64,9 @@ jQuery(document).ready(function() {
     
     $(".client5").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-fc-logo.png',
-            '/images/full-size/fs-mmo-fc-poster.png',
-            '/images/full-size/fs-mmo-fc-shirt.png',
+            './images/full-size/fs-mmo-fc-logo.png',
+            './images/full-size/fs-mmo-fc-poster.png',
+            './images/full-size/fs-mmo-fc-shirt.png',
         ], {
             'padding'           : 0,
             'title'         : 'Mike McNeil Fall Classic 2009',
@@ -79,10 +79,10 @@ jQuery(document).ready(function() {
     
     $(".client6").click(function() {
         $.fancybox([
-            '/images/full-size/fs-hpn-rack-1a.jpg',
-            '/images/full-size/fs-hpn-rack-1b.jpg',
-            '/images/full-size/fs-hpn-rack-2a.jpg',
-            '/images/full-size/fs-hpn-rack-2b.jpg',
+            './images/full-size/fs-hpn-rack-1a.jpg',
+            './images/full-size/fs-hpn-rack-1b.jpg',
+            './images/full-size/fs-hpn-rack-2a.jpg',
+            './images/full-size/fs-hpn-rack-2b.jpg',
                     
         ], {
             'padding'           : 0,
@@ -98,7 +98,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-quick2fit.png',
+            'href'          : './images/full-size/fs-quick2fit.png',
             'title'         : 'Quick-2-Fit Boot Camp Logo Design',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -107,9 +107,9 @@ jQuery(document).ready(function() {
     
     $(".client8").click(function() {
         $.fancybox([
-            '/images/full-size/fs-hpn-rr-card1.jpg',
-            '/images/full-size/fs-hpn-rr-card2.jpg',
-            '/images/full-size/fs-hpn-rr-poster.jpg',
+            './images/full-size/fs-hpn-rr-card1.jpg',
+            './images/full-size/fs-hpn-rr-card2.jpg',
+            './images/full-size/fs-hpn-rr-poster.jpg',
                     
         ], {
             'padding'           : 0,
@@ -125,7 +125,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-wanted-poster.jpg',
+            'href'          : './images/full-size/fs-wanted-poster.jpg',
             'title'         : 'Wanted Self Promotion Poster',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -134,7 +134,7 @@ jQuery(document).ready(function() {
     
     $(".univ2").click(function() {
         $.fancybox([
-            '/images/full-size/#',
+            './images/full-size/#',
                     
         ], {
             'padding'           : 0,
@@ -148,9 +148,9 @@ jQuery(document).ready(function() {
 
     $(".univ3").click(function() {
         $.fancybox([
-            '/images/full-size/fs-tolerance-1.jpg',
-            '/images/full-size/fs-tolerance-2.jpg',
-            '/images/full-size/fs-tolerance-3.jpg',
+            './images/full-size/fs-tolerance-1.jpg',
+            './images/full-size/fs-tolerance-2.jpg',
+            './images/full-size/fs-tolerance-3.jpg',
                     
         ], {
             'padding'           : 0,
@@ -166,7 +166,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-change.png',
+            'href'          : './images/full-size/fs-change.png',
             'title'         : 'Change Poster',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -175,9 +175,9 @@ jQuery(document).ready(function() {
 
     $(".univ5").click(function() {
         $.fancybox([
-            '/images/full-size/fs-tse-bw.jpg',
-            '/images/full-size/fs-tse-me1.jpg',
-            '/images/full-size/fs-tse-me2.jpg',
+            './images/full-size/fs-tse-bw.jpg',
+            './images/full-size/fs-tse-me1.jpg',
+            './images/full-size/fs-tse-me2.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Top Shelf Eats Concept',
@@ -190,12 +190,12 @@ jQuery(document).ready(function() {
     
     $(".univ6").click(function() {
         $.fancybox([
-            '/images/full-size/fs-ss-style1.jpg',
-            '/images/full-size/fs-ss-style2.jpg',
-            '/images/full-size/fs-ss-style3.jpg',
-            '/images/full-size/fs-ss-style4.jpg',
-            '/images/full-size/fs-ss-style5.jpg',
-            '/images/full-size/fs-ss-style6.jpg',
+            './images/full-size/fs-ss-style1.jpg',
+            './images/full-size/fs-ss-style2.jpg',
+            './images/full-size/fs-ss-style3.jpg',
+            './images/full-size/fs-ss-style4.jpg',
+            './images/full-size/fs-ss-style5.jpg',
+            './images/full-size/fs-ss-style6.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Vandelay Group Style Guide',
@@ -208,7 +208,7 @@ jQuery(document).ready(function() {
 
     $(".univ7").click(function() {
         $.fancybox([
-            '/images/full-size/fs-ss-label1.jpg',
+            './images/full-size/fs-ss-label1.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Vandelay Group Labels',
@@ -221,11 +221,11 @@ jQuery(document).ready(function() {
     
     $(".univ8").click(function() {
         $.fancybox([
-            '/images/full-size/fs-tent1.jpg',
-            '/images/full-size/fs-tent2.jpg',
-            '/images/full-size/fs-tent3.jpg',
-            '/images/full-size/fs-tent4.jpg',
-            '/images/full-size/fs-tent5.jpg',
+            './images/full-size/fs-tent1.jpg',
+            './images/full-size/fs-tent2.jpg',
+            './images/full-size/fs-tent3.jpg',
+            './images/full-size/fs-tent4.jpg',
+            './images/full-size/fs-tent5.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Vandelay Group Table Tents',
@@ -240,7 +240,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-mmo-cc-lg-11.png',
+            'href'          : './images/full-size/fs-mmo-cc-lg-11.png',
             'title'         : 'Mike McNeil Crawl for a Cure 2011',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -251,7 +251,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-brainstorm.png',
+            'href'          : './images/full-size/fs-brainstorm.png',
             'title'         : 'Brainstorm ID Supply',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -262,7 +262,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-mmo-cc-lg-10.png',
+            'href'          : './images/full-size/fs-mmo-cc-lg-10.png',
             'title'         : 'Mike McNeil Crawl for a Cure 2010',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -273,7 +273,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-quick2fit.png',
+            'href'          : './images/full-size/fs-quick2fit.png',
             'title'         : 'Quick-2-Fit Boot Camp',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -284,7 +284,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-mmo-fc-logo.png',
+            'href'          : './images/full-size/fs-mmo-fc-logo.png',
             'title'         : 'Mike McNeil Fall Classic 2010',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -295,7 +295,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-mmo-logo.png',
+            'href'          : './images/full-size/fs-mmo-logo.png',
             'title'         : 'Mike McNeil Organization',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -306,7 +306,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-mmo-cc-flyer-11.jpg',
+            'href'          : './images/full-size/fs-mmo-cc-flyer-11.jpg',
             'title'         : 'Mike McNeil Crawl for a Cure 2011',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -317,7 +317,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-hpn-rr-poster.jpg',
+            'href'          : './images/full-size/fs-hpn-rr-poster.jpg',
             'title'         : 'Harpoon Brewery Octoberfest Road Race',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -328,7 +328,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-mmo-fc-poster.png',
+            'href'          : './images/full-size/fs-mmo-fc-poster.png',
             'title'         : 'Mike McNeil Fall Classic 2010',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -339,7 +339,7 @@ jQuery(document).ready(function() {
         $.fancybox({
             //'orig'            : $(this),
             'padding'       : 0,
-            'href'          : '/images/full-size/fs-change.png',
+            'href'          : './images/full-size/fs-change.png',
             'title'         : 'Change',
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic'
@@ -348,9 +348,9 @@ jQuery(document).ready(function() {
     
     $(".poster5").click(function() {
         $.fancybox([
-            '/images/full-size/fs-tolerance-1.jpg',
-            '/images/full-size/fs-tolerance-2.jpg',
-            '/images/full-size/fs-tolerance-3.jpg',
+            './images/full-size/fs-tolerance-1.jpg',
+            './images/full-size/fs-tolerance-2.jpg',
+            './images/full-size/fs-tolerance-3.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Tolerance',
@@ -363,17 +363,17 @@ jQuery(document).ready(function() {
     
     $(".footer-client2").click(function() {
         $.fancybox([
-            '/images/full-size/fs-hpn-kssc-1.jpg',
-            '/images/full-size/fs-hpn-kssc-2.jpg',
-            '/images/full-size/fs-hpn-kssc-3.jpg',
-            '/images/full-size/fs-hpn-kssc-4.jpg',
-            '/images/full-size/fs-hpn-rack-1a.jpg',
-            '/images/full-size/fs-hpn-rack-1b.jpg',
-            '/images/full-size/fs-hpn-rack-2a.jpg',
-            '/images/full-size/fs-hpn-rack-2b.jpg',
-            '/images/full-size/fs-hpn-rr-card1.jpg',
-            '/images/full-size/fs-hpn-rr-card2.jpg',
-            '/images/full-size/fs-hpn-rr-poster.jpg',
+            './images/full-size/fs-hpn-kssc-1.jpg',
+            './images/full-size/fs-hpn-kssc-2.jpg',
+            './images/full-size/fs-hpn-kssc-3.jpg',
+            './images/full-size/fs-hpn-kssc-4.jpg',
+            './images/full-size/fs-hpn-rack-1a.jpg',
+            './images/full-size/fs-hpn-rack-1b.jpg',
+            './images/full-size/fs-hpn-rack-2a.jpg',
+            './images/full-size/fs-hpn-rack-2b.jpg',
+            './images/full-size/fs-hpn-rr-card1.jpg',
+            './images/full-size/fs-hpn-rr-card2.jpg',
+            './images/full-size/fs-hpn-rr-poster.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Logo Design',
@@ -386,20 +386,20 @@ jQuery(document).ready(function() {
     
     $(".footer-client3").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-cc-lg-11.png',
-            '/images/full-size/fs-mmo-cc-flyer-11.jpg',
-            '/images/full-size/fs-mmo-cc-tee1-11.png',
-            '/images/full-size/fs-mmo-cc-tee2-11.png',
-            '/images/full-size/fs-mmo-cc-coaster-11.png',
-            '/images/full-size/fs-mmo-cc-bannner1-11.png',
-            '/images/full-size/fs-mmo-cc-bannner2-11.png',
-            '/images/full-size/fs-mmo-cc-lg-10.png',
-            '/images/full-size/fs-mmo-cc-br-10a.png',
-            '/images/full-size/fs-mmo-cc-br-10b.png',
-            '/images/full-size/fs-mmo-cc-flyer-10.jpg',            
-            '/images/full-size/fs-mmo-fc-logo.png',
-            '/images/full-size/fs-mmo-fc-poster.png',
-            '/images/full-size/fs-mmo-fc-shirt.png',
+            './images/full-size/fs-mmo-cc-lg-11.png',
+            './images/full-size/fs-mmo-cc-flyer-11.jpg',
+            './images/full-size/fs-mmo-cc-tee1-11.png',
+            './images/full-size/fs-mmo-cc-tee2-11.png',
+            './images/full-size/fs-mmo-cc-coaster-11.png',
+            './images/full-size/fs-mmo-cc-bannner1-11.png',
+            './images/full-size/fs-mmo-cc-bannner2-11.png',
+            './images/full-size/fs-mmo-cc-lg-10.png',
+            './images/full-size/fs-mmo-cc-br-10a.png',
+            './images/full-size/fs-mmo-cc-br-10b.png',
+            './images/full-size/fs-mmo-cc-flyer-10.jpg',            
+            './images/full-size/fs-mmo-fc-logo.png',
+            './images/full-size/fs-mmo-fc-poster.png',
+            './images/full-size/fs-mmo-fc-shirt.png',
         ], {
             'padding'           : 0,
             'title'         : 'Logo Design',
@@ -412,19 +412,19 @@ jQuery(document).ready(function() {
     
     $(".brand1").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-cc-lg-11.png',
-            '/images/full-size/fs-mmo-cc-flyer-11.jpg',
-            '/images/full-size/fs-mmo-cc-tee1-11.png',
-            '/images/full-size/fs-mmo-cc-tee2-11.png',
-            '/images/full-size/fs-mmo-cc-coaster-11.png',
-            '/images/full-size/fs-mmo-cc-bannner1-11.png',
-            '/images/full-size/fs-mmo-cc-bannner2-11.png',
-            '/images/full-size/fs-ss-style1.jpg',
-            '/images/full-size/fs-ss-style2.jpg',
-            '/images/full-size/fs-ss-style3.jpg',
-            '/images/full-size/fs-ss-style4.jpg',
-            '/images/full-size/fs-ss-style5.jpg',
-            '/images/full-size/fs-ss-style6.jpg',
+            './images/full-size/fs-mmo-cc-lg-11.png',
+            './images/full-size/fs-mmo-cc-flyer-11.jpg',
+            './images/full-size/fs-mmo-cc-tee1-11.png',
+            './images/full-size/fs-mmo-cc-tee2-11.png',
+            './images/full-size/fs-mmo-cc-coaster-11.png',
+            './images/full-size/fs-mmo-cc-bannner1-11.png',
+            './images/full-size/fs-mmo-cc-bannner2-11.png',
+            './images/full-size/fs-ss-style1.jpg',
+            './images/full-size/fs-ss-style2.jpg',
+            './images/full-size/fs-ss-style3.jpg',
+            './images/full-size/fs-ss-style4.jpg',
+            './images/full-size/fs-ss-style5.jpg',
+            './images/full-size/fs-ss-style6.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Brand Identity',
@@ -437,12 +437,12 @@ jQuery(document).ready(function() {
 
     $(".logos").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-cc-lg-11.png',
-            '/images/full-size/fs-brainstorm.png',
-            '/images/full-size/fs-mmo-cc-lg-10.png',
-            '/images/full-size/fs-quick2fit.png',
-            '/images/full-size/fs-mmo-fc-logo.png',
-            '/images/full-size/fs-mmo-logo.png',
+            './images/full-size/fs-mmo-cc-lg-11.png',
+            './images/full-size/fs-brainstorm.png',
+            './images/full-size/fs-mmo-cc-lg-10.png',
+            './images/full-size/fs-quick2fit.png',
+            './images/full-size/fs-mmo-fc-logo.png',
+            './images/full-size/fs-mmo-logo.png',
         ], {
             'padding'           : 0,
             'title'         : 'Logo Design',
@@ -455,14 +455,14 @@ jQuery(document).ready(function() {
     
     $(".posters").click(function() {
         $.fancybox([
-            '/images/full-size/fs-mmo-cc-flyer-11.jpg',
-            '/images/full-size/fs-hpn-rr-poster.jpg',
-            '/images/full-size/fs-mmo-fc-poster.png',
-            '/images/full-size/fs-change.png',
-            '/images/full-size/fs-tolerance-1.jpg',
-            '/images/full-size/fs-tolerance-2.jpg',
-            '/images/full-size/fs-tolerance-3.jpg',
-            '/images/full-size/fs-wanted-poster.jpg',
+            './images/full-size/fs-mmo-cc-flyer-11.jpg',
+            './images/full-size/fs-hpn-rr-poster.jpg',
+            './images/full-size/fs-mmo-fc-poster.png',
+            './images/full-size/fs-change.png',
+            './images/full-size/fs-tolerance-1.jpg',
+            './images/full-size/fs-tolerance-2.jpg',
+            './images/full-size/fs-tolerance-3.jpg',
+            './images/full-size/fs-wanted-poster.jpg',
         ], {
             'padding'           : 0,
             'title'         : 'Poster Design',

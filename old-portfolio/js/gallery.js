@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
    
     $(".client1").click(function() {
         $.fancybox([
-            './images/full-size/fs-mmo-cc-lg-11.png',
+            '././images/full-size/fs-mmo-cc-lg-11.png',
             './images/full-size/fs-mmo-cc-flyer-11.jpg',
             './images/full-size/fs-mmo-cc-tee1-11.png',
             './images/full-size/fs-mmo-cc-tee2-11.png',

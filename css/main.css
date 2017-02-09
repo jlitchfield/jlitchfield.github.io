@@ -34,7 +34,8 @@
 
 /* ==== Helper Classes  ==== */
 * { box-sizing: border-box; }
-.clearfix { overflow: auto; content: ''; display: block; clear: both; }
+*:before, *:after { box-sizing: inherit; }
+.clearfix:after { content: ''; display: block; clear: both; overflow: auto; }
 .float-left { float: left; }
 .float-right { float: right; }
 .content-center { display: block; margin: 0 auto; }
@@ -43,7 +44,7 @@
 .no-padding-bottom { padding-bottom: 0; }
 
 /* ==== Layout ==== */
-body { background-color: #e1eef3; }
+body { background-color: #e1eef3; font-size: 16px; }
 div#wrapper { background-color: #fff !important; }
 
 /* ==== Typography ==== */
@@ -678,4 +679,19 @@ h1 a.knockout:hover {
 
 .info {
 	padding: 48px 0;
+}
+
+/* ==== Media Queries ==== */
+@media only all {
+/* styles for qualified small viewports here */
+}
+
+/*800px*/
+@media (min-width: 50em) {
+/* styles for viewport widths 50em and up here */
+}
+
+/*1040px*/
+@media (min-width: 65em) {
+/* styles for viewports 65em and up here */
 }

@@ -31,9 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-/*ol, ul {
-	list-style: none;
-}*/
 
 ol, ul {
 	padding-left: 19px;
@@ -61,3 +58,10 @@ section {
   display: table;
   clear: both;
 }
+
+/*Viewport Future Fix*/
+@-webkit-viewport { width: device-width; }
+   @-moz-viewport { width: device-width; }
+    @-ms-viewport { width: device-width; }
+     @-o-viewport { width: device-width; }
+		@viewport { width: device-width; }

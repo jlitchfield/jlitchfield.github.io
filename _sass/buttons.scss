@@ -1,0 +1,58 @@
+// Dependencies
+// colors.scss
+// type.scss
+
+.btn {
+  display: inline-block;
+  padding: 0 1em;
+  line-height: 35px;
+  font-family: $sans-serif-font-stack;
+  font-weight: 400;
+  color: #fff;
+  background-color: $secondary;
+  border-radius: 3px;
+  box-shadow: 0 4px darken($secondary, 30%);
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear; }
+  .btn:hover {
+    text-decoration: none;
+    color: #fff !important;
+    background-color: darken($secondary, 10%); }
+  .btn:active {
+    background-color: darken($secondary, 15%);
+    box-shadow: 0 2px darken($secondary, 30%);
+    transform: translateY(2px); }
+
+.btn--outline {
+  @extend .btn;
+  background-color: transparent;
+  color: $primary--dark;
+  border: 2px solid $primary--dark;
+  box-shadow: none; }
+  .btn--outline:hover {
+    background-color: $primary--dark;
+    color: #fff; }
+  .btn--outline:active {
+    box-shadow: none; }
+
+.btn--large {
+  @extend .btn;
+  font-size: 20px;
+  padding: .8rem 1.15em; }
+
+.btn--linkedin {
+  fill: $primary--dark;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear; }
+  .btn--linkedin:hover {
+    text-decoration: none;
+    fill: lighten($primary--dark, 10%); }
+  .btn--linkedin:active {
+    fill: darken($primary--dark, 10%);
+    transform: translateY(2px); }
+  @media (max-width: 600px) {
+    ul li:hover .btn--linkedin {
+      fill: lighten($primary--dark, 10%); }
+    ul li:hover .btn--primary {
+      background-color: lighten($secondary, 10%); } }

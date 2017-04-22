@@ -323,6 +323,677 @@ section {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+/* ==== Containers ==== */
+.container-12 {
+  width: 980px;
+  background-color: #fff;
+  overflow: auto; }
+
+/* ==== Grid >> Global ==== */
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+  display: inline;
+  float: left;
+  position: relative; }
+
+.offset-1, .offset-2, .offset-3, .offset-4, .offset-5, .offset-6, .offset-7, .offset-8, .pull-8, .offset-9, .offset-10, .offset-11 {
+  position: relative; }
+
+/* ==== Grid >> Children ==== */
+.alpha {
+  margin-left: 0; }
+
+.omega {
+  margin-right: 0; }
+
+/* ==== Grid >> 12 Columns ==== */
+.container-12 .grid-1 {
+  width: 60px; }
+
+.container-12 .grid-2 {
+  width: 140px; }
+
+.container-12 .grid-3 {
+  width: 220px; }
+
+.container-12 .grid-4 {
+  width: 300px; }
+
+.container-12 .grid-5 {
+  width: 380px; }
+
+.container-12 .grid-6 {
+  width: 460px; }
+
+.container-12 .grid-7 {
+  width: 540px; }
+
+.container-12 .grid-8 {
+  width: 620px; }
+
+.container-12 .grid-9 {
+  width: 700px; }
+
+.container-12 .grid-10 {
+  width: 780px; }
+
+.container-12 .grid-11 {
+  width: 860px; }
+
+.container-12 .grid-12 {
+  width: 940px; }
+
+/* ==== Margin Space >> 12 Columns ==== */
+.container-12 .offset-1 {
+  margin-left: 100px; }
+
+.container-12 .offset-2 {
+  margin-left: 180px; }
+
+.container-12 .offset-3 {
+  margin-left: 260px; }
+
+.container-12 .offset-4 {
+  margin-left: 340px; }
+
+.container-12 .offset-5 {
+  margin-left: 420px; }
+
+.container-12 .offset-6 {
+  margin-left: 500px; }
+
+.container-12 .offset-7 {
+  margin-left: 580px; }
+
+.container-12 .offset-8 {
+  margin-left: 660px; }
+
+.container-12 .offset-9 {
+  margin-left: 740px; }
+
+.container-12 .offset-10 {
+  margin-left: 820px; }
+
+.container-12 .offset-11 {
+  margin-left: 900px; }
+
+/* ==== Helper Classes  ==== */
+* {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: inherit; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.content-center {
+  display: block;
+  margin: 0 auto; }
+
+.houdini {
+  display: none; }
+
+.no-padding-top {
+  padding-top: 0; }
+
+.no-padding-bottom {
+  padding-bottom: 0; }
+
+/* ==== Layout ==== */
+body {
+  background-color: #e1eef3;
+  font-size: 16px; }
+
+div#wrapper {
+  background-color: #fff !important; }
+
+/* ==== Typography ==== */
+h1, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+  color: #364347; }
+
+h2, p, span, ul, a {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  color: #364347; }
+
+h1 {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e96300; }
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #5e696d; }
+
+h3 {
+  font-size: 30px;
+  line-height: 32px; }
+
+h4 {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 24px; }
+
+p, ul {
+  font-size: 16px;
+  line-height: 28px; }
+
+p {
+  padding: 24px 0; }
+
+.sub-header {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  color: #5e696d; }
+
+.project-type {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #93a4aa; }
+
+/* ==== Header & Footer Shared ==== */
+header nav {
+  float: right; }
+
+footer nav {
+  width: 310px;
+  margin-top: 24px !important; }
+
+header nav ul li, footer nav ul li {
+  display: inline-block;
+  margin-right: 28px;
+  padding: 0; }
+
+nav ul li:last-child {
+  margin-right: 0; }
+
+header a, footer a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear; }
+
+header .nav-icon {
+  width: 24px;
+  height: 24px; }
+
+footer .nav-icon {
+  width: 30px;
+  height: 30px; }
+
+header .nav-fill {
+  fill: #a2afb4; }
+
+header .nav-fill.white {
+  fill: #fff; }
+
+footer .nav-fill {
+  fill: #fff; }
+
+header .nav-fill:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  fill: #E81300;
+  /*red*/ }
+
+div.wego header .nav-fill:hover,
+div.solstice header .nav-fill:hover,
+div.quizzly header .nav-fill:hover,
+footer .nav-fill:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  fill: #0b1d40;
+  /*dark blue*/ }
+
+/* === Header ===*/
+header {
+  padding: 30px 40px 30px 40px;
+  background-color: #fff; }
+
+/* ==== Footer ==== */
+footer {
+  padding: 50px 0;
+  background-color: #1e4ca5; }
+
+footer h4, footer a {
+  color: #fff;
+  text-align: center; }
+
+footer a.contact {
+  display: block;
+  font-size: 30px;
+  line-height: 36px; }
+
+footer a:hover {
+  color: #0b1d40; }
+
+/* ==== Buttons ==== */
+.btn, .btn--outline, .btn--large {
+  display: inline-block;
+  padding: 0 15px;
+  height: 40px;
+  font-family: "Source Sans Pro", Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 39px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear; }
+
+.btn-yellow {
+  color: #364347;
+  background-color: #fad46b;
+  text-decoration: none; }
+
+.btn-yellow:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  background-color: #fac020; }
+
+.btn-blue {
+  color: #fff;
+  background-color: #02baf2;
+  text-decoration: none; }
+
+.btn-blue:hover {
+  background-color: #02a7d9; }
+
+/* ==== Sections ==== */
+section.contrast {
+  background-color: #eef2f5; }
+
+article.summary {
+  width: 380px;
+  margin-left: 40px; }
+
+section.twine-site {
+  height: 520px;
+  padding-top: 100px;
+  background: #eef2f5 url("http://joshualitchfield.com/images/twine-site@2x.png") top 55px left no-repeat;
+  background-size: 504px 390px; }
+
+section.twine-site h4 {
+  padding-top: 24px; }
+
+section.dribbble {
+  height: 340px;
+  padding: 60px 0;
+  overflow-y: hidden;
+  background-color: #ea4c89; }
+
+section.dribbble article {
+  padding-top: 22px; }
+
+section.dribbble h3, section.dribbble p {
+  color: #fff; }
+
+#logo-dribbble {
+  height: 28px; }
+
+section.quizzly {
+  height: 580px;
+  padding-top: 140px;
+  background: #fff url("http://joshualitchfield.com/images/quizzly.png") right bottom no-repeat;
+  background-size: 540px 592px; }
+
+section.solstice {
+  height: 550px;
+  padding-top: 140px;
+  background: #eef2f5 url("http://joshualitchfield.com/images/solstice-initiative@2x.png") 80px bottom no-repeat;
+  background: #fff url("http://joshualitchfield.com/images/solstice-initiative@2x.png") right 130px bottom no-repeat;
+  background-size: 328px 469px; }
+
+section.solstice article {
+  margin-left: 40px; }
+
+section.wego {
+  height: 640px;
+  padding-top: 140px;
+  background: #fff url("http://joshualitchfield.com/images/wego-health@2x.png") right no-repeat;
+  background-size: 526px 531px; }
+
+section.bio {
+  height: 551px;
+  padding-top: 140px;
+  background: #fff url("http://joshualitchfield.com/images/joshua-litchfield-ux-ui-designer.png") center center no-repeat;
+  background-size: 980px 551px; }
+
+section.bio article {
+  margin-left: 530px; }
+
+/* === Twine Site Redesign ===*/
+header.twine-site-redesign {
+  height: 590px;
+  background: #63bcdd url("http://joshualitchfield.com/images/twine-site-header.png") bottom center no-repeat; }
+
+.twine-site-font svg {
+  position: relative;
+  top: 10px; }
+
+.twine-site-colors {
+  height: 530px;
+  padding-top: 60px;
+  background: #eef2f5 url("http://joshualitchfield.com/images/twine-site-colors@2x.png") bottom left 100px no-repeat;
+  background-size: 405px 487px; }
+
+.twine-site-colors p:last-of-type {
+  padding-top: 0; }
+
+.twine-site-images {
+  height: 350px;
+  padding-top: 56px;
+  background: #fff url("http://joshualitchfield.com/images/twine-site-images.jpg") center right -30px no-repeat;
+  background-size: contain; }
+
+/* ==== Quizzly ==== */
+header.quizzly {
+  height: 530px;
+  background: #d4390f url("http://joshualitchfield.com/images/quizzly-login.png") bottom center no-repeat;
+  background-size: 511px 346px; }
+
+header.knockout h1,
+header.knockout h2,
+header.knockout .sub-header,
+header.knockout p,
+.after.knockout h3,
+.after.knockout ul,
+p.knockout {
+  color: #fff; }
+
+p.knockout {
+  font-size: 18px; }
+
+.background {
+  padding: 40px 0;
+  background: #fff url("http://joshualitchfield.com/images/gradient.png") top center no-repeat; }
+
+.background article:first-of-type, .wires article:first-of-type {
+  padding-right: 30px; }
+
+.background article:last-of-type, .wires article:last-of-type {
+  padding-left: 30px; }
+
+.background article:last-of-type {
+  padding-left: 30px; }
+
+.brainstorm {
+  height: 390px;
+  padding-top: 90px;
+  background: #fff url("http://joshualitchfield.com/images/brainstorm.png") center center no-repeat;
+  background-size: 980px 390px; }
+
+.wires {
+  padding: 48px 0; }
+
+.filters {
+  padding: 60px 0; }
+
+.filters img {
+  padding-top: 24px; }
+
+.details {
+  height: 800px;
+  padding-top: 60px;
+  background: #fff url("http://joshualitchfield.com/images/quizzly-question-details.png") bottom center no-repeat;
+  background-size: 980px 572px; }
+
+.create-question {
+  height: 640px;
+  background: #fad46b url("http://joshualitchfield.com/images/quizzly-create-question.png") 54px center no-repeat;
+  background-size: 452px 570px; }
+
+.create-question article {
+  width: 380px;
+  padding-top: 195px;
+  padding-left: 30px; }
+
+.groups {
+  height: 800px;
+  padding-top: 60px;
+  background: #fff url("http://joshualitchfield.com/images/quizzly-groups.png") bottom center no-repeat;
+  background-size: 980px 588px; }
+
+/* ==== Wego ==== */
+header.wego-header {
+  height: 566px;
+  background: #764673 url("http://joshualitchfield.com/images/wego-header.png") bottom center no-repeat;
+  background-size: 881px 422px; }
+
+.info {
+  padding: 48px 0; }
+
+.before {
+  height: 816px;
+  padding-top: 152px;
+  background: #dedede url("http://joshualitchfield.com/images/wego-before.png") bottom right no-repeat;
+  background-size: 494px 772px; }
+
+.after {
+  height: 883px;
+  padding-top: 102px;
+  background: #78a8cd url("http://joshualitchfield.com/images/wego-after.png") bottom right no-repeat;
+  background-size: 494px 842px;
+  color: #fff; }
+
+.before article, .after article {
+  padding-left: 20px; }
+
+.before h3, .after h3 {
+  padding-bottom: 18px; }
+
+.before ul li,
+.after ul li {
+  padding: 12px 0; }
+
+.scroll {
+  color: #fff; }
+
+.scroll img {
+  margin-right: 5px; }
+
+.contrast {
+  padding: 60px 0; }
+
+/* ==== Solstice ==== */
+header.solstice-header {
+  height: 536px;
+  background: #ef3e36 url("http://joshualitchfield.com/images/solstice-header.png") bottom right no-repeat;
+  background-size: 480px 442px; }
+
+header.solstice-header .grid-6 {
+  padding: 75px 45px 0 0; }
+
+header.solstice-header h2 {
+  text-align: left; }
+
+.account {
+  height: 786px;
+  padding-top: 60px;
+  background: #f6e766 url("http://joshualitchfield.com/images/solstice-create-account.png") bottom center no-repeat;
+  background-size: 973px 583px; }
+
+.news-feed {
+  height: 637px;
+  padding-top: 440px;
+  padding-left: 145px;
+  background: #f9f9f9 url("http://joshualitchfield.com/images/solstice-newsfeed.png") center center no-repeat;
+  background-size: 705px 637px; }
+
+.badge {
+  height: 637px;
+  padding-top: 84px;
+  background: #fff url("http://joshualitchfield.com/images/solstice-badge.png") center center no-repeat;
+  background-size: 980px 637px; }
+
+.badge article {
+  padding-left: 10px; }
+
+.dashboard {
+  height: 637px;
+  padding-top: 185px;
+  background: #fff url("http://joshualitchfield.com/images/solstice-dashboard.png") center center no-repeat;
+  background-size: 980px 637px; }
+
+.dashboard h3, .dashboard p {
+  color: #fff; }
+
+.orb {
+  height: 409px;
+  padding-top: 100px;
+  background: #fff url("http://joshualitchfield.com/images/solstice-orb.png") center center no-repeat;
+  background-size: 980px 409px; }
+
+.orb p {
+  padding-bottom: 12px; }
+
+.orb p.courtesy {
+  font-size: 12px;
+  padding-top: 0;
+  color: #5e696d; }
+
+/* ==== Next Project Nav ==== */
+.footer-nav {
+  height: 190px;
+  background-color: #2e74ff; }
+
+.footer-nav .nav-item {
+  width: 50%;
+  height: 190px;
+  float: left; }
+
+.footer-nav h4, .footer-nav span.project-type {
+  padding: 0;
+  font-weight: 400;
+  color: #fff; }
+
+.footer-nav a {
+  display: block;
+  padding: 40px 50px 40px 70px;
+  text-decoration: none; }
+
+.footer-nav a:hover h4, .footer-nav a:hover span.project-type {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #0b1d40; }
+
+.footer-nav a:hover .btn-yellow {
+  background-color: #fac020; }
+
+.footer-nav h4 {
+  font-size: 24px;
+  font-weight: 400; }
+
+.footer-nav .btn, .footer-nav .btn--outline, .footer-nav .btn--large {
+  margin-top: 18px; }
+
+.footer-nav .last {
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, transparent 100%); }
+
+/* ==== Resume ==== */
+.resume main {
+  margin-bottom: 40px;
+  padding: 0 40px;
+  border-right: 1px dashed #000; }
+
+.resume aside {
+  padding-left: 40px; }
+
+header.profile {
+  padding-top: 0; }
+
+header.profile p {
+  font-size: 18px;
+  line-height: 24px; }
+
+.resume h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #64B3DF; }
+
+.resume h4 {
+  padding-bottom: 0; }
+
+.resume main a {
+  font-weight: inherit; }
+
+.resume main a:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #fac739; }
+
+.resume p {
+  padding-top: 0; }
+
+.resume ul {
+  padding: 0 0 32px 0; }
+
+.resume ul li {
+  list-style-type: none;
+  padding: 0; }
+
+.resume .date {
+  font-size: 15px; }
+
+/* ==== Overrides ==== */
+h1 a {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: bold;
+  text-decoration: none;
+  color: #e96300; }
+
+h1 a:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #E81300; }
+
+h1 a.knockout {
+  text-decoration: none;
+  color: #fff !important; }
+
+h1 a.knockout:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #0b1d40 !important; }
+
+.info {
+  padding: 48px 0; }
+
+/* ==== Media Queries ==== */
+@media only all {
+  /* styles for qualified small viewports here */ }
+/*800px*/
+@media (min-width: 50em) {
+  /* styles for viewport widths 50em and up here */ }
+/*1040px*/
+@media (min-width: 65em) {
+  /* styles for viewports 65em and up here */ }
 /* ==== Helper Classes  ==== */
 * {
   box-sizing: border-box; }

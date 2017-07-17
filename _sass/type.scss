@@ -7,8 +7,8 @@ Bitter: regular 400, regular 400 italic, black 900
 Muli: regular 400, bold 700
 ==== */
 
-$serif-font-stack: Bitter, serif;
-$sans-serif-font-stack: Muli, Helvetica, Arial, sans-serif;
+$serif-font-stack: "Stint Ultra Expanded", serif;
+$sans-serif-font-stack: Nunito, Arial, sans-serif;
 
 /* ==== Default ==== */
 body {
@@ -27,12 +27,12 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
   margin-bottom: 1.125rem; /*18px*/ }
 
 p, blockquote, pre, ul, ol, dl, figure {
-  font-family: $sans-serif-font-stack;
-  font-size: 1rem;  }
+  font-family: $sans-serif-font-stack; }
 
 /* ==== Headings ==== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $serif-font-stack; }
+  font-family: $serif-font-stack;
+  color: $black; }
 
 // 66px
 h1 {
@@ -77,7 +77,8 @@ p.type--small {
   font-size: 0.75rem; } // 12px
 
 p {
-  font-size: 1rem; } // 16px
+  font-size: 1.0625rem;
+  line-height: 1.5; } // 17px
 
 p.type--medium {
   font-size: 1.25rem; } // 20px
@@ -102,3 +103,39 @@ blockquote {
   font-style: italic; }
   blockquote > :last-child {
     margin-bottom: 0; }
+
+
+/* ==== TODO: clean ==== */
+/* ==== Overrides ==== */
+h1 a {
+  font-weight: bold;
+  text-decoration: none;
+  color: $orange; }
+
+h1 a:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: $red--old; }
+
+h1 a.knockout {
+  text-decoration: none;
+  color: #fff !important; }
+
+h1 a.knockout:hover {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #0b1d40 !important; }
+
+.sub-header {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  color: #5e696d; }
+
+.project-type {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #93a4aa; }

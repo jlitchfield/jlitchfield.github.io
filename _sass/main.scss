@@ -219,11 +219,17 @@ animation-duration:2s;
 .contrast { 
   background-color: $contrast; }
 
+// @media (min-width: 50em) {
+//   .parent.quizzly {
+//   background: #fff url("/images/quizzly@3x.png") right bottom no-repeat;
+//   background-size: 540px 592px; }
+// }
+
 @media (min-width: 50em) {
-  .parent.quizzly {
-  background: #fff url("/images/quizzly@3x.png") right bottom no-repeat;
-  background-size: 540px 592px; }
-}
+  .parent.twine-site {
+    min-height: 900px;
+    background: $contrast url("http://joshualitchfield.com/images/twine-site@2x.png") center left no-repeat;
+    background-size: 780px 415px; } }
 
 section.dribbble {
   height: 340px;

@@ -684,9 +684,10 @@ img {
   background-color: #eef2f5; }
 
 @media (min-width: 50em) {
-  .parent.quizzly {
-    background: #fff url("/images/quizzly@3x.png") right bottom no-repeat;
-    background-size: 540px 592px; } }
+  .parent.twine-site {
+    min-height: 900px;
+    background: #eef2f5 url("http://joshualitchfield.com/images/twine-site@2x.png") center left no-repeat;
+    background-size: 780px 415px; } }
 section.dribbble {
   height: 340px;
   padding: 60px 0;

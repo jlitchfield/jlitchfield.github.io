@@ -219,9 +219,11 @@ animation-duration:2s;
 .contrast { 
   background-color: $contrast; }
 
-.parent.quizzly {
-  background: #fff url("http://joshualitchfield.com/images/quizzly.png") right bottom no-repeat;
+@media (min-width: 50em) {
+  .parent.quizzly {
+  background: #fff url("/images/quizzly@3x.png") right bottom no-repeat;
   background-size: 540px 592px; }
+}
 
 section.dribbble {
   height: 340px;

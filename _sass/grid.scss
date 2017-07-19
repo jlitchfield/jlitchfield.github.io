@@ -7,10 +7,11 @@
   max-width: -webkit-calc(1140px - (30px * 2));
   max-width: calc(1140px - (30px * 2));
   margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box; }
 
 .container.fluid {
-  max-width: none; }
+  min-width: 100%; }
 
 .column,
 .columns {
@@ -18,12 +19,11 @@
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
+/* For devices larger than 400px */ 
 @media (min-width: 400px) {
   .container {
     width: 85%;
-    padding: 0; }
-}
+    padding: 0; } }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
@@ -112,11 +112,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
-/* OLD LAYOUT
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-body { background-color: #e1eef3; font-size: 16px; }
-div#wrapper { background-color: #fff !important; }
-
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -126,6 +121,21 @@ div#wrapper { background-color: #fff !important; }
   content: "";
   display: table;
   clear: both; }
+
+
+/* Padding
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.padding--small {
+  padding: 2rem 0; } // 32px
+
+.padding--medium {
+  padding: 3rem 0; } // 48px
+
+.padding--large {
+  padding: 4rem 0; } // 64px
+
+.padding--x-large {
+  padding: 5rem 0; } // 80px
 
 
 /* Media Queries

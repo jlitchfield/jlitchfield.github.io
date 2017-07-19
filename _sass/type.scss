@@ -3,17 +3,17 @@
 
 /* ====
 Google Fonts Installed
-Bitter: regular 400, regular 400 italic, black 900
-Muli: regular 400, bold 700
+Zilla Slab : regular 400, 700, 900
+Nunito: 300, 400, 700, 900
 ==== */
 
-$serif-font-stack: "Stint Ultra Expanded", serif;
-$sans-serif-font-stack: Nunito, Arial, sans-serif;
+$serif-font-stack: "Zilla Slab", serif;
+$sans-serif-font-stack: "Nunito", Arial, sans-serif;
 
 /* ==== Default ==== */
 body {
-  font: 400 16px/1.4 $sans-serif-font-stack;
-  color: $black--light;
+  font: 400 16px/1.5 $sans-serif-font-stack;
+  color: $black;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -23,7 +23,8 @@ body {
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { 
-	line-height: 1.3;
+	font-weight: 500;
+  line-height: 1.3;
   margin-bottom: 1.125rem; /*18px*/ }
 
 p, blockquote, pre, ul, ol, dl, figure {
@@ -73,17 +74,17 @@ h6 {
 }
 
 /* ==== Copy ==== */
-p.type--small {
+p.type--small, span.type--small {
   font-size: 0.75rem; } // 12px
 
-p {
+p, span {
   font-size: 1.0625rem;
   line-height: 1.5; } // 17px
 
-p.type--medium {
+p.type--medium, span.type--medium {
   font-size: 1.25rem; } // 20px
 
-p.type--large {
+p.type--large, span.type--large {
   font-size: 1.5rem; } // 24px
 
 /* ==== Lists ==== */
@@ -105,18 +106,7 @@ blockquote {
     margin-bottom: 0; }
 
 
-/* ==== TODO: clean ==== */
 /* ==== Overrides ==== */
-h1 a {
-  font-weight: bold;
-  text-decoration: none;
-  color: $orange; }
-
-h1 a:hover {
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
-  color: $red--old; }
-
 h1 a.knockout {
   text-decoration: none;
   color: #fff !important; }
@@ -128,14 +118,17 @@ h1 a.knockout:hover {
 
 .sub-header {
   display: block;
-  font-size: 24px;
-  line-height: 24px;
-  color: #5e696d; }
+  font-size: 1.5rem; // 24px
+  line-height: 1.5;
+  color: $gray; }
+
+h3 + span.project-type {
+  margin-bottom: 0 !important;
+}
 
 .project-type {
   display: block;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: bold;
+  font-size: 0.875rem; // 14px
+  font-weight: 700;
   text-transform: uppercase;
-  color: #93a4aa; }
+  color: $gray--dark; }

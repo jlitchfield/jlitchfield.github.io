@@ -6,32 +6,29 @@
   display: inline-block;
   padding: 0 1em;
   height: 40px;
-  line-height: 40px;
   font-family: $sans-serif-font-stack;
-  font-weight: 400;
+  line-height: 40px;
+  font-weight: 700;
   color: $black;
-  background-color: $yellow;
+  background-color: $warning;
   border-radius: 5px;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
   .btn:hover {
     text-decoration: none;
-    color: $black;
-    background-color: darken($yellow, 10%); }
+    background-color: lighten($warning, 20%); }
   .btn:active {
-    background-color: darken($yellow, 15%);
+    background-color: saturate($warning, 5%); }
 
 .btn--outline {
   @extend .btn;
   background-color: transparent;
   color: $primary--dark;
-  border: 2px solid $primary--dark;
+  border: 2px solid $primary--dark; }
   .btn--outline:hover {
     background-color: $primary--dark;
     color: #fff; }
-  .btn--outline:active {
-    box-shadow: none; }
 
 .btn--large {
   @extend .btn;

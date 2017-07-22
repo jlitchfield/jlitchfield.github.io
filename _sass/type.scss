@@ -95,36 +95,11 @@ li > ul,
 li > ol {
   margin-bottom: 0; }
 
-/* ==== Blockquotes ==== */
-blockquote {
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 1.125rem; // 18px
-  letter-spacing: -1px;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-
-/* ==== Overrides ==== */
-h1 a.knockout {
-  text-decoration: none;
-  color: #fff !important; }
-
-h1 a.knockout:hover {
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
-  color: #0b1d40 !important; }
-
-.sub-header {
-  display: block;
-  font-size: 1.5rem; // 24px
-  line-height: 1.5;
-  color: $gray; }
-
-h3 + span.project-type {
-  margin-bottom: 0 !important;
-}
+// .sub-header {
+//   display: block;
+//   font-size: 1.5rem; // 24px
+//   line-height: 1.5;
+//   color: $gray; }
 
 .project-type {
   display: block;
@@ -132,3 +107,16 @@ h3 + span.project-type {
   font-weight: 700;
   text-transform: uppercase;
   color: $gray--dark; }
+
+.knockout h1,
+.knockout h2,
+.knockout h3,
+.knockout h4,
+.knockout h5,
+.knockout h6,
+.knockout p,
+.knockout span {
+  color: rgba(255, 255, 255, 0.9); }
+
+p.black {
+  color: $black; }

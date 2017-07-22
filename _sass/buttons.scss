@@ -23,6 +23,7 @@
 
 .btn--outline {
   @extend .btn;
+  line-height: 38px;
   background-color: transparent;
   color: $primary--dark;
   border: 2px solid $primary--dark; }

@@ -3,30 +3,28 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
-  max-width: -webkit-calc(1140px - (30px * 2));
-  max-width: calc(1140px - (30px * 2));
+  max-width: 1400px;
+  max-width: -webkit-calc(1400px - (30px * 2));
+  max-width: calc(1400px - (30px * 2));
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-
-.container.fluid {
-  min-width: 100%; }
+  padding: 0 20px; }
 
 .column,
 .columns {
   width: 100%;
-  float: left;
-  box-sizing: border-box; }
+  float: left; }
 
 /* For devices larger than 400px */ 
 @media (min-width: 400px) {
   .container {
     width: 85%;
-    padding: 0; } }
+    padding: 0; }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+  .container.fluid {
+    min-width: 100%; } 
+}
+
+@media (min-width: 769px) {
   .container {
     width: 80%; }
   .column,
@@ -89,6 +87,21 @@
 
 }
 
+@media (min-width: 769px) {
+  .container.fluid .one-third.column               { width: 33.6666666667%; }
+  .container.fluid .two-thirds.column              { width: 66.3333333333%; }
+  .container.fluid .one-half.column                { width: 50%; }
+
+  // .container.fluid {
+  //   padding: 0 3rem; }
+
+  .container.fluid .column,
+  .container.fluid .columns {
+    margin: 0;
+    padding: 0 40px; }
+}
+
+
 /* ==== EXTRAS (OLD)  ==== */
 /* Add .flow-opposite to columns where you want a column on the right on desktop to display first on mobile. */
 .column.flow-opposite { 
@@ -103,16 +116,6 @@
   margin-bottom: 0; }
 
 
-/* ==== EQUAL HEIGHT COLUMNS ==== */
-.col-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-
-
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container:after,
@@ -123,20 +126,44 @@
   clear: both; }
 
 
+/* Images / Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* ==== Global > Images ==== */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.img--mobile {
+  display: block;
+  padding: 2rem; }
+
+/* Larger than phablet (also point when grid becomes active) */
+@media only screen and (min-width: 769px) {
+  .img--mobile { display: none; } }
+
 /* Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.padding--small {
-  padding: 2rem 0; } // 32px
+@media (min-width: 769px) {
+  .padding--small {
+    padding: 2rem 0; } // 32px
 
-.padding--medium {
-  padding: 3rem 0; } // 48px
+  .padding--medium {
+    padding: 3rem 0; } // 48px
 
-.padding--large {
-  padding: 4rem 0; } // 64px
+  .padding--large {
+    padding: 4rem 0; } // 64px
 
-.padding--x-large {
-  padding: 5rem 0; } // 80px
-
+  .padding--x-large {
+    padding: 5rem 0; } // 80px
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -151,14 +178,23 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 769px) {}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+}
+
+
+

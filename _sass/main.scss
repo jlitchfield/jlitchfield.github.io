@@ -8,16 +8,17 @@
 .clearfix:after { content: ''; display: block; clear: both; overflow: auto; }
 .float-left { float: left; }
 .float-right { float: right; }
-.content-center { display: block !important; margin: 0 auto; }
-.houdini { display: none; }
+.content-center { display: block; margin: 0 auto; }
+.flex-content-center { display: flex; justify-content: center; }
 .no-padding-top { padding-top: 0; }
 .no-padding-bottom { padding-bottom: 0; }
 .no-margin-top { margin-top: 0; }
 .no-margin-bottom { margin-bottom: 0; }
+.houdini { display: none; }
 a { text-decoration: none; }
-.shadow { background: transparent url("http://joshualitchfield.com/images/gradient.png") top center repeat-x; }
-.offset-eighty { margin-top: 80px; }
-
+.shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
+.box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+.offset-header { margin-top: 80px; }
 
 body {
   min-height: 100vh;
@@ -32,16 +33,12 @@ body {
   width: 100vw;
   padding: 20px 40px;
   z-index: 1;
+  box-sizing: border-box;
   border-bottom: 1px solid $gray--dark;
   background-color: #fff; }
-  @media (max-width: 600px) {
-    .site-header { padding: 0 20px; } }
 
 .site-header a, footer a {
-  display: inline-block;
-  text-decoration: none;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear; }
+  display: inline-block; }
 
 .site-nav {
   float: right; }
@@ -56,10 +53,10 @@ body {
       margin-right: 30px; }
     ul li svg {
       margin-top: 5px; }
-  @media (max-width: 600px) {
-    a.site-name h1, .site-nav.mobile a {
+  @media (max-width: 769px) {
+    .site-nav.mobile a {
       display: block;
-      padding: 20px 0; }
+      padding: 10px 0; }
     .site-nav.mobile a.btn {
       height: auto; }
     .site-nav ul li {
@@ -97,7 +94,7 @@ body {
       transform: rotate(90deg);
       background-color: transparent;
       border: 0; }
-  @media (max-width: 600px) {
+  @media (max-width: 769px) {
     .mobile {
       display: block; 
       left: 0; } }
@@ -105,21 +102,9 @@ body {
 .desktop {
   display: block; 
   overflow: hidden; }
-  @media (max-width: 600px) {
+  @media (max-width: 769px) {
   .desktop {
     display: none; } }
-
-/* ==== Global > Icons ==== */
-.icon > svg {
-  display: inline-table;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: $primary--dark; }
-
-/* ==== Global > Images ==== */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
 
 /* ==== Global > Hero ==== */
 .hero--container {
@@ -203,6 +188,7 @@ animation-duration:2s;
   40% {-o-transform: translateY(-30px);}
   60% {-o-transform: translateY(-15px);}
 }
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
   40% {transform: translateY(-30px);}
@@ -210,66 +196,80 @@ animation-duration:2s;
 }
 
 /* ==== Index > Sections ==== */
-.parent {
-  min-height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+.contrast { background-color: $contrast; }
 
-.contrast { 
-  background-color: $contrast; }
+@media (max-width: 768px) {
+  .contrast--mobile { 
+    background-color: $contrast; } }
 
-// @media (min-width: 50em) {
-//   .parent.quizzly {
-//   background: #fff url("/images/quizzly@3x.png") right bottom no-repeat;
-//   background-size: 540px 592px; }
-// }
-
-@media (min-width: 50em) {
-  .parent.twine-site {
-    min-height: 900px;
-    background: $contrast url("http://joshualitchfield.com/images/twine-site@2x.png") center left no-repeat;
-    background-size: 780px 415px; } }
-
-section.dribbble {
-  height: 340px;
-  padding: 60px 0;
-  overflow-y: hidden;
-  background-color: #ea4c89; }
-
-section.dribbble article { padding-top: 22px; }
-
-section.dribbble h3, section.dribbble p { color: #fff; }
+.dribbble { background-color: #ea4c89; }
+.dribbble article { padding-top: 22px; }
+.dribbble h3, .dribbble p { color: #fff; }
 #logo-dribbble { height: 28px; }
 
-section.bio {
-  background: #fff url("http://joshualitchfield.com/images/joshua-litchfield-ux-ui-designer.png") center bottom no-repeat;
-  background-size: 980px 551px; }
+@media (min-width: 769px) {
+  .bio {
+    background: #fff url("/images/joshua-litchfield-ux-ui-designer.png") center bottom no-repeat;
+    background-size: 980px 551px; } }
 
 /* === Project > Twine Site Redesign ===*/
-.hero--container.twine-site-redesign {
-  background: #63bcdd url("http://joshualitchfield.com/images/twine-site-header.png") bottom center no-repeat; }
+.section.twine-site-redesign {
+  background-color: #63bcdd;
+  text-align: center;
+  padding-bottom: 0; }
 
-.twine-site-colors {
-  height: 530px;
-  background: $contrast url("http://joshualitchfield.com/images/twine-site-colors@2x.png") bottom left 100px no-repeat;
-  background-size: 405px 487px; }
+.section.twine-site-colors {
+  padding-bottom: 0; }
 
-.twine-site-images {
-  height: 350px;
-  background: #fff url("http://joshualitchfield.com/images/twine-site-images.jpg") center right -30px no-repeat;
-  background-size: contain; }
+@media (min-width: 769px) {
+  .twine-site-images {
+  background: #fff url("/images/twine-site-images.jpg") center right no-repeat;
+  background-size: cover; } }
 
 /* ==== Project > Quizzly ==== */
-.hero--container.quizzly {
-  background: #d4390f url("http://joshualitchfield.com/images/quizzly-login.png") bottom center no-repeat;
-  background-size: 511px 346px; }
+.quizzly {
+  padding-bottom: 0;
+  background-color: #d4390f;
+  text-align: center; }
+
+.quizzly img {
+  position: relative;
+  top: 2px; }
+
+.create-question {
+  background-color: $warning; }
 
 /* ==== Project > Solstice ==== */
-.hero--container.solstice {
-  height: 536px;
-  background: #ef3e36 url("http://joshualitchfield.com/images/solstice-header.png") bottom right no-repeat;
-  background-size: 480px 442px; }
+.solstice { background-color: #ef3e36; }
+.account { background-color: #f6e766; }
+
+// TODO: fix
+@media (min-width: 769px) {
+  .news-feed {
+    height: 637px;
+    padding-top: 440px;
+    padding-left: 145px;
+    background: #f9f9f9 url("/images/solstice-newsfeed.png") center center no-repeat;
+    background-size: 705px 637px; } }
+
+@media (min-width: 769px) {
+  .badge {
+    height: 637px;
+    padding-top: 84px;
+    background: #fff url("/images/solstice-badge.png") center center no-repeat;
+    background-size: cover; } }
+
+@media (min-width: 769px) {
+  .dashboard {
+    height: 500px;
+    background: #fff url("/images/solstice-dashboard.png") center center no-repeat;
+    background-size: cover; } 
+
+  .dashboard article h3, .dashboard article p {
+    color: #fff; } }
+
+.orb {
+  background: #fff url("/images/solstice-orb.png") center right no-repeat; }
 
 /* ==== Resume ==== */
 .resume h3 {
@@ -297,16 +297,15 @@ section.bio {
   padding-bottom: 0.5rem; }
 
 /*800px*/
-@media (min-width: 50em) {
+@media (min-width: 769px) {
   .resume main {
     padding-right: 8.66666666667%;
-    border-right: 1px dashed $gray; }
-}
+    border-right: 1px dashed $gray; } }
 
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {
   margin-bottom: 0;
-  font: 700 1.6rem/40px $sans-serif-font-stack;
+  font: 700 1.2rem/40px $sans-serif-font-stack;
   text-transform: uppercase;
   color: $primary--light; }
 
@@ -314,6 +313,10 @@ a:hover h1 {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   color: lighten($primary--light, 20%); }
+
+@media (min-width: 50em) {
+  .site-header h1 {
+    font-size: 1.6rem; } }
 
 .nav-icon {
   width: 28px;
@@ -327,23 +330,16 @@ header .nav-fill {
   fill: $black--light; }
 
 footer .nav-fill {
-  fill: darken($secondary, 40%); }
-  footer .nav-fill:hover {
-  fill: $black--dark; }
-
-.nav-fill.white {
   fill: #fff; }
 
 .nav-icon:hover > .nav-fill {
   fill: $black--dark; }
 
-footer.parent {
-  min-height: 300px;
-  max-height: 300px;
+footer.footer {
   background-color: $secondary; }
 
 footer nav {
-  margin-top: 1.5rem; }  
+  margin-top: 1rem; }  
 
 footer h4, footer a {
   font-family: $sans-serif-font-stack;
@@ -358,30 +354,28 @@ footer a.contact {
   color: darken($secondary--dark, 20%); }
 
 .copyright {
-  padding: 1.5rem 0;
+  height: 60px;
   text-align: center;
   color: rgba(255,255,255, 0.9);
-  background-color: darken($secondary, 10%);
-}
+  background-color: darken($secondary, 10%); }
+
+.copyright span {
+  line-height: 60px; }
 
 /* ==== Global > Footer Nav ==== */
-.footer-nav {
-  height: 190px;
-  background-color: #2e74ff; }
+.section.footer-nav {
+  padding: 0;
+  background-color: $primary; }
 
-.footer-nav .nav-item {
-  width: 50%;
-  height: 190px;
-  float: left; }
+.section.footer-nav .column {
+  padding: 0; }
 
 .footer-nav h4, .footer-nav span.project-type {
-  padding: 0;
-  font-weight: 400;
   color: #fff; }
 
 .footer-nav a {
   display: block;
-  padding: 40px 50px 40px 70px;
+  padding: 40px ;
   text-decoration: none; }
 
 .footer-nav a:hover h4, .footer-nav a:hover span.project-type {
@@ -389,11 +383,8 @@ footer a.contact {
   transition: all .2s linear;
   color: #0b1d40; }
 
-.footer-nav a:hover .btn-yellow {
-  background-color: #fac020; }
-
 .footer-nav h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400; }
 
 .footer-nav .btn {
@@ -404,17 +395,39 @@ footer a.contact {
   background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
   background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); }
 
-/* ==== Media Queries ==== */
-@media only all {
-/* styles for qualified small viewports here */
+/* Padding
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 769px) {
+  .padding--small {
+    padding: 2rem 0; } // 32px
+
+  .padding--medium {
+    padding: 3rem 0; } // 48px
+
+  .padding--large {
+    padding: 4rem 0; } // 64px
+
+  .padding--x-large {
+    padding: 5rem 0; } // 80px
 }
 
-/*800px*/
-@media (min-width: 50em) {
-/* styles for viewport widths 50em and up here */
-}
+/* ==== Global > Images ==== */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
 
-/*1040px*/
-@media (min-width: 65em) {
-/* styles for viewports 65em and up here */
+@media (min-width: 769px) {
+  .img--mobile {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .img--mobile {
+    display: block;
+    padding: 1rem 0; } }
+
+/* Grid Flex Overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.columns:last-child {
+  margin-bottom: 0;
 }

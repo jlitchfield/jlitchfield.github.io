@@ -1,0 +1,122 @@
+// Dependencies:
+// colors.scss
+
+/* ====
+Google Fonts Installed
+Zilla Slab : regular 400, 700, 900
+Nunito: 300, 400, 700, 900
+==== */
+
+$serif-font-stack: "Zilla Slab", serif;
+$sans-serif-font-stack: "Nunito", Arial, sans-serif;
+
+/* ==== Default ==== */
+body {
+  font: 400 16px/1.5 $sans-serif-font-stack;
+  color: $black;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+/* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { 
+	font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1.125rem; /*18px*/ }
+
+p, blockquote, pre, ul, ol, dl, figure {
+  font-family: $sans-serif-font-stack; }
+
+/* ==== Headings ==== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif-font-stack;
+  color: $black; }
+
+// 66px
+h1 {
+  font-size: 4.125rem; }
+
+// 36px
+h2 {
+  font-size: 2.25rem; }
+
+// 24
+h3 {
+  font-size: 1.5rem; }
+
+// 18px
+h4 {
+  font-size: 1.125rem; }
+
+// 16px
+h5 {
+  font-size: 1rem; }
+
+// 12px
+h6 {
+  font-size: 0.75rem; }
+
+.dash-trailing:after {
+  background: $primary--light;
+  display: block;
+  content: '';
+  height: 4px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 40px; }
+
+.dash-trailing-small:after {
+  @extend .dash-trailing;
+  height: 4px;
+}
+
+/* ==== Copy ==== */
+p.type--small, span.type--small {
+  font-size: 0.75rem; } // 12px
+
+p, span {
+  font-size: 1.0625rem;
+  line-height: 1.5; } // 17px
+
+p.type--medium, span.type--medium {
+  font-size: 1.25rem; } // 20px
+
+p.type--large, span.type--large {
+  font-size: 1.5rem; } // 24px
+
+/* ==== Lists ==== */
+ul, ol {
+  margin-left: 1.875rem; } // 30px
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+// .sub-header {
+//   display: block;
+//   font-size: 1.5rem; // 24px
+//   line-height: 1.5;
+//   color: $gray; }
+
+.project-type {
+  display: block;
+  font-size: 0.875rem; // 14px
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray--dark; }
+
+.knockout h1,
+.knockout h2,
+.knockout h3,
+.knockout h4,
+.knockout h5,
+.knockout h6,
+.knockout p,
+.knockout span {
+  color: rgba(255, 255, 255, 0.9); }
+
+p.black {
+  color: $black; }

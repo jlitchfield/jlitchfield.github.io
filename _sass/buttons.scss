@@ -1,0 +1,37 @@
+// Dependencies
+// colors.scss
+// type.scss
+
+.btn {
+  display: inline-block;
+  padding: 0 1em;
+  height: 40px;
+  font-family: $sans-serif-font-stack;
+  line-height: 40px;
+  font-weight: 700;
+  color: $black;
+  background-color: $warning;
+  border-radius: 5px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear; }
+  .btn:hover {
+    text-decoration: none;
+    background-color: lighten($warning, 20%); }
+  .btn:active {
+    background-color: saturate($warning, 5%); }
+
+.btn--outline {
+  @extend .btn;
+  line-height: 38px;
+  background-color: transparent;
+  color: $primary--dark;
+  border: 2px solid $primary--dark; }
+  .btn--outline:hover {
+    background-color: $primary--dark;
+    color: #fff; }
+
+.btn--large {
+  @extend .btn;
+  font-size: 1.25rem;
+  padding: .8rem 1.15em; }

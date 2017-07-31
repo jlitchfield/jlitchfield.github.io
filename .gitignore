@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 *.xml
+=======
+>>>>>>> origin/master
 _site/
 .sass-cache/
 .jekyll-metadata

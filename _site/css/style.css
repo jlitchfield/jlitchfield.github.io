@@ -6965,62 +6965,6 @@ button.expanded {
 .hero--content-inner p {
   color: rgba(255, 255, 255, 0.9); }
 
-/* ==== Global > Hero > Arrow ==== */
-.arrow {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  margin-left: -20px; }
-
-.bounce {
-  -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  -o-animation-name: bounce;
-  animation-name: bounce; }
-
-.animated {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -ms-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s; }
-
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-30px); }
-  60% {
-    -webkit-transform: translateY(-15px); } }
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0); }
-  40% {
-    -moz-transform: translateY(-30px); }
-  60% {
-    -moz-transform: translateY(-15px); } }
-@-o-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -o-transform: translateY(0); }
-  40% {
-    -o-transform: translateY(-30px); }
-  60% {
-    -o-transform: translateY(-15px); } }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(-30px); }
-  60% {
-    transform: translateY(-15px); } }
 /* ==== Index > Sections ==== */
 .contrast {
   background-color: #eef2f5; }
@@ -7060,7 +7004,7 @@ button.expanded {
 /* ==== Project > Quizzly ==== */
 .quizzly {
   padding-bottom: 0;
-  background-color: #d4390f;
+  background-color: #3b94ff;
   text-align: center; }
 
 .quizzly img {
@@ -7071,31 +7015,40 @@ button.expanded {
   background-color: #f9c22e; }
 
 /* ==== Project > Solstice ==== */
-.solstice {
+.section.solstice {
+  padding-bottom: 0;
   background-color: #ef3e36; }
 
 .account {
   background-color: #f6e766; }
 
-@media (min-width: 769px) {
-  .news-feed {
-    height: 637px;
-    padding-top: 440px;
-    padding-left: 145px;
-    background: #f9f9f9 url("/images/solstice-newsfeed.png") center center no-repeat;
-    background-size: 705px 637px; } }
+.section.news-feed {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f9f9f9; }
+
+.news-feed .column {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.news-feed article {
+  padding: 2rem 1.25em; }
+
+.news-feed img:nth-of-type(2) {
+  vertical-align: bottom; }
+
 @media (min-width: 769px) {
   .badge {
     height: 637px;
-    padding-top: 84px;
     background: #fff url("/images/solstice-badge.png") center center no-repeat;
-    background-size: cover; } }
-@media (min-width: 769px) {
+    background-size: cover; }
+
   .dashboard {
     height: 500px;
     background: #fff url("/images/solstice-dashboard.png") center center no-repeat;
     background-size: cover; }
 
+  .badge article h3, .badge article p,
   .dashboard article h3, .dashboard article p {
     color: #fff; } }
 .orb {

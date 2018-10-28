@@ -115,6 +115,9 @@ h5 {
 h6 {
   font-size: 0.75rem; }
 
+strong {
+  font-weight: 700; }
+
 .dash-trailing:after, .dash-trailing-small:after {
   background: #3b94ff;
   display: block;
@@ -6986,8 +6989,14 @@ button.expanded {
 
 @media (min-width: 769px) {
   .bio {
-    background: #fff url("/images/joshua-litchfield-ux-ui-designer.png") center bottom no-repeat;
-    background-size: 980px 551px; } }
+    background-color: #275dad;
+    color: #fff; }
+
+  h2, .bio span.project-type {
+    color: #fff; }
+
+  img {
+    height: 50%; } }
 /* === Project > Twine Site Redesign ===*/
 .section.twine-site-redesign {
   background-color: #63bcdd;
@@ -7062,6 +7071,9 @@ button.expanded {
   font-family: "Nunito", Arial, sans-serif;
   font-weight: 700; }
 
+span {
+  font-weight: normal; }
+
 .resume a {
   color: inherit;
   text-decoration: underline; }
@@ -7082,8 +7094,11 @@ button.expanded {
 /*800px*/
 @media (min-width: 769px) {
   .resume main {
-    padding-right: 8.66666666667%;
-    border-right: 1px dashed #ced3dc; } }
+    padding-right: 3%;
+    border-right: 1px dashed #ced3dc; }
+
+  .resume aside {
+    padding-left: 3%; } }
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {
   margin-bottom: 0;

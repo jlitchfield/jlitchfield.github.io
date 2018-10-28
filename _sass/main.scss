@@ -231,6 +231,10 @@ body {
   background: #fff url("/images/solstice-orb.png") center right no-repeat; }
 
 /* ==== Resume ==== */
+.resume {
+  margin-bottom: 110px;
+}
+
 .resume h3 {
   color: $primary--light; }
 
@@ -257,6 +261,18 @@ body {
 .resume ul li {
   list-style-type: none;
   padding-bottom: 0.5rem; }
+
+/* ==== Download Resume ==== */
+.download-resume {
+  z-index: 3; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $blurple--dark; }
+  .download-resume .btn {
+    display: block;
+    width: 265px;
+    margin: 0 auto; }
 
 /*800px*/
 @media (min-width: 769px) {

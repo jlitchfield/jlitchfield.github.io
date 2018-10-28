@@ -205,7 +205,9 @@ p.black {
 
 .btn--large {
   font-size: 1.25rem;
-  padding: .8rem 1.15em; }
+  padding: .8rem 1.15em;
+  line-height: 2rem;
+  height: 56px; }
 
 /*! bulma.io v0.4.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
@@ -7064,6 +7066,9 @@ button.expanded {
   background: #fff url("/images/solstice-orb.png") center right no-repeat; }
 
 /* ==== Resume ==== */
+.resume {
+  margin-bottom: 110px; }
+
 .resume h3 {
   color: #3b94ff; }
 
@@ -7090,6 +7095,19 @@ span {
 .resume ul li {
   list-style-type: none;
   padding-bottom: 0.5rem; }
+
+/* ==== Download Resume ==== */
+.download-resume {
+  z-index: 3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #45548c; }
+
+.download-resume .btn, .download-resume .btn--outline, .download-resume .btn--large {
+  display: block;
+  width: 265px;
+  margin: 0 auto; }
 
 /*800px*/
 @media (min-width: 769px) {

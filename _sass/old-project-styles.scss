@@ -1,18 +1,8 @@
 
 @media (min-width: 769px) {
-  // .parent.quizzly {
-  //   background: #fff url("/images/quizzly@2x.png") top 20px right 25% no-repeat;
-  //   background-size: 781px 614px; }
-
   .twine-site {
     height: 80vh;
-    // background: $contrast url("/images/twine@2x.png") center left no-repeat;
     background-size: 80%; }
-
-  // .twine-site {
-  //   height: 575px;
-  //   background: $contrast url("/images/twine@2x.png") center center no-repeat;
-  //   background-size: 100%; }
 
   .parent.solstice {
     background: url("/images/solstice@2x.png") top 50px right 20% no-repeat;
@@ -52,6 +42,7 @@
   }
 }
 
+// MINI RESET
 /*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,

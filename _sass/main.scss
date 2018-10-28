@@ -155,8 +155,12 @@ body {
 
 @media (min-width: 769px) {
   .bio {
-    background: #fff url("/images/joshua-litchfield-ux-ui-designer.png") center bottom no-repeat;
-    background-size: 980px 551px; } }
+    background-color: $primary; 
+    color: $white; }
+    h2, .bio span.project-type {
+      color: $white; }
+    img {
+      height: 50%; } } 
 
 /* === Project > Twine Site Redesign ===*/
 .section.twine-site-redesign {

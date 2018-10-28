@@ -34,4 +34,7 @@
 .btn--large {
   @extend .btn;
   font-size: 1.25rem;
-  padding: .8rem 1.15em; }
+  padding: .8rem 1.15em;
+  line-height: 2rem; 
+  height: 56px; }
+  

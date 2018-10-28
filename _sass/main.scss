@@ -245,11 +245,11 @@ body {
     font-weight: normal;
   }
 
-.resume a {
+.resume main a {
   color: inherit;
   text-decoration: underline; }
 
-.resume a:hover {
+.resume main a:hover {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   color: $warning; }
@@ -269,10 +269,11 @@ body {
   bottom: 0;
   left: 0;
   background-color: $blurple--dark; }
-  .download-resume .btn {
-    display: block;
-    width: 265px;
-    margin: 0 auto; }
+  
+.download-resume .btn--large {
+  display: block;
+  width: 265px;
+  margin: 0 auto; }
 
 /*800px*/
 @media (min-width: 769px) {

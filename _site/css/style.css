@@ -7079,11 +7079,11 @@ button.expanded {
 span {
   font-weight: normal; }
 
-.resume a {
+.resume main a {
   color: inherit;
   text-decoration: underline; }
 
-.resume a:hover {
+.resume main a:hover {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   color: #f9c22e; }
@@ -7104,7 +7104,7 @@ span {
   left: 0;
   background-color: #45548c; }
 
-.download-resume .btn, .download-resume .btn--outline, .download-resume .btn--large {
+.download-resume .btn--large {
   display: block;
   width: 265px;
   margin: 0 auto; }

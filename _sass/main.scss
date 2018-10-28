@@ -233,6 +233,9 @@ body {
 .resume h4 {
   font-family: $sans-serif-font-stack;
   font-weight: 700; }
+  span {
+    font-weight: normal;
+  }
 
 .resume a {
   color: inherit;
@@ -254,8 +257,10 @@ body {
 /*800px*/
 @media (min-width: 769px) {
   .resume main {
-    padding-right: 8.66666666667%;
-    border-right: 1px dashed $gray; } }
+    padding-right: 3%;
+    border-right: 1px dashed $gray; } 
+  .resume aside {
+    padding-left: 3%; } }
 
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {

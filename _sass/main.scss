@@ -19,6 +19,7 @@ a { text-decoration: none; }
 .shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
 .box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
 .offset-header { margin-top: 80px; }
+mark { padding: 0 6px; background-color: $warning; border-radius: 2px; }
 
 body {
   min-height: 100vh;
@@ -261,6 +262,10 @@ body {
 .resume ul li {
   list-style-type: none;
   padding-bottom: 0.5rem; }
+
+.resume strong {
+  color: $blurple--light;
+}
 
 /* ==== Download Resume ==== */
 .download-resume {

@@ -6838,6 +6838,11 @@ a {
 .offset-header {
   margin-top: 80px; }
 
+mark {
+  padding: 0 6px;
+  background-color: #f9c22e;
+  border-radius: 2px; }
+
 body {
   min-height: 100vh;
   color: #545d7f;
@@ -7095,6 +7100,9 @@ span {
 .resume ul li {
   list-style-type: none;
   padding-bottom: 0.5rem; }
+
+.resume strong {
+  color: #8da6ff; }
 
 /* ==== Download Resume ==== */
 .download-resume {

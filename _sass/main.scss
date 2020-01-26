@@ -149,10 +149,6 @@ body {
   .contrast--mobile { 
     background-color: $contrast; } }
 
-.dribbble { background-color: #ea4c89; }
-.dribbble article { padding-top: 22px; }
-.dribbble h3, .dribbble p { color: #fff; }
-#logo-dribbble { height: 28px; }
 
 @media (min-width: 769px) {
   .bio {
@@ -162,6 +158,14 @@ body {
       color: $white; }
     img {
       height: 50%; } } 
+
+/* === Dribbble > All ===*/
+
+#logo-dribbble { height: 28px; }
+.dribbble { background-color: #D2E0F0; }
+.dribbble h3 { color: #ea4c89; } 
+.dribbble p { color: $black--light; }
+
 
 /* === Project > Twine Site Redesign ===*/
 .section.twine-site-redesign {

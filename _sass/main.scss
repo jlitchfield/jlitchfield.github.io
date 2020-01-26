@@ -164,7 +164,7 @@ body {
 #logo-dribbble { height: 28px; }
 .dribbble { background-color: #D2E0F0; }
 .dribbble h3 { color: #ea4c89; } 
-.dribbble p { color: $black--light; }
+.dribbble p { color: adjust_hue(saturate(lighten($black--dark, 5), 0), 0); }
 
 
 /* === Project > Twine Site Redesign ===*/

@@ -7122,6 +7122,28 @@ span {
 
   .resume aside {
     padding-left: 3%; } }
+/* ==== Download Resume ==== */
+section.user-guide {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #eef2f5; }
+
+section.user-guide p {
+  font-size: 0.9rem;
+  color: #001011; }
+
+/* ==== User Guide ==== */
+p, ul {
+  line-height: 1.75; }
+
+.resume.user-guide ul li {
+  list-style-type: circle;
+  padding-bottom: 0.5rem; }
+
+.last-updated {
+  color: #a7b7c2; }
+
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {
   margin-bottom: 0;

@@ -4,6 +4,7 @@ _site/
 .jekyll-metadata
 .DS_Store
 .README.md.icloud
+feed.xml
 # OS generated files #
 ######################
 .DS_Store

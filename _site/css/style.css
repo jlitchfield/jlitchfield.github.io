@@ -6888,7 +6888,7 @@ nav ul li {
   line-height: 1.5; }
 
 nav ul li:not(:last-child) {
-  margin-right: 30px; }
+  margin-right: 15px; }
 
 ul li svg {
   margin-top: 5px; }
@@ -7157,7 +7157,8 @@ p, ul {
   padding-bottom: 0.5rem; }
 
 .last-updated {
-  color: #545d7f; }
+  color: #545d7f;
+  font-size: 0.9rem; }
 
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {

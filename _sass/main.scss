@@ -19,7 +19,7 @@ a { text-decoration: none; }
 .shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
 .box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
 .offset-header { margin-top: 80px; }
-mark { padding: 0 6px; background-color: $warning; border-radius: 2px; }
+mark { display: inline-block; margin-left: 2px; padding: 2px 4px; background-color: $primary--light; border-radius: 4px; color: $white; }
 
 body {
   min-height: 100vh;
@@ -150,14 +150,29 @@ body {
     background-color: $contrast; } }
 
 
-@media (min-width: 769px) {
+
   .bio {
     background-color: $primary; 
     color: $white; }
     h2, .bio span.project-type {
       color: $white; }
     img {
-      height: 50%; } } 
+      height: 50%; } 
+    a.btn {
+      margin-right: 1rem; }
+
+// keep or remove this section
+// @media (min-width: 769px) {
+//   .bio {
+//     background-color: $primary; 
+//     color: $white; }
+//     h2, .bio span.project-type {
+//       color: $white; }
+//     img {
+//       height: 50%; } 
+//     a.btn {
+//       margin-right: 1rem; } } 
+
 
 /* === Dribbble > All ===*/
 
@@ -314,7 +329,7 @@ p, ul {
   padding-bottom: 0.5rem; }
 
 .last-updated {
-  color: $black-light; }
+  color: $black--light; }
 
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {

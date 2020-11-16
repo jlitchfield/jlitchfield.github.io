@@ -23,13 +23,23 @@
 
 .btn--outline {
   @extend .btn;
-  line-height: 38px;
+  box-sizing: border-box;
+  line-height: 36px;
   background-color: transparent;
   color: $primary--dark;
   border: 2px solid $primary--dark; }
   .btn--outline:hover {
     background-color: $primary--dark;
     color: #fff; }
+
+
+.btn--outline--on-dark {
+  @extend .btn--outline;
+  color: $white;
+  border: 2px solid $white; }
+  .btn--outline:hover {
+    background-color: $white;
+    color: $black--dark; }
 
 .btn--large {
   @extend .btn;

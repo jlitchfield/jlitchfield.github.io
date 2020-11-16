@@ -172,7 +172,7 @@ li > ol {
 p.black {
   color: #2d3047; }
 
-.btn, .btn--outline, .btn--large {
+.btn, .btn--outline, .btn--outline--on-dark, .btn--large {
   display: inline-block;
   padding: 0 1em;
   height: 40px;
@@ -186,22 +186,31 @@ p.black {
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
 
-.btn:hover, .btn--outline:hover, .btn--large:hover {
+.btn:hover, .btn--outline:hover, .btn--outline--on-dark:hover, .btn--large:hover {
   text-decoration: none;
   background-color: #fcdf91; }
 
-.btn:active, .btn--outline:active, .btn--large:active {
+.btn:active, .btn--outline:active, .btn--outline--on-dark:active, .btn--large:active {
   background-color: #fec429; }
 
-.btn--outline {
-  line-height: 38px;
+.btn--outline, .btn--outline--on-dark {
+  box-sizing: border-box;
+  line-height: 36px;
   background-color: transparent;
   color: #16375e;
   border: 2px solid #16375e; }
 
-.btn--outline:hover {
+.btn--outline:hover, .btn--outline--on-dark:hover {
   background-color: #16375e;
   color: #fff; }
+
+.btn--outline--on-dark {
+  color: #fff;
+  border: 2px solid #fff; }
+
+.btn--outline:hover, .btn--outline--on-dark:hover {
+  background-color: #fff;
+  color: #001011; }
 
 .btn--large {
   font-size: 1.25rem;
@@ -6839,9 +6848,12 @@ a {
   margin-top: 80px; }
 
 mark {
-  padding: 0 6px;
-  background-color: #f9c22e;
-  border-radius: 2px; }
+  display: inline-block;
+  margin-left: 2px;
+  padding: 2px 4px;
+  background-color: #3b94ff;
+  border-radius: 4px;
+  color: #fff; }
 
 body {
   min-height: 100vh;
@@ -6886,7 +6898,7 @@ ul li svg {
     display: block;
     padding: 10px 0; }
 
-  .site-nav.mobile a.btn, .site-nav.mobile a.btn--outline, .site-nav.mobile a.btn--large {
+  .site-nav.mobile a.btn, .site-nav.mobile a.btn--outline, .site-nav.mobile a.btn--outline--on-dark, .site-nav.mobile a.btn--large {
     height: auto; }
 
   .site-nav ul li {
@@ -6982,16 +6994,19 @@ button.expanded {
 @media (max-width: 768px) {
   .contrast--mobile {
     background-color: #eef2f5; } }
-@media (min-width: 769px) {
-  .bio {
-    background-color: #275dad;
-    color: #fff; }
+.bio {
+  background-color: #275dad;
+  color: #fff; }
 
-  h2, .bio span.project-type {
-    color: #fff; }
+h2, .bio span.project-type {
+  color: #fff; }
 
-  img {
-    height: 50%; } }
+img {
+  height: 50%; }
+
+a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
+  margin-right: 1rem; }
+
 /* === Dribbble > All ===*/
 #logo-dribbble {
   height: 28px; }
@@ -7233,7 +7248,7 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 400; }
 
-.footer-nav .btn, .footer-nav .btn--outline, .footer-nav .btn--large {
+.footer-nav .btn, .footer-nav .btn--outline, .footer-nav .btn--outline--on-dark, .footer-nav .btn--large {
   margin-top: 18px; }
 
 .footer-nav .last {

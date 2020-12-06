@@ -131,7 +131,7 @@ strong {
   height: 4px; }
 
 /* ==== Copy ==== */
-p.type--small, span.type--small {
+.type--small {
   font-size: 0.75rem; }
 
 p, span {
@@ -157,7 +157,7 @@ li > ol {
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #a7b7c2; }
+  color: #6a7fdb; }
 
 .knockout h1,
 .knockout h2,
@@ -6850,10 +6850,21 @@ a {
 mark {
   display: inline-block;
   margin-left: 2px;
-  padding: 2px 4px;
+  padding: 2px 6px;
   background-color: #3b94ff;
   border-radius: 4px;
   color: #fff; }
+
+cite {
+  display: block;
+  margin-top: 8px;
+  color: #545d7f; }
+
+cite a {
+  color: inherit; }
+
+cite a:hover {
+  text-decoration: underline; }
 
 body {
   min-height: 100vh;
@@ -6889,6 +6900,9 @@ nav ul li {
 
 nav ul li:not(:last-child) {
   margin-right: 15px; }
+
+nav ul li:nth-of-type(5) {
+  margin-right: 0; }
 
 ul li svg {
   margin-top: 5px; }
@@ -7126,8 +7140,9 @@ span {
 
 .download-resume .btn--large {
   display: block;
-  width: 265px;
-  margin: 0 auto; }
+  width: 300px;
+  margin: 0 auto;
+  text-align: center; }
 
 /*800px*/
 @media (min-width: 769px) {
@@ -7147,6 +7162,17 @@ section.user-guide {
 section.user-guide p {
   font-size: 0.9rem;
   color: #001011; }
+
+/* ==== About Joshua ==== */
+section.skills img {
+  border-radius: 4px; }
+
+section.green {
+  background-color: #1cc498; }
+  section.green .project-type {
+    color: #cdf8ed; }
+  section.green h3, section.green p {
+    color: #2d3047; }
 
 /* ==== User Guide ==== */
 p, ul {
@@ -7243,7 +7269,7 @@ a:hover {
 .footer-nav a:hover h4, .footer-nav a:hover span.project-type {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
-  color: #0b1d40; }
+  color: #e6e6e6; }
 
 .footer-nav h4 {
   font-size: 1.5rem;
@@ -7279,6 +7305,9 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle; }
+
+img.photo {
+  border: 10px solid #fff; }
 
 @media (min-width: 769px) {
   .img--mobile {

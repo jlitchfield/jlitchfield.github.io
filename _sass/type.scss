@@ -78,7 +78,7 @@ strong {
 }
 
 /* ==== Copy ==== */
-p.type--small, span.type--small {
+.type--small {
   font-size: 0.75rem; } // 12px
 
 p, span {
@@ -99,18 +99,12 @@ li > ul,
 li > ol {
   margin-bottom: 0; }
 
-// .sub-header {
-//   display: block;
-//   font-size: 1.5rem; // 24px
-//   line-height: 1.5;
-//   color: $gray; }
-
 .project-type {
   display: block;
   font-size: 0.875rem; // 14px
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray--dark; }
+  color: $blurple; }
 
 .knockout h1,
 .knockout h2,

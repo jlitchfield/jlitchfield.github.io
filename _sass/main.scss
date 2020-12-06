@@ -19,7 +19,10 @@ a { text-decoration: none; }
 .shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
 .box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
 .offset-header { margin-top: 80px; }
-mark { display: inline-block; margin-left: 2px; padding: 2px 4px; background-color: $primary--light; border-radius: 4px; color: $white; }
+mark { display: inline-block; margin-left: 2px; padding: 2px 6px; background-color: $primary--light; border-radius: 4px; color: $white; }
+cite { display: block; margin-top: 8px; color: $black--light; }
+cite a { color: inherit; }
+cite a:hover { text-decoration: underline; }
 
 body {
   min-height: 100vh;
@@ -52,6 +55,8 @@ body {
     line-height: 1.5; }
     nav ul li:not(:last-child) {
       margin-right: 15px; }
+    nav ul li:nth-of-type(5) {
+      margin-right: 0; }
     ul li svg {
       margin-top: 5px; }
   @media (max-width: 769px) {
@@ -148,9 +153,6 @@ body {
 @media (max-width: 768px) {
   .contrast--mobile { 
     background-color: $contrast; } }
-
-
-
   .bio {
     background-color: $primary; 
     color: $white; }
@@ -296,8 +298,9 @@ body {
   
 .download-resume .btn--large {
   display: block;
-  width: 265px;
-  margin: 0 auto; }
+  width: 300px;
+  margin: 0 auto;
+  text-align: center; }
 
 /*800px*/
 @media (min-width: 769px) {
@@ -318,10 +321,18 @@ section.user-guide p {
   font-size: 0.9rem;
   color: $black--dark; }
 
+/* ==== About Joshua ==== */
+section.skills img {
+  border-radius: 4px; }
+
+section.green {
+  background-color: darken($success, 15%);
+  .project-type { color: lighten($success, 30%); }
+  h3, p { color: $black; } }
+
 /* ==== User Guide ==== */
 p, ul {
-  line-height: 1.75;
-}
+  line-height: 1.75; }
 
 .resume.user-guide ul li {
   list-style-type: circle;
@@ -415,7 +426,7 @@ footer a.contact {
 .footer-nav a:hover h4, .footer-nav a:hover span.project-type {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
-  color: #0b1d40; }
+  color: darken(#fff, 10%); }
 
 .footer-nav h4 {
   font-size: 1.5rem;
@@ -454,6 +465,9 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle; }
+
+img.photo {
+  border: 10px solid #fff; }
 
 @media (min-width: 769px) {
   .img--mobile {

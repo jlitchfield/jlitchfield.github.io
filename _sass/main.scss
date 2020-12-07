@@ -154,6 +154,10 @@ body {
 /* ==== Index > Sections ==== */
 .contrast { background-color: $contrast; }
 
+.bio img { 
+  border-radius: 100%; }
+
+
 @media (max-width: 768px) {
   .contrast--mobile { 
     background-color: $contrast; } }
@@ -163,7 +167,7 @@ body {
     h2, .bio span.project-type {
       color: $white; }
     img {
-      height: 50%; } 
+      max-width: 50%; }
     a.btn {
       margin-right: 1rem; }
 

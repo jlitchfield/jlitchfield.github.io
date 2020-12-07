@@ -7020,8 +7020,15 @@ button.expanded {
 h2, .bio span.project-type {
   color: #fff; }
 
+<<<<<<< HEAD
 img {
   max-width: 50%; }
+=======
+.bio img {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto; }
+>>>>>>> ui-bugs
 
 a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
   margin-right: 1rem; }

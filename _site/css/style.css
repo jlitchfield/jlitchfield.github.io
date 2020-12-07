@@ -7010,9 +7010,6 @@ button.expanded {
 .contrast {
   background-color: #eef2f5; }
 
-.bio img {
-  border-radius: 100%; }
-
 @media (max-width: 768px) {
   .contrast--mobile {
     background-color: #eef2f5; } }

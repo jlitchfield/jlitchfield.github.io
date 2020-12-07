@@ -62,17 +62,21 @@ body {
   @media (max-width: 769px) {
     .site-nav.mobile a {
       display: block;
-      padding: 10px 0; }
+      padding: 20px 0; }
     .site-nav.mobile a.btn {
-      height: auto; }
+      height: auto;
+      margin-right: 0;
+      background-color: transparent; }
+    a.btn--outline {
+        border: none; } 
     .site-nav ul li {
       width: 100%;
-      background: $gray--light;
+      background: $white;
       text-align: center;
       border-bottom: 1px solid $gray--dark;
       text-decoration: none; }
       .site-nav ul li:hover, .site-nav ul li:active, .site-nav ul li:focus {
-        background: darken($gray--light, 10%); } }
+        background: $gray--light; } }
 
 .mobile {
   display: none;
@@ -163,19 +167,6 @@ body {
     a.btn {
       margin-right: 1rem; }
 
-// keep or remove this section
-// @media (min-width: 769px) {
-//   .bio {
-//     background-color: $primary; 
-//     color: $white; }
-//     h2, .bio span.project-type {
-//       color: $white; }
-//     img {
-//       height: 50%; } 
-//     a.btn {
-//       margin-right: 1rem; } } 
-
-
 /* === Dribbble > All ===*/
 
 #logo-dribbble { height: 28px; }
@@ -196,7 +187,16 @@ body {
 @media (min-width: 769px) {
   .twine-site-images {
   background: #fff url("/images/twine-site-images.jpg") center right no-repeat;
-  background-size: cover; } }
+  background-size: cover;
+  color: $black; } }
+
+@media (max-width: 768px) {
+  .twine-site-images {
+  background: url("/images/twine-site-images.jpg") no-repeat;
+  background-size: cover; }
+  .twine-site-images .hero-body {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: $black; } }
 
 /* ==== Project > Quizzly ==== */
 .quizzly {
@@ -204,12 +204,10 @@ body {
   background-color: $primary--light;
   text-align: center; }
 
-// .quizzly img {
-//   position: relative;
-//   top: 0; }
-
 .create-question {
-  background-color: $warning; }
+  background-color: $warning;
+  .create-question img {
+  border-radius: 7px; } }
 
 /* ==== Project > Solstice ==== */
 .section.solstice { 
@@ -233,6 +231,12 @@ body {
 .news-feed img:nth-of-type(2) {
   vertical-align: bottom; }
 
+@media (max-width: 769px) {
+  section.solstice img, section.news-feed img {
+    max-width: 80% !important;
+    display: block;
+    margin: 0 auto; } }
+
 @media (min-width: 769px) {
   .badge {
     height: 637px;
@@ -240,7 +244,6 @@ body {
     background-size: cover; }
 
   .dashboard {
-    // border-top: 3px solid #fff;
     height: 500px;
     background: #fff url("/images/solstice-dashboard.png") center center no-repeat;
     background-size: cover; } 
@@ -440,9 +443,8 @@ footer a.contact {
   background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
   background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); }
 
-// TODO: Fix padding for breakpoints
 .padding--small {
-    padding: 2rem 0; }
+    padding: 2rem; }
 
 /* Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

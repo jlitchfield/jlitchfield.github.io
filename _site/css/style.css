@@ -198,7 +198,7 @@ p.black {
   line-height: 36px;
   background-color: transparent;
   color: #16375e;
-  border: 2px solid #16375e; }
+  border: 2px solid #16375e !important; }
 
 .btn--outline:hover, .btn--outline--on-dark:hover {
   background-color: #16375e;
@@ -6910,20 +6910,25 @@ ul li svg {
 @media (max-width: 769px) {
   .site-nav.mobile a {
     display: block;
-    padding: 10px 0; }
+    padding: 20px 0; }
 
   .site-nav.mobile a.btn, .site-nav.mobile a.btn--outline, .site-nav.mobile a.btn--outline--on-dark, .site-nav.mobile a.btn--large {
-    height: auto; }
+    height: auto;
+    margin-right: 0;
+    background-color: transparent; }
+
+  a.btn--outline, a.btn--outline--on-dark {
+    border: none; }
 
   .site-nav ul li {
     width: 100%;
-    background: #edf0f2;
+    background: #fff;
     text-align: center;
     border-bottom: 1px solid #a7b7c2;
     text-decoration: none; }
 
   .site-nav ul li:hover, .site-nav ul li:active, .site-nav ul li:focus {
-    background: #cfd7dd; } }
+    background: #edf0f2; } }
 .mobile {
   display: none;
   top: 0;
@@ -7046,7 +7051,16 @@ a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
 @media (min-width: 769px) {
   .twine-site-images {
     background: #fff url("/images/twine-site-images.jpg") center right no-repeat;
-    background-size: cover; } }
+    background-size: cover;
+    color: #2d3047; } }
+@media (max-width: 768px) {
+  .twine-site-images {
+    background: url("/images/twine-site-images.jpg") no-repeat;
+    background-size: cover; }
+
+  .twine-site-images .hero-body {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #2d3047; } }
 /* ==== Project > Quizzly ==== */
 .quizzly {
   padding-bottom: 0;
@@ -7055,6 +7069,8 @@ a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
 
 .create-question {
   background-color: #f9c22e; }
+  .create-question .create-question img {
+    border-radius: 7px; }
 
 /* ==== Project > Solstice ==== */
 .section.solstice {
@@ -7079,6 +7095,11 @@ a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
 .news-feed img:nth-of-type(2) {
   vertical-align: bottom; }
 
+@media (max-width: 769px) {
+  section.solstice img, section.news-feed img {
+    max-width: 80% !important;
+    display: block;
+    margin: 0 auto; } }
 @media (min-width: 769px) {
   .badge {
     height: 637px;
@@ -7284,7 +7305,7 @@ a:hover {
   background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%); }
 
 .padding--small {
-  padding: 2rem 0; }
+  padding: 2rem; }
 
 /* Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

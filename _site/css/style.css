@@ -6901,8 +6901,8 @@ nav ul li {
 nav ul li:not(:last-child) {
   margin-right: 15px; }
 
-nav ul li:nth-of-type(5) {
-  margin-right: 0; }
+/*nav ul li:nth-of-type(5) {
+  margin-right: 0; }*/
 
 ul li svg {
   margin-top: 5px; }

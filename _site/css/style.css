@@ -198,7 +198,7 @@ p.black {
   line-height: 36px;
   background-color: transparent;
   color: #16375e;
-  border: 2px solid #16375e !important; }
+  border: 2px solid #16375e; }
 
 .btn--outline:hover, .btn--outline--on-dark:hover {
   background-color: #16375e;
@@ -6917,7 +6917,7 @@ ul li svg {
     margin-right: 0;
     background-color: transparent; }
 
-  a.btn--outline, a.btn--outline--on-dark {
+  .site-nav.mobile a.btn--outline, .site-nav.mobile a.btn--outline--on-dark {
     border: none; }
 
   .site-nav ul li {

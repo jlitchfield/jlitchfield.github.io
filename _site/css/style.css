@@ -7020,8 +7020,10 @@ button.expanded {
 h2, .bio span.project-type {
   color: #fff; }
 
-img {
-  height: 50%; }
+.bio img {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto; }
 
 a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
   margin-right: 1rem; }
@@ -7069,8 +7071,9 @@ a.btn, a.btn--outline, a.btn--outline--on-dark, a.btn--large {
 
 .create-question {
   background-color: #f9c22e; }
-  .create-question .create-question img {
-    border-radius: 7px; }
+
+.create-question img {
+  border-radius: 7px; }
 
 /* ==== Project > Solstice ==== */
 .section.solstice {

@@ -205,9 +205,10 @@ body {
   text-align: center; }
 
 .create-question {
-  background-color: $warning;
-  .create-question img {
-  border-radius: 7px; } }
+  background-color: $warning; }
+
+.create-question img {
+  border-radius: 7px; }
 
 /* ==== Project > Solstice ==== */
 .section.solstice { 

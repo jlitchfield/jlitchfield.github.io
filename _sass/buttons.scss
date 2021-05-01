@@ -37,7 +37,7 @@
   @extend .btn--outline;
   color: $white;
   border: 2px solid $white; }
-  .btn--outline:hover {
+  .btn--outline--on-dark:hover {
     background-color: $white;
     color: $black--dark; }
 

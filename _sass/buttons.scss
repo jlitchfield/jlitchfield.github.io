@@ -41,6 +41,15 @@
     background-color: $white;
     color: $black--dark; }
 
+
+.btn--outline--on-dark {
+  @extend .btn--outline;
+  color: $white;
+  border: 2px solid $white; }
+  .btn--outline--on-light:hover {
+    background-color: $black-dark;
+    color: $white; }
+
 .btn--large {
   @extend .btn;
   font-size: 1.25rem;

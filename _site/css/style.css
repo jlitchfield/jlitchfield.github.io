@@ -208,7 +208,7 @@ p.black {
   color: #fff;
   border: 2px solid #fff; }
 
-.btn--outline:hover, .btn--outline--on-dark:hover {
+.btn--outline--on-dark:hover {
   background-color: #fff;
   color: #001011; }
 

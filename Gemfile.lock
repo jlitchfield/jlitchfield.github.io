@@ -6,7 +6,7 @@ GEM
     colorator (1.1.0)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    jekyll (3.4.3)
+    jekyll (3.4.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -49,7 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.4.3)
+  jekyll (= 3.4.2)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
@@ -58,4 +58,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.2.23
+   2.3.22

@@ -272,7 +272,9 @@ body {
   font-family: $sans-serif-font-stack;
   font-weight: 700; }
   span {
+    padding-left: .05rem;
     font-weight: normal;
+    color: $black--light;
   }
 
 .resume main a {

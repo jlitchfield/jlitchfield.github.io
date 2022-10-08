@@ -2374,7 +2374,7 @@ ui-bugs a.btn, ui-bugs a.btn--outline, ui-bugs a.btn--outline--on-dark, ui-bugs 
 
 .resume h4 { font-family: "Nunito", Arial, sans-serif; font-weight: 700; }
 
-span { font-weight: normal; }
+span { padding-left: .05rem; font-weight: normal; color: #545d7f; }
 
 .resume main a { color: inherit; text-decoration: underline; }
 

@@ -410,12 +410,11 @@ footer a.contact {
 .copyright {
   height: 60px;
   text-align: center;
-  color: rgba(255,255,255, 0.9);
   background-color: darken($secondary, 10%); }
 
 .copyright span {
+  color: rgba(255,255,255, 0.9);
   line-height: 60px; }
-
 
 /* ==== Global > Footer Nav ==== */
 .section.footer-nav {

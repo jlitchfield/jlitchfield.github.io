@@ -2444,9 +2444,9 @@ footer a.contact { display: block; font-size: 1.875rem; line-height: 2.25; }
 
 a:hover { color: #850f2f; }
 
-.copyright { height: 60px; text-align: center; color: rgba(255, 255, 255, 0.9); background-color: #f52556; }
+.copyright { height: 60px; text-align: center; background-color: #f52556; }
 
-.copyright span { line-height: 60px; }
+.copyright span { color: rgba(255, 255, 255, 0.9); line-height: 60px; }
 
 /* ==== Global > Footer Nav ==== */
 .section.footer-nav { padding: 0; background-color: #275dad; }

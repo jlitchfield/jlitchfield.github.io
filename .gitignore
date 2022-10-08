@@ -1,6 +1,7 @@
 *.xml
 _site/
 .sass-cache/
+*-cache/
 .jekyll-metadata
 .DS_Store
 .README.md.icloud

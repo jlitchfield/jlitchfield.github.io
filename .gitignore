@@ -1,5 +1,5 @@
 *.xml
-_posts
+*_posts
 # hide _posts to try and fix date problem
 _site/
 .sass-cache/

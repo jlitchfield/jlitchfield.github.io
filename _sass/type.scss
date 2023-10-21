@@ -60,8 +60,29 @@ h6 {
   font-size: 0.75rem; }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
+
+.highlight-text {
+  display: inline-block;
+  font-weight: 600;
+  padding: .25em 0;
+  background: $highlight;
+  color: $black;
+  box-shadow: .25em 0 0 $highlight, -.25em 0 0 $highlight;
+}
+
+.text-badge {
+  display: inline-block;
+  // font-style: italic;
+  font-weight: 500;
+  padding: .25em 0;
+  background: $warning--light;
+  color: $black;
+  
+  box-shadow: .25em 0 0 $warning--light, -.25em 0 0 $warning--light;
+}
+
 
 .dash-trailing:after {
   background: $primary--dark;
@@ -70,7 +91,8 @@ strong {
   height: 4px;
   margin-bottom: 15px;
   margin-top: 15px;
-  width: 40px; }
+  width: 40px; 
+}
 
 .dash-trailing-small:after {
   @extend .dash-trailing;
@@ -78,6 +100,10 @@ strong {
 }
 
 /* ==== Copy ==== */
+.type--kind_small {
+  font-size: 0.875rem; } // 13px
+
+
 .type--small {
   font-size: 0.75rem; } // 12px
 

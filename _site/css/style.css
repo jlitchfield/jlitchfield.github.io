@@ -58,13 +58,19 @@ h5 { font-size: 1rem; }
 
 h6 { font-size: 0.75rem; }
 
-strong { font-weight: 700; }
+strong { font-weight: 500; }
+
+.highlight-text { display: inline-block; font-weight: 600; padding: .25em 0; background: #FDF3C3; color: #2d3047; box-shadow: 0.25em 0 0 #FDF3C3, -0.25em 0 0 #FDF3C3; }
+
+.text-badge { display: inline-block; font-weight: 500; padding: .25em 0; background: #fcdf92; color: #2d3047; box-shadow: 0.25em 0 0 #fcdf92, -0.25em 0 0 #fcdf92; }
 
 .dash-trailing:after, .dash-trailing-small:after { background: #16375e; display: block; content: ''; height: 4px; margin-bottom: 15px; margin-top: 15px; width: 40px; }
 
 .dash-trailing-small:after { height: 4px; }
 
 /* ==== Copy ==== */
+.type--kind_small { font-size: 0.875rem; }
+
 .type--small { font-size: 0.75rem; }
 
 p, span { font-size: 1.0625rem; line-height: 1.5; }
@@ -2273,7 +2279,7 @@ nav ul li { float: left; list-style-type: none; line-height: 1.5; }
 
 nav ul li:not(:last-child) { margin-right: 15px; }
 
-ul li svg { margin-top: 5px; }
+ul li svg { margin-top: 6px; }
 
 @media (max-width: 769px) { .site-nav.mobile a { display: block; padding: 20px 0; } .site-nav.mobile a.btn, .site-nav.mobile a.btn--outline, .site-nav.mobile a.btn--outline--on-dark, .site-nav.mobile a.btn--outline--on-light, .site-nav.mobile a.btn--large { height: auto; margin-right: 0; background-color: transparent; } .site-nav.mobile a.btn--outline, .site-nav.mobile a.btn--outline--on-dark, .site-nav.mobile a.btn--outline--on-light { border: none; } .site-nav ul li { width: 100%; background: #fff; text-align: center; border-bottom: 1px solid #a7b7c2; text-decoration: none; } .site-nav ul li:hover, .site-nav ul li:active, .site-nav ul li:focus { background: #edf0f2; } }
 
@@ -2376,6 +2382,8 @@ ui-bugs a.btn, ui-bugs a.btn--outline, ui-bugs a.btn--outline--on-dark, ui-bugs 
 
 span { padding-left: .05rem; font-weight: normal; color: #545d7f; }
 
+.resume p, .resume ul { font-weight: 300; }
+
 .resume main a { color: inherit; text-decoration: underline; }
 
 .resume main a:hover { -webkit-transition: all .2s linear; transition: all .2s linear; color: #f9c22e; }
@@ -2385,6 +2393,13 @@ span { padding-left: .05rem; font-weight: normal; color: #545d7f; }
 .resume ul li { list-style-type: none; padding-bottom: 0.5rem; }
 
 .resume strong { color: #6a7fdb; }
+
+/* ==== Resume > Company ==== */
+.company img { float: left; }
+
+.company { padding-bottom: 24px; }
+
+.company h4, .company p { padding-left: 64px; }
 
 /* ==== Download Resume ==== */
 .download-resume { z-index: 3; position: fixed; bottom: 0; left: 0; background-color: #45548c; }
@@ -2401,6 +2416,8 @@ section.user-guide p { font-size: 0.9rem; color: #001011; }
 
 /* ==== About Joshua ==== */
 section.skills img { border-radius: 4px; }
+
+section.skills a.btn, section.skills a.btn--outline, section.skills a.btn--outline--on-dark, section.skills a.btn--outline--on-light, section.skills a.btn--large { margin: 0 15px 15px 0; }
 
 section.green { background-color: #1cc498; }
 

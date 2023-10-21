@@ -56,7 +56,7 @@ body {
     nav ul li:not(:last-child) {
       margin-right: 15px; }
     ul li svg {
-      margin-top: 5px; }
+      margin-top: 6px; }
   @media (max-width: 769px) {
     .site-nav.mobile a {
       display: block;
@@ -277,6 +277,10 @@ body {
     color: $black--light;
   }
 
+.resume p, .resume ul {
+  font-weight: 300;
+}
+
 .resume main a {
   color: inherit;
   text-decoration: underline; }
@@ -297,6 +301,12 @@ body {
 .resume strong {
   color: $blurple;
 }
+
+/* ==== Resume > Company ==== */
+.company img { float: left }
+.company { padding-bottom: 24px; }
+.company h4, .company p { padding-left: 64px; }
+
 
 /* ==== Download Resume ==== */
 .download-resume {
@@ -334,6 +344,9 @@ section.user-guide p {
 /* ==== About Joshua ==== */
 section.skills img {
   border-radius: 4px; }
+
+
+section.skills a.btn { margin: 0 15px 15px 0; }
 
 section.green {
   background-color: darken($success, 15%);

@@ -8,17 +8,26 @@
 .clearfix:after { content: ''; display: block; clear: both; overflow: auto; }
 .float-left { float: left; }
 .float-right { float: right; }
+
 .content-center { display: block; margin: 0 auto; }
 .flex-content-center { display: flex; justify-content: center; }
+
 .no-padding-top { padding-top: 0; }
 .no-padding-bottom { padding-bottom: 0; }
 .no-margin-top { margin-top: 0; }
 .no-margin-bottom { margin-bottom: 0; }
+
 .houdini { display: none; }
+
 a { text-decoration: none; }
+
 .shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
+.shadow-img { box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5); }
+.shadow-large { box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); }
 .box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+
 .offset-header { margin-top: 80px; }
+
 mark { display: inline-block; margin-left: 2px; padding: 2px 6px; background-color: $primary--light; border-radius: 4px; color: $white; }
 cite { display: block; margin-top: 8px; color: $black--light; }
 cite a { color: inherit; }
@@ -159,7 +168,7 @@ body {
   .bio {
     background-color: $primary; 
     color: $white; }
-    h2, .bio span.project-type {
+    .bio span.project-type {
       color: $white; }
     img {
       max-width: 50%; }
@@ -201,6 +210,43 @@ body {
   .twine-site-images .hero-body {
     background-color: rgba(255, 255, 255, 0.75);
     color: $black; } }
+
+/* ==== Project > Vela ==== */
+
+.vela-panel-hero,
+.vela-outcomes,
+.vela-sketches,
+.iteration-1,
+.iteration-2 { 
+  background-color: $blurple;
+}
+
+.vela-panel-hero { 
+  padding-bottom: 0;
+  text-align: center;
+} 
+
+.vela-prob-space {
+  h4 { 
+      font-family: $sans-serif-font-stack; 
+      color: $blurple; }
+  ul { 
+    margin-left: 0; }
+  h4 + p, h4 + ul { margin-bottom: 2rem; } }
+
+
+.vela-outcomes h2,
+.vela-sorting h2,
+.vela-sorting p { 
+  text-align: center; 
+}
+
+.vela-principles h2 { color: $black; }
+
+.iteration,
+.vela-panel-view { 
+  border-bottom: 1px solid #f0f5f6; }
+
 
 /* ==== Project > Quizzly ==== */
 .quizzly {

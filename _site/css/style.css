@@ -39,12 +39,12 @@ Nunito: 300, 400, 700, 900
 body { font: 400 16px/1.5 "Nunito", Arial, sans-serif; color: #2d3047; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { font-weight: 500; line-height: 1.3; margin-bottom: 1.125rem; /*18px*/ }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.3; margin-bottom: 1.125rem; /*18px*/ }
 
 p, blockquote, pre, ul, ol, dl, figure { font-family: "Nunito", Arial, sans-serif; }
 
 /* ==== Headings ==== */
-h1, h2, h3, h4, h5, h6 { font-family: "Zilla Slab", serif; color: #2d3047; }
+h1, h2, h3, h4, h5, h6 { font-family: "Zilla Slab", serif; font-weight: 400; color: #2d3047; }
 
 h1 { font-size: 4.125rem; }
 
@@ -58,7 +58,7 @@ h5 { font-size: 1rem; }
 
 h6 { font-size: 0.75rem; }
 
-strong { font-weight: 500; }
+strong { font-weight: 700; }
 
 .highlight-text { display: inline-block; font-weight: 600; padding: .25em 0; background: #FDF3C3; color: #2d3047; box-shadow: 0.25em 0 0 #FDF3C3, -0.25em 0 0 #FDF3C3; }
 
@@ -86,7 +86,7 @@ li > ul, li > ol { margin-bottom: 0; }
 
 .project-type { display: block; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: #6a7fdb; }
 
-.knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span { color: rgba(255, 255, 255, 0.9); }
+.knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span { color: rgba(255, 255, 255, 0.9) !important; }
 
 p.black { color: #2d3047; }
 
@@ -2221,6 +2221,8 @@ a.panel-block:hover, label.panel-block:hover { background-color: whitesmoke; }
 
 .section { background-color: white; padding: 3rem 1.5rem; }
 
+.section--large { background-color: white; padding: 6rem 1.5rem; }
+
 @media screen and (min-width: 1000px) { .section.is-medium { padding: 9rem 1.5rem; } .section.is-large { padding: 18rem 1.5rem; } }
 
 /* ==== Global > Helper Classes  ==== */
@@ -2251,6 +2253,10 @@ a.panel-block:hover, label.panel-block:hover { background-color: whitesmoke; }
 a { text-decoration: none; }
 
 .shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
+
+.shadow-img { box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5); }
+
+.shadow-large { box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); }
 
 .box-shadow { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
@@ -2321,7 +2327,7 @@ button.expanded { transform: rotate(90deg); background-color: transparent; borde
 
 .bio { background-color: #275dad; color: #fff; }
 
-h2, .bio span.project-type { color: #fff; }
+.bio span.project-type { color: #fff; }
 
 img { max-width: 50%; }
 
@@ -2346,6 +2352,23 @@ ui-bugs a.btn, ui-bugs a.btn--outline, ui-bugs a.btn--outline--on-dark, ui-bugs 
 @media (min-width: 769px) { .twine-site-images { background: #fff url("/images/twine-site-images.jpg") center right no-repeat; background-size: cover; color: #2d3047; } }
 
 @media (max-width: 768px) { .twine-site-images { background: url("/images/twine-site-images.jpg") no-repeat; background-size: cover; } .twine-site-images .hero-body { background-color: rgba(255, 255, 255, 0.75); color: #2d3047; } }
+
+/* ==== Project > Vela ==== */
+.vela-panel-hero, .vela-outcomes, .vela-sketches, .iteration-1, .iteration-2 { background-color: #6a7fdb; }
+
+.vela-panel-hero { padding-bottom: 0; text-align: center; }
+
+.vela-prob-space h4 { font-family: "Nunito", Arial, sans-serif; color: #6a7fdb; }
+
+.vela-prob-space ul { margin-left: 0; }
+
+.vela-prob-space h4 + p, .vela-prob-space h4 + ul { margin-bottom: 2rem; }
+
+.vela-outcomes h2, .vela-sorting h2, .vela-sorting p { text-align: center; }
+
+.vela-principles h2 { color: #2d3047; }
+
+.iteration, .vela-panel-view { border-bottom: 1px solid #f0f5f6; }
 
 /* ==== Project > Quizzly ==== */
 .quizzly { padding-bottom: 0; background-color: #3b94ff; text-align: center; }

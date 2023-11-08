@@ -23,16 +23,17 @@ body {
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { 
-	font-weight: 500;
   line-height: 1.3;
   margin-bottom: 1.125rem; /*18px*/ }
 
 p, blockquote, pre, ul, ol, dl, figure {
-  font-family: $sans-serif-font-stack; }
+  font-family: $sans-serif-font-stack; 
+}
 
 /* ==== Headings ==== */
 h1, h2, h3, h4, h5, h6 {
   font-family: $serif-font-stack;
+  font-weight: 400;
   color: $black; }
 
 // 66px
@@ -60,7 +61,7 @@ h6 {
   font-size: 0.75rem; }
 
 strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .highlight-text {
@@ -74,15 +75,12 @@ strong {
 
 .text-badge {
   display: inline-block;
-  // font-style: italic;
   font-weight: 500;
   padding: .25em 0;
   background: $warning--light;
-  color: $black;
-  
+  color: $black;  
   box-shadow: .25em 0 0 $warning--light, -.25em 0 0 $warning--light;
 }
-
 
 .dash-trailing:after {
   background: $primary--dark;
@@ -102,7 +100,6 @@ strong {
 /* ==== Copy ==== */
 .type--kind_small {
   font-size: 0.875rem; } // 13px
-
 
 .type--small {
   font-size: 0.75rem; } // 12px
@@ -140,7 +137,7 @@ li > ol {
 .knockout h6,
 .knockout p,
 .knockout span {
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255, 0.9) !important; }
 
 p.black {
   color: $black; }

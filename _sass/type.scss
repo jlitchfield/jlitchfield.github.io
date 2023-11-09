@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
   line-height: 1.3;
   margin-bottom: 1.125rem; /*18px*/ }
 
-p, blockquote, pre, ul, ol, dl, figure {
+p, pre, ul, ol, dl, figure {
   font-family: $sans-serif-font-stack; 
 }
 
 /* ==== Headings ==== */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, blockquote {
   font-family: $serif-font-stack;
   font-weight: 400;
   color: $black; }
@@ -98,6 +98,7 @@ strong {
 }
 
 /* ==== Copy ==== */
+
 .type--kind_small {
   font-size: 0.875rem; } // 13px
 
@@ -111,8 +112,39 @@ p, span {
 p.type--medium, span.type--medium {
   font-size: 1.25rem; } // 20px
 
-p.type--large, span.type--large {
+.type--large {
   font-size: 1.5rem; } // 24px
+
+.has-dropcap:first-letter {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+
+/* ==== Copy > Dropcap ==== */
+
+.dropcap {
+  font-family: $sans-serif-font-stack;
+  color: inherit;
+  float: left;
+  font-size: 6rem;
+  line-height: 1;
+  // margin: 0.1em 0.1em 0.2em 0;
+  // padding: 0.1em;
+}
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+.dropcap:before {
+  margin-top: -0.2em;
+}
+.dropcap:after {
+  margin-bottom: -0.15em;
+}
 
 /* ==== Lists ==== */
 ul, ol {
@@ -136,7 +168,8 @@ li > ol {
 .knockout h5,
 .knockout h6,
 .knockout p,
-.knockout span {
+.knockout span,
+.knockout blockquote {
   color: rgba(255, 255, 255, 0.9) !important; }
 
 p.black {

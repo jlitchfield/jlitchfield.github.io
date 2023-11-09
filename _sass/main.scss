@@ -175,7 +175,10 @@ body {
     .bio img {
       display: block;
       max-width: 60%;
-      margin: 0 auto; } 
+      margin: 0 auto; }
+    .bio h2 {
+      color: $white;
+    } 
   ui-bugs
     a.btn {
       margin-right: 1rem; }
@@ -213,11 +216,11 @@ body {
 
 /* ==== Project > Vela ==== */
 
-.vela-panel-hero,
+.vela-panel-hero { background-color: $blurple--dark; }
+
 .vela-outcomes,
 .vela-sketches,
-.iteration-1,
-.iteration-2 { 
+.iteration { 
   background-color: $blurple;
 }
 
@@ -305,6 +308,25 @@ body {
 
 .orb {
   background: #fff url("/images/solstice-orb.png") center right no-repeat; }
+
+/* ==== Quote ==== */
+
+.quote { 
+  background-color: $warning--light;
+  blockquote, cite { 
+  font-family: $serif-font-stack !important;
+  letter-spacing: .05rem;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  text-align: justify;
+  color: $black !important; }
+  blockquote span.highlight-text {
+  font-size: inherit;
+  font-weight: inherit;
+  background: $black;
+  color: $highlight;
+  box-shadow: .25em 0 0 $black, -.25em 0 0 $black; } }
 
 /* ==== Resume ==== */
 .resume {

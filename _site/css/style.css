@@ -41,10 +41,10 @@ body { font: 400 16px/1.5 "Nunito", Arial, sans-serif; color: #2d3047; -webkit-t
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.3; margin-bottom: 1.125rem; /*18px*/ }
 
-p, blockquote, pre, ul, ol, dl, figure { font-family: "Nunito", Arial, sans-serif; }
+p, pre, ul, ol, dl, figure { font-family: "Nunito", Arial, sans-serif; }
 
 /* ==== Headings ==== */
-h1, h2, h3, h4, h5, h6 { font-family: "Zilla Slab", serif; font-weight: 400; color: #2d3047; }
+h1, h2, h3, h4, h5, h6, blockquote { font-family: "Zilla Slab", serif; font-weight: 400; color: #2d3047; }
 
 h1 { font-size: 4.125rem; }
 
@@ -77,7 +77,18 @@ p, span { font-size: 1.0625rem; line-height: 1.5; }
 
 p.type--medium, span.type--medium { font-size: 1.25rem; }
 
-p.type--large, span.type--large { font-size: 1.5rem; }
+.type--large { font-size: 1.5rem; }
+
+.has-dropcap:first-letter { font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; float: left; font-size: 6rem; line-height: 0.65; margin: 0.1em 0.1em 0.2em 0; }
+
+/* ==== Copy > Dropcap ==== */
+.dropcap { font-family: "Nunito", Arial, sans-serif; color: inherit; float: left; font-size: 6rem; line-height: 1; }
+
+.dropcap:before, .dropcap:after { content: ""; display: block; }
+
+.dropcap:before { margin-top: -0.2em; }
+
+.dropcap:after { margin-bottom: -0.15em; }
 
 /* ==== Lists ==== */
 ul, ol { margin-left: 1.875rem; }
@@ -86,7 +97,7 @@ li > ul, li > ol { margin-bottom: 0; }
 
 .project-type { display: block; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: #6a7fdb; }
 
-.knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span { color: rgba(255, 255, 255, 0.9) !important; }
+.knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span, .knockout blockquote { color: rgba(255, 255, 255, 0.9) !important; }
 
 p.black { color: #2d3047; }
 
@@ -2333,6 +2344,8 @@ img { max-width: 50%; }
 
 .bio img { display: block; max-width: 60%; margin: 0 auto; }
 
+.bio h2 { color: #fff; }
+
 ui-bugs a.btn, ui-bugs a.btn--outline, ui-bugs a.btn--outline--on-dark, ui-bugs a.btn--outline--on-light, ui-bugs a.btn--large { margin-right: 1rem; }
 
 /* === Dribbble > All ===*/
@@ -2354,7 +2367,9 @@ ui-bugs a.btn, ui-bugs a.btn--outline, ui-bugs a.btn--outline--on-dark, ui-bugs 
 @media (max-width: 768px) { .twine-site-images { background: url("/images/twine-site-images.jpg") no-repeat; background-size: cover; } .twine-site-images .hero-body { background-color: rgba(255, 255, 255, 0.75); color: #2d3047; } }
 
 /* ==== Project > Vela ==== */
-.vela-panel-hero, .vela-outcomes, .vela-sketches, .iteration-1, .iteration-2 { background-color: #6a7fdb; }
+.vela-panel-hero { background-color: #45548c; }
+
+.vela-outcomes, .vela-sketches, .iteration { background-color: #6a7fdb; }
 
 .vela-panel-hero { padding-bottom: 0; text-align: center; }
 
@@ -2395,6 +2410,13 @@ ui-bugs a.btn, ui-bugs a.btn--outline, ui-bugs a.btn--outline--on-dark, ui-bugs 
 @media (min-width: 769px) { .badge { height: 637px; background: #fff url("/images/solstice-badge.png") center center no-repeat; background-size: cover; } .dashboard { height: 500px; background: #fff url("/images/solstice-dashboard.png") center center no-repeat; background-size: cover; } .badge article h3, .badge article p, .dashboard article h3, .dashboard article p { color: #fff; } }
 
 .orb { background: #fff url("/images/solstice-orb.png") center right no-repeat; }
+
+/* ==== Quote ==== */
+.quote { background-color: #fcdf92; }
+
+.quote blockquote, .quote cite { font-family: "Zilla Slab", serif !important; letter-spacing: .05rem; font-size: 1.3rem; line-height: 1.9rem; font-weight: 400; text-align: justify; color: #2d3047 !important; }
+
+.quote blockquote span.highlight-text { font-size: inherit; font-weight: inherit; background: #2d3047; color: #FDF3C3; box-shadow: 0.25em 0 0 #2d3047, -0.25em 0 0 #2d3047; }
 
 /* ==== Resume ==== */
 .resume { margin-bottom: 110px; }

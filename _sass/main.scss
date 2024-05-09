@@ -370,6 +370,8 @@ body {
   color: $blurple;
 }
 
+.resume .mvp.strong { color: inherit; font-weight: bold; }
+
 /* ==== Resume > Company ==== */
 .company img { float: left }
 .company { padding-bottom: 24px; }

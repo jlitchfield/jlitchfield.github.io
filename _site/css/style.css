@@ -2439,6 +2439,8 @@ span { padding-left: .05rem; font-weight: normal; color: #545d7f; }
 
 .resume strong { color: #6a7fdb; }
 
+.resume .mvp.strong { color: inherit; font-weight: bold; }
+
 /* ==== Resume > Company ==== */
 .company img { float: left; }
 

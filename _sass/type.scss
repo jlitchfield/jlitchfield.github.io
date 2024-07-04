@@ -3,17 +3,43 @@
 
 /* ====
 Google Fonts Installed
-Zilla Slab : regular 400, 700, 900
+PT Serif: 400, 700
 Nunito: 300, 400, 700, 900
 ==== */
 
-$serif-font-stack: "Zilla Slab", serif;
+$serif-font-stack: "PT Serif", serif;
 $sans-serif-font-stack: "Nunito", Arial, sans-serif;
 
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 /* ==== Default ==== */
+
 body {
   font: 400 16px/1.5 $sans-serif-font-stack;
-  color: $black;
+  color: $black--900;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -27,14 +53,13 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
   margin-bottom: 1.125rem; /*18px*/ }
 
 p, pre, ul, ol, dl, figure {
-  font-family: $sans-serif-font-stack; 
-}
+  font-family: $sans-serif-font-stack; }
 
 /* ==== Headings ==== */
 h1, h2, h3, h4, h5, h6, blockquote {
   font-family: $serif-font-stack;
   font-weight: 400;
-  color: $black; }
+  color: $black--950; }
 
 // 66px
 h1 {
@@ -60,30 +85,32 @@ h5 {
 h6 {
   font-size: 0.75rem; }
 
+/* ==== Legacy Styles ==== */
+
 strong {
   font-weight: 700;
 }
 
 .highlight-text {
-  display: inline-block;
-  font-weight: 600;
-  padding: .25em 0;
+  // display: inline-block;
+  padding: .15em 0;
+  font-weight: 700;
+  color: $black--900;
   background: $highlight;
-  color: $black;
-  box-shadow: .25em 0 0 $highlight, -.25em 0 0 $highlight;
+  box-shadow: .15em 0 0 $highlight, -.15em 0 0 $highlight;
 }
 
 .text-badge {
   display: inline-block;
-  font-weight: 500;
   padding: .25em 0;
-  background: $warning--light;
-  color: $black;  
-  box-shadow: .25em 0 0 $warning--light, -.25em 0 0 $warning--light;
+  font-weight: 700;
+  color: $black--950;
+  background: $primary--200;
+  box-shadow: .15em 0 0 $primary--200, -.15em 0 0 $primary--200;
 }
 
 .dash-trailing:after {
-  background: $primary--dark;
+  background: $primary--800;
   display: block;
   content: '';
   height: 4px;
@@ -123,16 +150,14 @@ p.type--medium, span.type--medium {
   margin: 0.1em 0.1em 0.2em 0;
 }
 
-/* ==== Copy > Dropcap ==== */
+/* ==== Quote ==== */
 
 .dropcap {
-  font-family: $sans-serif-font-stack;
+  font-family: $serif-font-stack;
   color: inherit;
   float: left;
   font-size: 6rem;
   line-height: 1;
-  // margin: 0.1em 0.1em 0.2em 0;
-  // padding: 0.1em;
 }
 .dropcap:before,
 .dropcap:after {
@@ -156,6 +181,7 @@ li > ol {
 
 .project-type {
   display: block;
+  font-family: $sans-serif-font-stack;
   font-size: 0.875rem; // 14px
   font-weight: 700;
   text-transform: uppercase;
@@ -171,6 +197,3 @@ li > ol {
 .knockout span,
 .knockout blockquote {
   color: rgba(255, 255, 255, 0.9) !important; }
-
-p.black {
-  color: $black; }

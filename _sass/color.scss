@@ -1,32 +1,71 @@
-// blue
-$primary: #275dad;
-$primary--light: #3b94ff;
-$primary--dark: #16375e;
+$white: #fff;
 
-// salmon
-$secondary: #f7567c;
-$secondary--light: #ff99b6;
-$secondary--dark: #e01a4f;
+$black--50: #f6f6f5;
+$black--100: #e7e7e6;
+$black--200: #d1d1d0;
+$black--300: #b2b2ae;
+$black--400: #8a8986;
+$black--500: #6f6e6b;
+$black--600: #5f5f5b;
+$black--700: #504f4e;
+$black--800: #464544;
+$black--900: #3d3d3c;
+$black--950: #1f1f1e;
+
+$success: #47e5bc;
+$warning:#f9c22e;
+$danger: #ff342c;
+$highlight: #FDF3C3;
+
+$primary--50: #eef4ff;
+$primary--100: #dae6ff;
+$primary--200: #bdd5ff;
+$primary--300: #90baff;
+$primary--400: #5c95ff;
+$primary--500: #356dfc;
+$primary--600: #1f4cf1;
+$primary--700: #1737de;
+$primary--800: #192fb4;
+$primary--900: #1a2d8e;
+$primary--950: #151e56;
+
+$secondary--50: #fffbeb;
+$secondary--100: #fdf3c8;
+$secondary--200: #fce68b; // hover
+$secondary--300: #fad34f; // idle
+$secondary--400: #f9c22e;
+$secondary--500: #f39f0d; // pressed
+$secondary--600: #d77908;
+$secondary--700: #b2540b;
+$secondary--800: #91410f;
+$secondary--900: #773610;
+$secondary--950: #441b04;
+
+$tertiary--50: #fff1f3;
+$tertiary--100: #ffe4e8;
+$tertiary--200: #fecdd6;
+$tertiary--300: #fea3b4; // tertiary light
+$tertiary--400: #fc708d;
+$tertiary--500: #f7567c; // tertiary
+$tertiary--600: #e31b54;
+$tertiary--700: #c01046; // seconary dark
+$tertiary--800: #a01141;
+$tertiary--900: #89123f;
+$tertiary--950: #4d041e;
 
 $blurple: #6a7fdb;
 $blurple--light: #8da6ff;
 $blurple--dark: #45548c;
 
-$black: #2d3047;
-$black--light: #545d7f;
-$black--dark: #001011;
+/* === Background ===*/
+$bg--primary: #275dad;
+$bg--primary--light: #3b94ff;
+$bg--primary--dark: #16375e;
 
-$gray: #ced3dc;
-$gray--light: #edf0f2;
-$gray--dark: #a7b7c2;
+$bg--secondary: #f7567c;
+$bg--secondary--light: #ff99b6;
+$bg--secondary--dark: #e01a4f;
 
-$white: #fff;
+$bg--contrast: #fbf9fb;
 
-$success: #47e5bc;
-$warning:#f9c22e;
-$warning--light: #fcdf92; 
-$warning--dark: #C79100;
-$danger: #f15946;
-$highlight: #FDF3C3;
 
-$contrast: #eef2f5;

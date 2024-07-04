@@ -152,6 +152,9 @@ img {
 /* Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 769px) {
+  .padding--x-small {
+    padding: 1rem 0; } // 16px
+
   .padding--small {
     padding: 2rem 0; } // 32px
 

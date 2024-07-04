@@ -2304,7 +2304,7 @@ cite a:hover { text-decoration: underline; }
 body { min-height: 100vh; background-color: #fff; }
 
 /* ==== Global > Nav ==== */
-.site-header { position: fixed; top: 0; left: 0; width: 100vw; padding: 20px 40px; z-index: 1; box-sizing: border-box; border-bottom: 1px solid #6f6e6b; background-color: #fff; }
+.site-header { position: fixed; top: 0; left: 0; width: 100vw; padding: 20px 40px; z-index: 1; box-sizing: border-box; border-bottom: 1px solid #d1d1d0; background-color: #fff; }
 
 .site-header a, footer a { display: inline-block; }
 

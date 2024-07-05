@@ -21,11 +21,6 @@
 
 a { text-decoration: none; }
 
-.shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
-.shadow-img { box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5); }
-.shadow-large { box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); }
-.box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
-
 .offset-header { margin-top: 80px; }
 
 mark { display: inline-block; margin-left: 2px; padding: 2px 6px; background-color: $bg--primary--light; border-radius: 4px; color: $white; }
@@ -62,7 +57,7 @@ body {
     list-style-type: none;
     line-height: 1.5; }
     nav ul li:not(:last-child) {
-      margin-right: 15px; }
+      margin-right: 20px; }
     ul li svg {
       margin-top: 6px; }
   @media (max-width: 769px) {
@@ -157,31 +152,6 @@ body {
 .hero--content-inner p {
   color: rgba(255,255,255,.9); }
 
-/* ==== Index > Sections ==== */
-.contrast { background-color: $bg--contrast; }
-
-
-@media (max-width: 768px) {
-  .contrast--mobile { 
-    background-color: $bg--contrast; } }
-  .bio {
-    background-color: $bg--primary; 
-    color: $white; }
-    .bio span.project-type {
-      color: $white; }
-    img {
-      max-width: 50%; }
-    .bio img {
-      display: block;
-      max-width: 60%;
-      margin: 0 auto; }
-    .bio h2 {
-      color: $white;
-    } 
-  ui-bugs
-    a.btn {
-      margin-right: 1rem; }
-
 /* === Dribbble > All ===*/
 
 #logo-dribbble { height: 28px; }
@@ -215,7 +185,7 @@ body {
 
 /* ==== Project > Vela ==== */
 
-.vela-panel-hero { background-color: $blurple--dark; }
+.vela-panel-hero { background-color: $primary--400; }
 
 .vela-outcomes,
 .vela-sketches,
@@ -336,7 +306,7 @@ body {
   span {
     padding-left: .05rem;
     font-weight: normal;
-    color: $black--300;
+    // color: $black--300;
   }
 
 .resume h5 {
@@ -453,7 +423,10 @@ section.skills a.btn { margin: 0 15px 15px 0; }
 section.green {
   background-color: darken($success, 15%);
   .project-type { color: lighten($success, 30%); }
-  h3, p { color: $black--950; } }
+  h3, p { 
+    color: $black--950; } 
+  .dash-trailing:after { 
+    background: lighten($tertiary--50, 30%) !important; } }
 
 /* ==== User Guide ==== */
 .resume.user-guide p, ul {
@@ -508,7 +481,7 @@ footer.footer {
   background-color: $bg--secondary; }
 
 footer nav {
-  margin-top: 1rem; }  
+  margin-top: 1rem; }
 
 footer h4, footer a {
   font-family: $sans-serif-font-stack;

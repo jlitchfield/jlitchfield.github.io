@@ -7834,12 +7834,12 @@ label.panel-block:hover {
 }
 
 .section {
-  background-color: white;
+  background-color: $white;
   padding: 3rem 1.5rem;
 }
 
 .section--large {
-  background-color: white;
+  background-color: $white;
   padding: 6rem 1.5rem;
 }
 
@@ -7851,3 +7851,28 @@ label.panel-block:hover {
     padding: 18rem 1.5rem;
   }
 }
+
+/* ==== Index > Sections ==== */
+.bg--contrast { background-color: $bg--contrast; }
+
+
+@media (max-width: 768px) {
+  .contrast--mobile { 
+    background-color: $bg--contrast; } }
+  .bio {
+    background-color: $bg--primary; 
+    color: $white; }
+    .bio span.project-type {
+      color: $white; }
+    img {
+      max-width: 50%; }
+    .bio img {
+      display: block;
+      max-width: 60%;
+      margin: 0 auto; }
+    .bio h2 {
+      color: $white;
+    } 
+  ui-bugs
+    a.btn {
+      margin-right: 1rem; }

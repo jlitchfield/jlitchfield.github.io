@@ -31,6 +31,14 @@ section { display: block; width: 100%; }
 @viewport { width: device-width; }
 
 /* === Background ===*/
+.shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
+
+.shadow-img { box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5); }
+
+.shadow-large { box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); }
+
+.box-shadow { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
 /* ====
 Google Fonts Installed
 PT Serif: 400, 700
@@ -2250,11 +2258,28 @@ a.panel-block:hover, label.panel-block:hover { background-color: whitesmoke; }
 
 .hero.is-fullheight { min-height: 100vh; }
 
-.section { background-color: white; padding: 3rem 1.5rem; }
+.section { background-color: #fff; padding: 3rem 1.5rem; }
 
-.section--large { background-color: white; padding: 6rem 1.5rem; }
+.section--large { background-color: #fff; padding: 6rem 1.5rem; }
 
 @media screen and (min-width: 1000px) { .section.is-medium { padding: 9rem 1.5rem; } .section.is-large { padding: 18rem 1.5rem; } }
+
+/* ==== Index > Sections ==== */
+.bg--contrast { background-color: #f6f6f5; }
+
+@media (max-width: 768px) { .contrast--mobile { background-color: #f6f6f5; } }
+
+.bio { background-color: #275dad; color: #fff; }
+
+.bio span.project-type { color: #fff; }
+
+img { max-width: 50%; }
+
+.bio img { display: block; max-width: 60%; margin: 0 auto; }
+
+.bio h2 { color: #fff; }
+
+ui-bugs a.btn, ui-bugs a.btn--primary, ui-bugs a.btn--secondary, ui-bugs a.btn--tertiary, ui-bugs a.btn--tertiary--on-dark, ui-bugs a.btn--tertiary--on-light, ui-bugs a.btn--large--primary, ui-bugs a.btn--large--tertiary { margin-right: 1rem; }
 
 /* ==== Global > Helper Classes  ==== */
 * { box-sizing: border-box; }
@@ -2283,14 +2308,6 @@ a.panel-block:hover, label.panel-block:hover { background-color: whitesmoke; }
 
 a { text-decoration: none; }
 
-.shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
-
-.shadow-img { box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5); }
-
-.shadow-large { box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); }
-
-.box-shadow { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-
 .offset-header { margin-top: 80px; }
 
 mark { display: inline-block; margin-left: 2px; padding: 2px 6px; background-color: #3b94ff; border-radius: 4px; color: #fff; }
@@ -2314,7 +2331,7 @@ nav ul { margin: 0; padding-left: 0; }
 
 nav ul li { float: left; list-style-type: none; line-height: 1.5; }
 
-nav ul li:not(:last-child) { margin-right: 15px; }
+nav ul li:not(:last-child) { margin-right: 20px; }
 
 ul li svg { margin-top: 6px; }
 
@@ -2351,23 +2368,6 @@ button.expanded { transform: rotate(90deg); background-color: transparent; borde
 
 .hero--content-inner p { color: rgba(255, 255, 255, 0.9); }
 
-/* ==== Index > Sections ==== */
-.contrast { background-color: #fbf9fb; }
-
-@media (max-width: 768px) { .contrast--mobile { background-color: #fbf9fb; } }
-
-.bio { background-color: #275dad; color: #fff; }
-
-.bio span.project-type { color: #fff; }
-
-img { max-width: 50%; }
-
-.bio img { display: block; max-width: 60%; margin: 0 auto; }
-
-.bio h2 { color: #fff; }
-
-ui-bugs a.btn, ui-bugs a.btn--primary, ui-bugs a.btn--secondary, ui-bugs a.btn--tertiary, ui-bugs a.btn--tertiary--on-dark, ui-bugs a.btn--tertiary--on-light, ui-bugs a.btn--large--primary, ui-bugs a.btn--large--tertiary { margin-right: 1rem; }
-
 /* === Dribbble > All ===*/
 #logo-dribbble { height: 28px; }
 
@@ -2387,7 +2387,7 @@ ui-bugs a.btn, ui-bugs a.btn--primary, ui-bugs a.btn--secondary, ui-bugs a.btn--
 @media (max-width: 768px) { .twine-site-images { background: url("/images/twine-site-images.jpg") no-repeat; background-size: cover; } .twine-site-images .hero-body { background-color: rgba(255, 255, 255, 0.75); color: #1f1f1e; } }
 
 /* ==== Project > Vela ==== */
-.vela-panel-hero { background-color: #45548c; }
+.vela-panel-hero { background-color: #5c95ff; }
 
 .vela-outcomes, .vela-sketches, .iteration { background-color: #6a7fdb; }
 
@@ -2443,7 +2443,7 @@ ui-bugs a.btn, ui-bugs a.btn--primary, ui-bugs a.btn--secondary, ui-bugs a.btn--
 
 .resume h4 { font-family: "PT Serif", serif; font-weight: 700; }
 
-span { padding-left: .05rem; font-weight: normal; color: #b2b2ae; }
+span { padding-left: .05rem; font-weight: normal; }
 
 .resume h5 { font-family: "Nunito", Arial, sans-serif; font-weight: 700; margin-bottom: 3px; }
 
@@ -2473,7 +2473,7 @@ span { padding-left: .05rem; font-weight: normal; color: #b2b2ae; }
 .company--position { padding-left: 64px; }
 
 /* ==== Download Resume ==== */
-.download-resume { z-index: 3; position: fixed; bottom: 0; left: 0; background-color: #fbf9fb; border-top: 1px solid #d1d1d0; }
+.download-resume { z-index: 3; position: fixed; bottom: 0; left: 0; background-color: #f6f6f5; border-top: 1px solid #d1d1d0; }
 
 .download-resume ul { margin-bottom: 0; }
 
@@ -2505,6 +2505,8 @@ section.green { background-color: #1cc498; }
 section.green .project-type { color: #cdf8ed; }
 
 section.green h3, section.green p { color: #1f1f1e; }
+
+section.green .dash-trailing:after, section.green .dash-trailing-small:after { background: white !important; }
 
 /* ==== User Guide ==== */
 .resume.user-guide p, ul { line-height: 1.75; }

@@ -56,7 +56,7 @@ Nunito: 300, 400, 700, 900
 body { font: 400 16px/1.5 "Nunito", Arial, sans-serif; color: #3d3d3c; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.3; margin-bottom: 1.125rem; /*18px*/ }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.5; margin-bottom: 1.125rem; /*18px*/ }
 
 p, pre, ul, ol, dl, figure { font-family: "Nunito", Arial, sans-serif; }
 
@@ -67,13 +67,13 @@ h1 { font-size: 4.125rem; }
 
 h2 { font-size: 2.25rem; }
 
-h3 { font-size: 1.5rem; }
+h3 { font-size: 1.75rem; }
 
-h4 { font-size: 1.125rem; }
+h4 { font-size: 1.5rem; }
 
-h5 { font-size: 1rem; }
+h5 { font-size: 1.125rem; }
 
-h6 { font-size: 0.75rem; }
+h6 { font-size: 1rem; }
 
 /* ==== Legacy Styles ==== */
 strong { font-weight: 700; }
@@ -91,8 +91,6 @@ strong { font-weight: 700; }
 
 .type--small { font-size: 0.75rem; }
 
-p, span { font-size: 1.0625rem; line-height: 1.5; }
-
 p.type--medium, span.type--medium { font-size: 1.25rem; }
 
 .type--large { font-size: 1.5rem; }
@@ -109,7 +107,7 @@ p.type--medium, span.type--medium { font-size: 1.25rem; }
 .dropcap:after { margin-bottom: -0.15em; }
 
 /* ==== Lists ==== */
-ul, ol { margin-left: 1.875rem; }
+ul li, ol li { margin-bottom: .5rem; }
 
 li > ul, li > ol { margin-bottom: 0; }
 
@@ -2329,7 +2327,7 @@ body { min-height: 100vh; background-color: #fff; }
 
 nav ul { margin: 0; padding-left: 0; }
 
-nav ul li { float: left; list-style-type: none; line-height: 1.5; }
+nav ul li { float: left; list-style-type: none; line-height: 1.5; margin-bottom: 0; }
 
 nav ul li:not(:last-child) { margin-right: 20px; }
 
@@ -2368,6 +2366,11 @@ button.expanded { transform: rotate(90deg); background-color: transparent; borde
 
 .hero--content-inner p { color: rgba(255, 255, 255, 0.9); }
 
+/* === Sections NEW ===*/
+section article { margin-bottom: 4rem; }
+
+section article:first-of-type h3 { padding-top: .6rem; }
+
 /* === Dribbble > All ===*/
 #logo-dribbble { height: 28px; }
 
@@ -2387,23 +2390,7 @@ button.expanded { transform: rotate(90deg); background-color: transparent; borde
 @media (max-width: 768px) { .twine-site-images { background: url("/images/twine-site-images.jpg") no-repeat; background-size: cover; } .twine-site-images .hero-body { background-color: rgba(255, 255, 255, 0.75); color: #1f1f1e; } }
 
 /* ==== Project > Vela ==== */
-.vela-panel-hero { background-color: #5c95ff; }
-
-.vela-outcomes, .vela-sketches, .iteration { background-color: #6a7fdb; }
-
-.vela-panel-hero { padding-bottom: 0; text-align: center; }
-
-.vela-prob-space h4 { font-family: "Nunito", Arial, sans-serif; color: #6a7fdb; }
-
-.vela-prob-space ul { margin-left: 0; }
-
-.vela-prob-space h4 + p, .vela-prob-space h4 + ul { margin-bottom: 2rem; }
-
-.vela-outcomes h2, .vela-sorting h2, .vela-sorting p { text-align: center; }
-
-.vela-principles h2 { color: #1f1f1e; }
-
-.iteration, .vela-panel-view { border-bottom: 1px solid #f0f5f6; }
+.vela-panel-hero { padding-bottom: 0; text-align: center; background-color: #5c95ff; }
 
 /* ==== Project > Quizzly ==== */
 .quizzly { padding-bottom: 0; background-color: #3b94ff; text-align: center; }
@@ -2477,18 +2464,14 @@ span { padding-left: .05rem; font-weight: normal; }
 
 .download-resume ul { margin-bottom: 0; }
 
-.download-resume ul li { display: inline; margin: 0 12px; }
+.download-resume ul li { display: inline; }
 
 .download-resume ul li:first-of-type { margin-right: 16px; }
-
-.download-resume .btn--large { width: auto; margin: 0 auto; text-align: center; }
-
-@media (max-width: 769px) { .download-resume .btn--large { display: block; } .download-resume ul li:first-of-type { margin-right: 0; margin-bottom: 16px; } }
 
 /*800px*/
 @media (min-width: 769px) { .resume main { padding-right: 5%; border-right: 1px dashed #b2b2ae; } .resume aside { padding-left: 3%; } }
 
-/* ==== Download Resume ==== */
+/* ==== User Guide ==== */
 section.user-guide { margin-bottom: 24px; padding: 16px; border-radius: 8px; background-color: #fdf3c8; }
 
 section.user-guide p { font-size: 0.9rem; color: #1f1f1e; }
@@ -2509,14 +2492,10 @@ section.green h3, section.green p { color: #1f1f1e; }
 section.green .dash-trailing:after, section.green .dash-trailing-small:after { background: white !important; }
 
 /* ==== User Guide ==== */
-.resume.user-guide p, ul { line-height: 1.75; }
-
-.resume.user-guide ul li { list-style-type: circle; padding-bottom: 0.5rem; }
-
 .last-updated { color: #b2b2ae; font-size: 0.9rem; }
 
 /* ==== Global > Header & Footer ==== */
-.site-header h1 { margin-bottom: 0; font: 700 1.2rem/40px "Nunito", Arial, sans-serif; text-transform: uppercase; color: #5c95ff; }
+.site-header h1 { margin-bottom: 0; font: 700 1.2rem/41px "Nunito", Arial, sans-serif; text-transform: uppercase; color: #5c95ff; }
 
 a:hover h1 { -webkit-transition: all .2s linear; transition: all .2s linear; color: #1f4cf1; }
 

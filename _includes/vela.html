@@ -2,7 +2,7 @@
   <div class="container">
     <div class="columns is-gapless">
       <div class="column knockout">
-        <h2 class="no-margin-bottom">Vela Panel: A Case Study</h2>
+        <h2 class="no-margin-bottom">Vela Patient Panel</h2>
         <p class="type--large">Enables Care Managers to efficiently manage their caseloads at scale, aligned with program objectives or personal preferences.</p>
         <img class="shadow-large" src="/images/vela-panel-hero.svg" alt="Vela Panel">
       </div>
@@ -10,349 +10,259 @@
   </div>
 </section>
 
-<section class="section vela-prob-space shadow is-fullwidth">
+<!-- Overview -->
+<section class="section is-fullwidth"> 
   <div class="container">
-    <div class="columns padding--small">
-      <div class="column is-offset-1 is-6">
+    <div class="columns">
+      <div class="column is-offset-1 is-3">
+        <h2>Overview</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
         <article>
-          <h3>The Business Problem</h3>
           <p>Typically, a Care Manager and Coach's initial task is to review and triage patient activity for incidents and critical events. Care teams, comprising various healthcare professionals centered around the patient, rely on multiple data points to gain a comprehensive understanding of the patient's health.</p>
           <p>For instance, Vela Pro displays activity through indicators for new chat messages and alerts for questionnaire submissions. These features are organized in a dedicated space within the app, allowing professionals to focus on their tasks.</p>
           <p>However, a decentralized structure has made it challenging for professionals to get an overview of care team activity and has hindered their ability to triage care based on need.</p>
           <p><strong>View-all permissions:</strong> Branch Managers have read-only access to view the Care Teams managed by their Professionals. We also had to consider the functionality governed by this permission.</p>
           <p><strong>Additional use cases:</strong> While Vela Pro is designed for durably assigned caseloads, we must also accommodate other care models that meet our customers' diverse needs.</p>
         </article>
-      </div>
-      <div class="column is-offset-1 is-4">
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
+</section>
+
+<!-- Business Problem -->
+<section class="section is-fullwidth">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-3">
+        <h2>The Business Problem</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
         <article>
+          <h3>The team</h3>
           <h4 class="no-margin-bottom">My Role</h4>
           <p>Senior Product Designer</p>
-          
           <h4 class="no-margin-bottom">Team</h4>
-          <ul>
-            <li>1 Product Manager</li>
-            <li>6 Engineers</li>
-            <li>Subject Matter Experts</li>
-          </ul>
-
+          <p>1 Product Manager, 6 Engineers, Subject Matter Experts</p>
           <h4 class="no-margin-bottom">Duration</h4>
           <p>2 quarters</p>
-          
           <h4 class="no-margin-bottom">Process Overview</h4>
-          <ul>
-            <li>Product thinking</li>
-            <li>Sketching</li>
-            <li>Primary research</li>
-            <li>Secondary research</li>
-            <li>Visual design</li>
-            <li>Prototypes for product validation</li>
-            <li>SME feedback sessions</li>
-          </ul>
-          
+          <p>Product thinking, sketching, primary and secondary research, visual design, prototypes for feature validation, SME feedback sessions</p>
           <h4 class="no-margin-bottom">Personas</h4>
+          <p>Branch Manager, Care Manager, RN Care Manager, Care Coach, Care Coordinator</p>
+        </article>
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
+</section>
+
+<!-- Process -->
+<section class="section is-fullwidth">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-3">
+        <h2>My Process</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
+        <article>
+          <h3>Outcome statements</h3>
           <ul>
-            <li>Branch Manager</li>
-            <li>Professionals: Care Manager, RN Care Manager, Care Coach, Care Coordinator</li>
+            <li>Professionals can manage their caseloads efficiently at scale from a single view.</li>
+            <li>Professionals can view their panel based on personal preferences, workflows, or program goals.</li>
+            <li>Branch Managers need to view a Professional's panel for caseload balancing, assessing coverage needs, and reviewing care team activity.</li>
           </ul>
         </article>
-      </div>
-    </div>
-  </div>
+
+        <article>
+          <h3>Technical Constraints</h3>
+          <ul>
+            <li><strong>Performance Requirements:</strong> Data might come from Vela Pro, a system of record, or other services. We need to ensure the Panel will be performant. Working closely with Engineering around this topic was essential.</li>
+            <li><strong>Data Failures:</strong> We want to ensure that if one service fails, it doesn't kill the entire Panel service. If a failure does occur, how can we allow the Pro to recover from that?</li>
+            <li><strong>No Machine Learning or AI:</strong> Vela doesn't use ML or AI, nor did we have folks with those skills. Also, using these technologies for several, often experimental, use cases might be too costly.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Development Statements</h3>
+          <ul>
+            <li><strong>List View:</strong> Pros need a new list view with columns for activity and other care room information.</li>
+            <li><strong>Filtering:</strong> Pros need to filter their care team to see activity and other data.</li>
+            <li><strong>Sorting:</strong> Pros need to prioritize sorting to get to what matters most to them. For example, I want to sort by my primary care teams, then secondary.</li>
+            <li><strong>Data:</strong> As more data becomes available in the Panel, Pros must hide those irrelevant data, not germane to my workflow or program objectives.</li>
+            <li><strong>Efficient Navigation:</strong> Pros need to efficiently go in and out of care rooms, which the current experience could do better. Red routes and modality will allow Pro to complete tasks with speed and efficiency.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Secondary Research</h3>
+          <ul>
+            <li>I needed access to users, but I didn't have it. However, user feedback from the Product and Technical Support teams informed the problem statement and user needs.</li>
+            <li>Next, I conducted secondary research to evaluate best practices for filtering, sorting, data density, and complex tables while considering our users' skill levels.</li>
+          </ul>
+        </article>
+
+        <!-- <article>
+          <h3>Data Model</h3>
+          <p>I met with the Product Manager and Engineering leads to determine the types of data we should expect, how it should be organized, and in which format.</p>
+        </article> -->  
+
+        <article>
+          <h3>Design Principles</h3>
+          <ul>
+            <li><strong>Performance:</strong> If the panel is performant, it will retain its utility.</li>
+            <li><strong>Efficiency:</strong> Easy access to data, red routes, and modality significantly decreases interaction costs, allowing the Professional to spend less time in the application and more time with care teams.</li>
+            <li><strong>Extensibility:</strong> Filtering and sorting must be extensible enough to allow different data types we have yet to think of to support furure use cases.</li>
+            <li><strong>Straightforward filtering &amp; sorting:</strong> Considering our users' technical proficiency, users need to be able to quickly determine how the panel is filtered and sorted with a low cognitive load.</li>
+            <li><strong>Just enough information:</strong> Prior knowledge and my data density research helped validate our assumptions about data overload.</li>
+            <li><strong>Information hierarch:</strong> For those pertinent data, Pros want to move panel columns to show the most critical information first.</li>
+          </ul>
+        </article>
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
 </section>
 
-<section class="section knockout vela-outcomes is-fullwidth bg--contrast">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-12">
-        <h2 class="text-center">Outcome Statements</h2>
-      </div>
-    </div>
-  </div>
+<!-- Iterations -->
+<section class="section is-fullwidth">
   <div class="container">
     <div class="columns">
-      <div class="column is-4">
-        <blockquote><span class="type--medium">Professionals can manage their caseloads efficiently at scale from a single view.</span></blockquote>
-      </div>
-      <div class="column is-4">
-        <blockquote><span class="type--medium">Professionals can view their panel based on personal preferences, workflows, or program goals.</span></blockquote>
-      </div>
-      <div class="column is-4">
-        <blockquote><span class="type--medium">Branch Managers need to view a Professional's panel for caseload balancing, assessing coverage needs, and reviewing care team activity.</span></blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="section shadow is-fullwidth">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-offset-1 is-4">
-        <h3>Technical Constraints</h3>
-        <p class="black"><span class="highlight-text">Performance Requirements.</span> Data might come from Vela Pro, a system of record, or other services. We need to ensure the Panel will be performant. Working closely with Engineering around this topic was essential.</p>
-        <p class="black"><span class="highlight-text">Data Failures.</span> We want to ensure that if one service fails, it doesn't kill the entire Panel service. If a failure does occur, how can we allow the Pro to recover from that?</p>
-        <p class="black"><span class="highlight-text">No Machine Learning or AI.</span> Vela doesn't use ML or AI, nor did we have folks with those skills. Also, using these technologies for several, often experimental, use cases might be too costly.</p>
-      </div>
-      <div class="column is-offset-1 is-4">        
-        <h3>Development Statements</h3>
-        <p class="black"><span class="highlight-text">List View.</span> Pros need a new list view with columns for activity and other care room information.</p>
-        <p class="black"><span class="highlight-text">Filtering.</span> Pros need to filter their care team to see activity and other data.</p>
-        <p class="black"><span class="highlight-text">Sorting.</span> Pros need to prioritize sorting to get to what matters most to them. For example, I want to sort by my primary care teams, then secondary.</p>
-        <p class="black"><span class="highlight-text">Data.</span> As more data becomes available in the Panel, Pros must hide those irrelevant data, not germane to my workflow or program objectives.</p>
-        <p class="black"><span class="highlight-text">Efficient Navigation.</span> Pros need to efficiently go in and out of care rooms, which the current experience could do better. Red routes and modality will allow Pro to complete tasks with speed and efficiency.</p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section bg--contrast is-fullwidth">
-  <h2 class="has-text-centered black">Getting Starting with Requirements</h2>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-offset-1 is-4">        
-        <h3>Secondary Research</h3>
-        <p class="black">I needed access to users, but I didn't have it. However, user feedback from the Product and Technical Support teams informed the problem statement and user needs.</p>
-        <p class="black">Next, I conducted secondary research to evaluate best practices for filtering, sorting, data density, and complex tables while considering our users' skill levels.</p>
-      </div>
-      <div class="column is-offset-1 is-4">
-        <h3>Data Modeling</h3>
-        <p class="black">I met with the Product Manager and Engineering leads to determine the types of data we should expect, how it should be organized, and in which format.</p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="section shadow vela-principles is-fullwidth">
-  <h2 class="has-text-centered">Design Principles</h2>
-  <div class="container">
-    <div class="columns is-vcentered">
-    </div>
-  </div>
-  <div class="container">
-    <div class="columns">
-      <div class="is-offset-1 column is-4">
-        <p class="black"><span class="highlight-text">Performance.</span> If the panel is performant, it will retain its utility.</p>
-        <p class="black"><span class="highlight-text">Efficiency.</span> Easy access to data, red routes, and modality significantly decreases interaction costs, allowing the Professional to spend less time in the application and more time with care teams.</p>
-        <p class="black"><span class="highlight-text">Extensibility.</span> Filtering and sorting must be extensible enough to allow different data types we have yet to think of to support furure use cases.</p>
-      </div>
-      <div class="is-offset-1 column is-4">
-        <p class="black"><span class="highlight-text">Straightforward Filtering &amp; Sorting.</span> Considering our users' technical proficiency, users need to be able to quickly determine how the panel is filtered and sorted with a low cognitive load.</p>
-        <p class="black"><span class="highlight-text">Just Enough Information.</span> Prior knowledge and my data density research helped validate our assumptions about data overload.</p>
-        <p class="black"><span class="highlight-text">Information Hierarchy.</span> For those pertinent data, Pros want to move panel columns to show the most critical information first.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="section shadow">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-4">
-        <article>
-          <h3>Sketches & Feedback</h3>
-          <p class="black">I often start with sketches, and this case was no different. I have quick progress meetings with the PM or an Engineer for technical guidance and feedback. We also hold formal design reviews with the whole team. Unfortunately, I no longer have those sketches for this project. 😥</p>
-          <h3>Nurturing Ideas in Figma</h3>
-          <p class="black">With the design system I built, I can work out many ideas quickly with high fidelity.</p>
-        </article>
-      </div>
-      <div class="column is-offset-1 is-4">
-        <img src="/images/book.svg" alt="Empty sketch book">
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="section no-padding-bottom iteration knockout">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-6 no-padding-bottom">
-        <img class="shadow-large" src="/images/vela-panel-1.svg" alt="Vela Patient Panel, First Iteration">
-      </div>
-      <div class="column is-offset-1 is-4">
-        <article>
-          <h3>Iteration One</h3>
-          <p class="black">The first iteration of the panel utilized existing components to give the panel a consistent experience—for example, the use of cards as rows and applied filters.</p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section no-padding-bottom shadow">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-4">
-        <article>
-          <p class="black">I played around with quick filters with a single click instead of a dropdown menu with higher interaction costs.</p>
-        </article>
-      </div>
-      <div class="column is-offset-1 is-6 no-padding-bottom">
-        <img class="shadow-large" src="/images/vela-panel-1-utility.svg" alt="Vela Panel: Filter and Sort">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section shadow no-padding-bottom">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-6 no-padding-bottom">
-        <img class="shadow-large" src="/images/vela-panel-1-filter.svg" alt="Vela Patient Pnael: filtering long lists">
-      </div>
-      <div class="column is-offset-1 is-4">
-        <article>
-          <h3>Filters &amp; Long Lists</h3>
-          <p class="black">Filters with short lists are displayed in dropdown menus in Vela Pro. Given many filters have long lists, I experimented with the right drawer.</p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section no-padding-bottom knockout iteration">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-4">
-        <article>
-          <h3>Iteration Two</h3>
-          <p class="black">Sometimes, I build out the experience when working on a project, considering the long-term vision. It helps with story mapping and planning.</p>
-          <p class="black">During the second iteration, I began considering the requirements and design principles the team and I agreed on. The utility menu here accounts for views, filter and sort, and other menu items.</p>
-        </article>
-      </div>
-      <div class="column is-offset-1 is-6 no-padding-bottom">
-        <img class="shadow-large" src="/images/vela-panel-2.svg" alt="Vela Panel: Filter and Sort">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth has-text-centered">
-  <div class="container">
-    <div class="columns is-gapless is-centered">
+      <div class="column is-offset-1 is-3">
+        <h2>Iterations</h2>
+      </div> <!-- end column -->
       <div class="column is-6">
-        <h3>Rule Builder Filters</h3>
-        <p class="black">My desk research informed me that sentence-style wording, instead of parametric-style, makes it easier for Professionals to comprehend, even if longer.</p>
-        <img class="content-center" src="/images/vela-builder-filter.svg" alt="Vela Patient Panel: rule builder filter">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth has-text-centered no-padding-bottom bg--contrast">
-  <div class="container">
-    <div class="columns is-gapless is-centered">
-      <div class="column is-8">
-        <h3>Advanced Sorting</h3>
-        <p class="black">In the previous implementation, we allowed the Professional to choose a primary sort and then make some assumptions about the secondary sort. In the future, the Pro will determine the order of her care teams.</p>
-        <img class="content-center shadow-large" src="/images/vela-panel-sort.svg" alt="Vela Patient Panel: advanced sorting">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth no-padding-bottom has-text-centered ">
-  <div class="container">
-    <div class="columns is-gapless is-centered">
-      <div class="column is-8">
-        <h3>Fields</h3>
-        <p class="black">Data overload would eventually be a genuine concern. Also, some data would be necessary for some Professionals rather than others. They need a way to hide and order panel columns.</p>
-        <img class="content-center shadow-large" src="/images/vela-panel-fields.svg" alt="Vela Patient Panel: fields">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth has-text-centered no-padding-bottom vela-panel-view bg--contrast">
-  <div class="container">
-    <div class="columns is-gapless is-centered">
-      <div class="column is-8">
-        <h3>Panel Views &amp; Menu</h3>
-        <p class="black">Having complex filtering and sorting and the ability to configure fields a Professional cares about is a game-changer. Still, it can be taxing to configure them regularly, even if the application has a memory. Being able to save the settings into a view will be crucial. Of course, the professional needs to be able to rename, duplicate, or delete views.</p>
-        <img class="content-center shadow-large" src="/images/vela-panel-views.svg" alt="Vela Patient Panel: panel views">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth has-text-centered no-padding-bottom">
-  <div class="container">
-    <div class="columns is-gapless is-centered">
-      <div class="column is-8">
-        <h3>Expanded Columns</h3>
-        <p class="black">Performance is always a consideration, so I worked closely with my Engineering colleagues. Using the principle of progressive disclosure, we can show just enough data about the care team. With another call, the Professional can access care team data without leaving the panel.</p>
-        <img class="content-center shadow-large" src="/images/vela-panel-expanded.svg" alt="Vela Patient Panel: expanded columns">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth has-text-centered no-padding-bottom bg--contrast">
-  <div class="container">
-    <div class="columns is-gapless is-centered">
-      <div class="column is-8">
-        <h3>Feature Prioritization through Story Mapping</h3>
-        <p class="black">I worked with Product and Engineering to determine the MVP features. We decided to work on the rule builder and update the interface first. Everything else would come at a later release.</p>
-        <img class="content-center" src="/images/vela-story-map.png" alt="Vela Patient Panel: story mapping">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section no-padding-bottom">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-4">
         <article>
-          <h3>Feedback through Design Reviews</h3>
-          <p class="black">The Product Manager and I met our Clinical and Client Services teams regularly to ensure we met professionals' and clients' needs.</p>
-          <h3>Final Product</h3>
-          <p class="black">I often build out the experience taking into account the long-term vision. During the second iteration, I began to consider the requirements and design principles the team and I agreed on. The utility menu here accounts for views, filter and sort, and other menu items.</p>
+          <h3>Iteration one</h3>
+          <p>The first iteration of the panel utilized existing components to give the panel a consistent experience—for example, the use of cards as rows and applied filters.</p>
+          <img class="shadow-large" src="/images/vela-panel-1.svg" alt="Vela Patient Panel, First Exploration">
         </article>
-      </div>
-      <div class="column is-offset-1 is-6 no-padding-bottom">
-        <img class="shadow-large" src="/images/vela-panel-3.svg" alt="Vela Panel: Filter and Sort">
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section knockout iteration">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-offset-1 is-4">
         <article>
-          <h3>Results &amp; Monitoring</h3>
-          <p class="black">Overall, the feedback has been good. Since the original re-design, we have been able to add more filters, and the system has proved extensible enough to allow for new filters to be added without problems.</p>
-          <p>Before adding the primary filter, Professionals found it hard to determine the care teams' accurate caseload. The new filter made them more efficient and more focus time on their cases.</p>
+          <h4>Quick filters exploration</h4>
+          <p>I played around with quick filters with a single click instead of a dropdown menu with higher interaction costs.</p>
+          <img class="shadow-large" src="/images/vela-panel-1-utility.svg" alt="Vela Panel: Filter and Sort">
         </article>
-      </div>
-      <div class="column is-offset-1 is-6 no-padding-bottom">
-        <img src="/images/vela-rule-builder.svg" alt="Vela Panel: Rules">
-      </div>
-    </div>
-  </div>
+
+        <article>
+          <h4>Filters &amp; long lists exploration</h4>
+          <p>Filters with short lists are displayed in dropdown menus in Vela Pro. Given many filters have long lists, I experimented with the right drawer.</p>
+          <img class="shadow-large" src="/images/vela-panel-1-utility.svg" alt="Vela Panel: Filter and Sort">
+        </article>
+
+        <article>
+          <h3>Iteration two</h3>
+          <p>Sometimes, I build out the experience when working on a project, considering the long-term vision. It helps with story mapping and planning.</p>
+          <p>During the second iteration, I began considering the requirements and design principles the team and I agreed on. The utility menu here accounts for views, filter and sort, and other menu items.</p>
+          <img class="shadow-large" src="/images/vela-panel-2.svg" alt="Vela Panel: Filter and Sort">
+        </article>
+
+        <article>
+          <h4>Rule Builder Filters</h4>
+          <p>My desk research informed me that sentence-style wording, instead of parametric-style, makes it easier for Professionals to comprehend, even if longer.</p>
+          <img class="content-center" src="/images/vela-builder-filter.svg" alt="Vela Patient Panel: rule builder filter">
+        </article>
+
+        <article>
+          <h4>Advanced Sorting</h4>
+          <p>In the previous implementation, we allowed the Professional to choose a primary sort and then make some assumptions about the secondary sort. In the future, the Pro will determine the order of her care teams.</p>
+          <img class="content-center shadow-large" src="/images/vela-panel-sort.svg" alt="Vela Patient Panel: advanced sorting">
+        </article>
+
+        <article>
+          <h4>Fields</h4>
+          <p>Data overload would eventually be a genuine concern. Also, some data would be necessary for some Professionals rather than others. They need a way to hide and order panel columns.</p>
+          <img class="content-center shadow-large" src="/images/vela-panel-fields.svg" alt="Vela Patient Panel: fields">
+        </article>
+
+        <article>
+          <h4>Panel Views &amp; Menu</h4>
+          <p>Having complex filtering and sorting and the ability to configure fields a Professional cares about is a game-changer. Still, it can be taxing to configure them regularly, even if the application has a memory. Being able to save the settings into a view will be crucial. Of course, the professional needs to be able to rename, duplicate, or delete views.</p>
+          <img class="content-center shadow-large" src="/images/vela-panel-views.svg" alt="Vela Patient Panel: panel views">
+        </article>
+
+        <article>
+          <h4>Expanded Columns</h4>
+          <p>Performance is always a consideration, so I worked closely with my Engineering colleagues. Using the principle of progressive disclosure, we can show just enough data about the care team. With another call, the Professional can access care team data without leaving the panel.</p>
+          <img class="content-center shadow-large" src="/images/vela-panel-expanded.svg" alt="Vela Patient Panel: expanded columns">
+        </article>
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
 </section>
 
-<section class="section shadow is-fullwidth">
-  <h3 class="has-text-centered">Feature Updates &amp; Improvements</h3>
+<!-- Final Design -->
+<section class="section is-fullwidth">
   <div class="container">
     <div class="columns">
-      <div class="column is-offset-1 is-4">
+      <div class="column is-offset-1 is-3">
+        <h2>Final Design</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
         <article>
-          <p class="type--medium black">Since the updated panel filters release, we have worked closely with the Clinical and client Services teams to identify updates and improvements.</p>
+          <h3>Feature prioritization through story mapping</h3>
+          <p>I worked with Product and Engineering to determine the MVP features. We decided to work on the rule builder and update the interface first. Everything else would come at a later release.</p>
+          <img class="content-center" src="/images/vela-story-map.png" alt="Vela Patient Panel: story mapping">
         </article>
-      </div>
-      <div class="column is-offset-1 is-4">
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
+</section>
+
+<!-- Monitoring -->
+<section class="section is-fullwidth">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-3">
+        <h2>Monitoring</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
         <article>
+          <h3>Feedback</h3>
+          <p>Overall, the feedback has been good. Since the original re-design, we have been able to add more filters, and the system has proved extensible enough to allow for new filters to be added without problems.</p>
+          <p>Before adding the primary filter, Professionals found it hard to determine the care teams' accurate caseload. The new filter made them more efficient and more focus time on their cases.</p>
+
+        </article>
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
+</section>
+
+
+<!-- Impact -->
+<section class="section is-fullwidth">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-3">
+        <h2>Impact</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
+        <article>
+
+        </article>
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
+</section>
+
+<!-- Reflection -->
+<section class="section is-fullwidth">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-3">
+        <h2>Reflection</h2>
+      </div> <!-- end column -->
+      <div class="column is-6">
+        <article>
+          <h3>Feature Updates &amp; Improvements</h3>
+          <p>Since the updated panel filters release, we have worked closely with the Clinical and client Services teams to identify updates and improvements.</p>
           <ul>
             <li>We have consulted with the teams to learn what Branch Managers and Care Coaches need.</li>
             <li>We have tested usability with Care Coaches to identify pain points and test our assumptions.</li>
             <li>We continue to integrate SMEs throughout the product development process to improve outcomes.</li>
           </ul>
         </article>
-      </div>
-    </div>
-  </div>
+      </div> <!-- end column -->  
+    </div> <!-- end columns -->
+  </div> <!-- end container -->
 </section>
 
 {% include dribbble-twine.html %}
@@ -362,7 +272,7 @@
     <div class="columns is-vcentered">
       <div class="column">
         <a href="/pages/twine-health-site-redesign">  
-          <h4 class="no-margin-bottom">Twine Health Site Resign</h4>
+          <h4 class="no-margin-bottom">Twine Health site redesign</h4>
           <span class="project-type">In House Design</span>
           <span class="btn--primary">View project</span>
         </a>
@@ -370,7 +280,7 @@
 
       <div class="column last">
         <a href="/pages/quizzly">
-          <h4 class="no-margin-bottom">Quizzly: A Case Study</h4>
+          <h4 class="no-margin-bottom">Quizzly case study</h4>
           <span class="project-type">Consultant Work</span>
           <span class="btn--primary">View case study</span>
         </a>
@@ -379,3 +289,4 @@
     </div>
   </div>
 </section>
+

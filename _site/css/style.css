@@ -2390,7 +2390,7 @@ section article:first-of-type h3 { padding-top: .6rem; }
 @media (max-width: 768px) { .twine-site-images { background: url("/images/twine-site-images.jpg") no-repeat; background-size: cover; } .twine-site-images .hero-body { background-color: rgba(255, 255, 255, 0.75); color: #1f1f1e; } }
 
 /* ==== Project > Vela ==== */
-.vela-panel-hero { padding-bottom: 0; text-align: center; background-color: #5c95ff; }
+.vela-panel-hero { padding-bottom: 0; text-align: center; background-color: #D4E3F1; background-color: #356dfc; }
 
 /* ==== Project > Quizzly ==== */
 .quizzly { padding-bottom: 0; background-color: #3b94ff; text-align: center; }

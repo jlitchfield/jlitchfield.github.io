@@ -66,6 +66,10 @@ $bg--secondary: #f7567c;
 $bg--secondary--light: #ff99b6;
 $bg--secondary--dark: #e01a4f;
 
-$bg--contrast: #fbf9fb;
+$bg--contrast: $black--50;
 
+.shadow { background: transparent url("/images/gradient.png") top center repeat-x; }
+.shadow-img { box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5); }
+.shadow-large { box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); }
+.box-shadow { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
 

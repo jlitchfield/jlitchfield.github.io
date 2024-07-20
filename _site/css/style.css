@@ -56,7 +56,7 @@ Nunito: 300, 400, 700, 900
 body { font: 400 16px/1.5 "Nunito", Arial, sans-serif; color: #3d3d3c; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.5; margin-bottom: 1.125rem; /*18px*/ }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.5; margin-bottom: 1rem; /*16px*/ }
 
 p, pre, ul, ol, dl, figure { font-family: "Nunito", Arial, sans-serif; }
 
@@ -71,9 +71,13 @@ h3 { font-size: 1.75rem; }
 
 h4 { font-size: 1.5rem; }
 
-h5 { font-size: 1.125rem; font-weight: 700; }
+h5 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0; }
 
 h6 { font-size: 1rem; }
+
+.knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span, .knockout blockquote { color: rgba(255, 255, 255, 0.9) !important; }
+
+blockquote { font-family: "Nunito", Arial, sans-serif; padding-left: 16px; border-left: 3px solid #3d3d3c; }
 
 /* ==== Legacy Styles ==== */
 strong { font-weight: 700; }
@@ -98,7 +102,7 @@ p.type--medium, span.type--medium { font-size: 1.25rem; }
 .has-dropcap:first-letter { font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; float: left; font-size: 6rem; line-height: 0.65; margin: 0.1em 0.1em 0.2em 0; }
 
 /* ==== Quote ==== */
-.dropcap { font-family: "PT Serif", serif; color: inherit; float: left; font-size: 6rem; line-height: 1; }
+.dropcap { float: left; font-family: "PT Serif", serif; font-size: 6rem; line-height: 1; color: inherit; }
 
 .dropcap:before, .dropcap:after { content: ""; display: block; }
 
@@ -112,8 +116,6 @@ ul li, ol li { margin-bottom: .5rem; }
 li > ul, li > ol { margin-bottom: 0; }
 
 .project-type { display: block; font-family: "Nunito", Arial, sans-serif; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: #6a7fdb; }
-
-.knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span, .knockout blockquote { color: rgba(255, 255, 255, 0.9) !important; }
 
 .btn, .btn--tertiary, .btn--large--tertiary, .btn--tertiary--on-light, .btn--tertiary--on-dark, .btn--secondary, .btn--primary, .btn--large--primary { box-sizing: border-box; display: inline-block; padding: 0 1em; height: 40px; font-family: "Nunito", Arial, sans-serif; line-height: 40px; font-weight: 700; border-radius: 5px; -webkit-font-smoothing: subpixel-antialiased; -webkit-transition: all .2s linear; transition: all .2s linear; }
 
@@ -2366,10 +2368,19 @@ button.expanded { transform: rotate(90deg); background-color: transparent; borde
 
 .hero--content-inner p { color: rgba(255, 255, 255, 0.9); }
 
-/* === Sections NEW ===*/
+/* === Sections ===*/
 section article { margin-bottom: 4rem; }
 
-section article:first-of-type h3 { padding-top: .6rem; }
+article h5:first-of-type { margin-top: 19px; }
+
+article h4 + p { margin-bottom: 2rem; }
+
+/* === Integrate Design System ===*/
+.int-ds-hero { text-align: center; background-color: #D4E3F1; }
+
+.ds-principles { padding: 16px 24px; border-radius: 24px; background-color: #F8F8F8; }
+
+.ds-principle { margin-bottom: 2rem; }
 
 /* === Dribbble > All ===*/
 #logo-dribbble { height: 28px; }
@@ -2416,6 +2427,7 @@ section article:first-of-type h3 { padding-top: .6rem; }
 
 @media (min-width: 769px) { .badge { height: 637px; background: #fff url("/images/solstice-badge.png") center center no-repeat; background-size: cover; } .dashboard { height: 500px; background: #fff url("/images/solstice-dashboard.png") center center no-repeat; background-size: cover; } .badge article h3, .badge article p, .dashboard article h3, .dashboard article p { color: #fff; } }
 
+/* ==== Project > Vela ==== */
 /* ==== Quote ==== */
 .quote { background-color: #bdd5ff; }
 

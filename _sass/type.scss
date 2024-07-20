@@ -34,7 +34,6 @@ $sans-serif-font-stack: "Nunito", Arial, sans-serif;
   font-style: italic;
 }
 
-
 /* ==== Default ==== */
 
 body {
@@ -50,7 +49,7 @@ body {
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { 
   line-height: 1.5;
-  margin-bottom: 1.125rem; /*18px*/ }
+  margin-bottom: 1rem; /*16px*/ }
 
 p, pre, ul, ol, dl, figure {
   font-family: $sans-serif-font-stack; }
@@ -62,29 +61,39 @@ h1, h2, h3, h4, h5, h6, blockquote {
   color: $black--950; }
 
 // 66px
-h1 {
-  font-size: 4.125rem; }
+h1 { font-size: 4.125rem; }
 
 // 36px
-h2 {
-  font-size: 2.25rem; }
+h2 { font-size: 2.25rem; }
 
 // 28
-h3 {
-  font-size: 1.75rem; }
+h3 { font-size: 1.75rem; }
 
 // 24px
-h4 {
-  font-size: 1.5rem; }
+h4 { font-size: 1.5rem; }
 
 // 18px
-h5 {
-  font-size: 1.125rem;
-  font-weight: 700; }
+h5 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0; }
 
 // 16px
-h6 {
-  font-size: 1rem; }
+h6 { font-size: 1rem; }
+
+.knockout h1,
+.knockout h2,
+.knockout h3,
+.knockout h4,
+.knockout h5,
+.knockout h6,
+.knockout p,
+.knockout span,
+.knockout blockquote {
+  color: rgba(255, 255, 255, 0.9) !important; }
+
+blockquote {
+  font-family: $sans-serif-font-stack;
+  padding-left: 16px;
+  border-left: 3px solid $black--900;
+}
 
 /* ==== Legacy Styles ==== */
 
@@ -93,7 +102,6 @@ strong {
 }
 
 .highlight-text {
-  // display: inline-block;
   padding: .15em 0;
   font-weight: 700;
   color: $black--900;
@@ -133,10 +141,6 @@ strong {
 .type--small {
   font-size: 0.75rem; } // 12px
 
-// p, span {
-//   font-size: 1.0625rem;
-//   line-height: 1.5; } // 17px
-
 p.type--medium, span.type--medium {
   font-size: 1.25rem; } // 20px
 
@@ -154,11 +158,11 @@ p.type--medium, span.type--medium {
 /* ==== Quote ==== */
 
 .dropcap {
-  font-family: $serif-font-stack;
-  color: inherit;
   float: left;
+  font-family: $serif-font-stack;
   font-size: 6rem;
   line-height: 1;
+  color: inherit;
 }
 .dropcap:before,
 .dropcap:after {
@@ -173,9 +177,6 @@ p.type--medium, span.type--medium {
 }
 
 /* ==== Lists ==== */
-// ul, ol {
-//   margin-left: 1.875rem; } // 30px
-
 ul li, ol li {
   margin-bottom: .5rem;
 }
@@ -191,14 +192,3 @@ li > ol {
   font-weight: 700;
   text-transform: uppercase;
   color: $blurple; }
-
-.knockout h1,
-.knockout h2,
-.knockout h3,
-.knockout h4,
-.knockout h5,
-.knockout h6,
-.knockout p,
-.knockout span,
-.knockout blockquote {
-  color: rgba(255, 255, 255, 0.9) !important; }

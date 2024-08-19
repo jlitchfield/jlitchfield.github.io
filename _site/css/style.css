@@ -77,8 +77,6 @@ h6 { font-size: 1rem; }
 
 .knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span, .knockout blockquote { color: rgba(255, 255, 255, 0.9) !important; }
 
-blockquote { font-family: "Nunito", Arial, sans-serif; padding-left: 16px; border-left: 3px solid #3d3d3c; }
-
 /* ==== Legacy Styles ==== */
 strong { font-weight: 700; }
 
@@ -99,7 +97,7 @@ p.type--medium, span.type--medium { font-size: 1.25rem; }
 
 .type--large { font-size: 1.5rem; }
 
-.has-dropcap:first-letter { font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; float: left; font-size: 6rem; line-height: 0.65; margin: 0.1em 0.1em 0.2em 0; }
+.has-dropcap:first-letter { font-family: "PT Serif", serif; float: left; font-size: 5.65rem; line-height: 0.65; margin: 0.1em 0.1em 0 0; }
 
 /* ==== Quote ==== */
 .dropcap { float: left; font-family: "PT Serif", serif; font-size: 6rem; line-height: 1; color: inherit; }
@@ -129,7 +127,7 @@ li > ul, li > ol { margin-bottom: 0; }
 
 .btn--secondary:hover { color: #fff; background-color: #90baff; }
 
-.btn--secondary:active { background-color: #356dfc; }
+.btn--secondary:active { color: #fff; background-color: #356dfc; }
 
 .btn--tertiary, .btn--large--tertiary, .btn--tertiary--on-light, .btn--tertiary--on-dark { line-height: 36px; background-color: transparent; color: #1f1f1e; border: 2px solid #1f1f1e; }
 
@@ -2427,11 +2425,10 @@ article h4 + p { margin-bottom: 2rem; }
 
 @media (min-width: 769px) { .badge { height: 637px; background: #fff url("/images/solstice-badge.png") center center no-repeat; background-size: cover; } .dashboard { height: 500px; background: #fff url("/images/solstice-dashboard.png") center center no-repeat; background-size: cover; } .badge article h3, .badge article p, .dashboard article h3, .dashboard article p { color: #fff; } }
 
-/* ==== Project > Vela ==== */
 /* ==== Quote ==== */
 .quote { background-color: #bdd5ff; }
 
-.quote blockquote, .quote cite { font-family: "PT Serif", serif; letter-spacing: .05rem; font-size: 1.3rem; line-height: 1.9rem; text-align: justify; }
+.quote blockquote, .quote cite { font-family: "PT Serif", serif; letter-spacing: .05rem; font-size: 1rem; line-height: 1.6rem; text-align: justify; }
 
 .quote blockquote span.highlight-text { font-size: inherit; font-weight: inherit; background-color: #1f1f1e; color: #FDF3C3; box-shadow: 0.25em 0 0 #1f1f1e, -0.25em 0 0 #1f1f1e; }
 
@@ -2572,6 +2569,8 @@ img.photo { border: 10px solid #fff; }
 /* Grid Flex Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .columns:last-child { margin-bottom: 0; }
+
+.red { background-color: #3d3d3c; }
 
 /* ==== Code formatting ==== */
 pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }

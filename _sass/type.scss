@@ -89,12 +89,6 @@ h6 { font-size: 1rem; }
 .knockout blockquote {
   color: rgba(255, 255, 255, 0.9) !important; }
 
-blockquote {
-  font-family: $sans-serif-font-stack;
-  padding-left: 16px;
-  border-left: 3px solid $black--900;
-}
-
 /* ==== Legacy Styles ==== */
 
 strong {
@@ -148,11 +142,11 @@ p.type--medium, span.type--medium {
   font-size: 1.5rem; } // 24px
 
 .has-dropcap:first-letter {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-family: $serif-font-stack;
   float: left;
-  font-size: 6rem;
+  font-size: 5.65rem;
   line-height: 0.65;
-  margin: 0.1em 0.1em 0.2em 0;
+  margin: 0.1em 0.1em 0 0;
 }
 
 /* ==== Quote ==== */

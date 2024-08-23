@@ -2367,9 +2367,13 @@ button.expanded { transform: rotate(90deg); background-color: transparent; borde
 .hero--content-inner p { color: rgba(255, 255, 255, 0.9); }
 
 /* === Sections ===*/
-section article { margin-bottom: 4rem; }
+section article { margin-bottom: 5rem; }
 
-article h5:first-of-type { margin-top: 19px; }
+article h3:first-of-type { margin-top: 9px; }
+
+article h4:first-of-type { margin-top: 14px; }
+
+section.p-start article p:first-of-type { padding-top: 24px; }
 
 article h4 + p { margin-bottom: 2rem; }
 
@@ -2441,7 +2445,7 @@ article h4 + p { margin-bottom: 2rem; }
 
 span { padding-left: .05rem; font-weight: normal; }
 
-.resume h5.category { font-family: "Nunito", Arial, sans-serif; font-weight: 700; margin-bottom: 3px; }
+.resume h6.category { font-family: "Nunito", Arial, sans-serif; font-weight: 700; margin-bottom: 3px; }
 
 .resume p { color: #5f5f5b; }
 
@@ -2494,9 +2498,9 @@ section.skills a.btn, section.skills a.btn--primary, section.skills a.btn--secon
 
 section.green { background-color: #1cc498; }
 
-section.green .project-type { color: #cdf8ed; }
+section.green .project-type { color: white; }
 
-section.green h3, section.green p { color: #1f1f1e; }
+section.green h3, section.green p { color: #f6f6f5; }
 
 section.green .dash-trailing:after, section.green .dash-trailing-small:after { background: white !important; }
 
@@ -2529,6 +2533,8 @@ footer nav { margin-top: 1rem; }
 footer h4, footer a { font-family: "Nunito", Arial, sans-serif; text-align: center; color: #fff; }
 
 footer a.contact { display: block; font-size: 1.875rem; line-height: 2.25; }
+
+.bio .dash-trailing:after, .dash-trailing-small:after { background-color: #fff; }
 
 .copyright { height: 60px; text-align: center; background-color: #f52556; }
 

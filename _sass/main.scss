@@ -156,11 +156,19 @@ body {
 
 /* === Sections ===*/
 section article {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
-article h5:first-of-type {
-  margin-top: 19px;
+article h3:first-of-type {
+  margin-top: 9px;
+}
+
+article h4:first-of-type {
+  margin-top: 14px;
+}
+
+section.p-start article p:first-of-type {
+  padding-top: 24px;
 }
 
 article h4 + p {
@@ -310,7 +318,7 @@ article h4 + p {
     font-weight: normal;
   }
 
-.resume h5.category {
+.resume h6.category {
   font-family: $sans-serif-font-stack;
   font-weight: 700;
   margin-bottom: 3px; }
@@ -400,11 +408,11 @@ section.skills a.btn { margin: 0 15px 15px 0; }
 
 section.green {
   background-color: darken($success, 15%);
-  .project-type { color: lighten($success, 30%); }
+  .project-type { color: lighten($black--50, 30%); }
   h3, p { 
-    color: $black--950; } 
+    color: $black--50; } 
   .dash-trailing:after { 
-    background: lighten($tertiary--50, 30%) !important; } }
+    background: lighten($black--50, 30%) !important; } }
 
 /* ==== User Guide ==== */
 .last-updated {
@@ -463,6 +471,9 @@ footer a.contact {
   display: block;
   font-size: 1.875rem; // 30px
   line-height: 2.25; }
+
+.bio .dash-trailing:after, .dash-trailing-small:after { 
+  background-color: $white; }
 
 .copyright {
   height: 60px;

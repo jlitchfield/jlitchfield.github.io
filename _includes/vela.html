@@ -1,4 +1,4 @@
-<section class="section vela-panel-hero is-fullwidth offset-header">
+<section class="section vela-panel-hero offset-header is-fullwidth">
   <div class="container">
     <div class="columns is-gapless">
       <div class="column knockout">
@@ -11,7 +11,7 @@
 </section>
 
 <!-- Overview -->
-<section class="section is-fullwidth"> 
+<section class="section p-start is-fullwidth"> 
   <div class="container">
     <div class="columns">
       <div class="column is-offset-1 is-3">
@@ -32,7 +32,7 @@
 
 
 <!-- Business Problem -->
-<section class="section is-fullwidth">
+<section class="is-fullwidth">
   <div class="container">
     <div class="columns">
       <div class="column is-offset-1 is-3">
@@ -43,7 +43,7 @@
           <h4 class="no-margin-bottom">My role</h4>
           <p>Senior Product Designer</p>
           <h4 class="no-margin-bottom">Team</h4>
-          <p>1 Product Manager, 6 Engineers, Subject Matter Experts</p>
+          <p>1 Product Manager, 6 engineers, subject matter experts</p>
           <h4 class="no-margin-bottom">Duration</h4>
           <p>2 quarters</p>
           <h4 class="no-margin-bottom">Process overview</h4>
@@ -58,7 +58,7 @@
 </section>
 
 <!-- Process -->
-<section class="section is-fullwidth">
+<section class="is-fullwidth">
   <div class="container">
     <div class="columns">
       <div class="column is-offset-1 is-3">
@@ -66,7 +66,7 @@
       </div> <!-- end column -->
       <div class="column is-8">
         <article>
-          <h3>Outcome statements</h3>
+          <h4>Outcome statements</h4>
           <ul>
             <li>Professionals can manage their caseloads efficiently at scale from a single view.</li>
             <li>Professionals can view their panel based on personal preferences, workflows, or program goals.</li>
@@ -75,27 +75,27 @@
         </article>
 
         <article>
-          <h3>Technical constraints</h3>
+          <h4>Technical constraints</h4>
           <ul>
-            <li><strong>Performance Requirements:</strong> Data might come from Vela Pro, a system of record, or other services. We need to ensure the Panel will be performant. Working closely with Engineering around this topic was essential.</li>
-            <li><strong>Data Failures:</strong> We want to ensure that if one service fails, it doesn't kill the entire Panel service. If a failure does occur, how can we allow the Pro to recover from that?</li>
-            <li><strong>No Machine Learning or AI:</strong> Vela doesn't use ML or AI, nor did we have folks with those skills. Also, using these technologies for several, often experimental, use cases might be too costly.</li>
+            <li><strong>Performance requirements:</strong> data might come from Vela Pro, a system of record, or other services. We need to ensure the Panel will be performant. Working closely with Engineering around this topic was essential.</li>
+            <li><strong>Data failures:</strong> we want to ensure that if one service fails, it doesn't kill the entire Panel service. If a failure does occur, how can we allow the Pro to recover from that?</li>
+            <li><strong>No machine learning or AI:</strong> Vela doesn't use ML or AI, nor did we have folks with those skills. Also, using these technologies for several, often experimental, use cases might be too costly.</li>
           </ul>
         </article>
 
         <article>
-          <h3>Development statements</h3>
+          <h4>Development statements</h4>
           <ul>
-            <li><strong>List View:</strong> Pros need a new list view with columns for activity and other care room information.</li>
+            <li><strong>List view:</strong> Pros need a new list view with columns for activity and other care room information.</li>
             <li><strong>Filtering:</strong> Pros need to filter their care team to see activity and other data.</li>
             <li><strong>Sorting:</strong> Pros need to prioritize sorting to get to what matters most to them. For example, I want to sort by my primary care teams, then secondary.</li>
-            <li><strong>Data:</strong> As more data becomes available in the Panel, Pros must hide those irrelevant data, not germane to my workflow or program objectives.</li>
-            <li><strong>Efficient Navigation:</strong> Pros need to efficiently go in and out of care rooms, which the current experience could do better. Red routes and modality will allow Pro to complete tasks with speed and efficiency.</li>
+            <li><strong>Data:</strong> as more data becomes available in the Panel, Pros must hide those irrelevant data, not germane to my workflow or program objectives.</li>
+            <li><strong>Efficient navigation:</strong> Pros need to efficiently go in and out of care rooms, which the current experience could do better. Red routes and modality will allow Pro to complete tasks with speed and efficiency.</li>
           </ul>
         </article>
 
         <article>
-          <h3>Secondary research</h3>
+          <h4>Secondary research</h4>
           <ul>
             <li>I needed access to users, but I didn't have it. However, user feedback from the Product and Technical Support teams informed the problem statement and user needs.</li>
             <li>Next, I conducted secondary research to evaluate best practices for filtering, sorting, data density, and complex tables while considering our users' skill levels.</li>
@@ -103,14 +103,14 @@
         </article>
 
         <article>
-          <h3>Design principles</h3>
+          <h4>Design principles</h4>
           <ul>
-            <li><strong>Performance:</strong> If the panel is performant, it will retain its utility.</li>
-            <li><strong>Efficiency:</strong> Easy access to data, red routes, and modality significantly decreases interaction costs, allowing the Professional to spend less time in the application and more time with care teams.</li>
-            <li><strong>Extensibility:</strong> Filtering and sorting must be extensible enough to allow different data types we have yet to think of to support furure use cases.</li>
-            <li><strong>Straightforward filtering and sorting:</strong> Considering our users' technical proficiency, users need to be able to quickly determine how the panel is filtered and sorted with a low cognitive load.</li>
-            <li><strong>Just enough information:</strong> Prior knowledge and my data density research helped validate our assumptions about data overload.</li>
-            <li><strong>Information hierarch:</strong> For those pertinent data, Pros want to move panel columns to show the most critical information first.</li>
+            <li><strong>Performance:</strong> if the panel is performant, it will retain its utility.</li>
+            <li><strong>Efficiency:</strong> easy access to data, red routes, and modality significantly decreases interaction costs, allowing the Professional to spend less time in the application and more time with care teams.</li>
+            <li><strong>Extensibility:</strong> filtering and sorting must be extensible enough to allow different data types we have yet to think of to support furure use cases.</li>
+            <li><strong>Straightforward filtering and sorting:</strong> considering our users' technical proficiency, users need to be able to quickly determine how the panel is filtered and sorted with a low cognitive load.</li>
+            <li><strong>Just enough information:</strong> prior knowledge and my data density research helped validate our assumptions about data overload.</li>
+            <li><strong>Information hierarchy:</strong> for those pertinent data, Pros want to move panel columns to show the most critical information first.</li>
           </ul>
         </article>
       </div> <!-- end column -->  
@@ -119,7 +119,7 @@
 </section>
 
 <!-- Iterations -->
-<section class="section is-fullwidth">
+<section class="is-fullwidth">
   <div class="container">
     <div class="columns">
       <div class="column is-offset-1 is-3">
@@ -187,17 +187,15 @@
 <!-- Monitoring section removed-->
 
 <!-- Impact -->
-<section class="section is-fullwidth">
+<section class="p-start is-fullwidth">
   <div class="container">
     <div class="columns">
       <div class="column is-offset-1 is-3">
         <h2>Impact</h2>
       </div> <!-- end column -->
       <div class="column is-8">
-        <article>
-          <ul>
-            <p>Before adding the primary filter, Professionals found it hard to determine the care teams' accurate caseload. The filter rule builder has enabled professionals to create personalized experiences tailored to their individual workflows, enhancing their efficiency and allowing them to spend more time with patients.</p>
-          <p></p>
+        ¬k<article>
+          <p>Before adding the primary filter, Professionals found it hard to determine the care teams' accurate caseload. The filter rule builder has enabled professionals to create personalized experiences tailored to their individual workflows, enhancing their efficiency and allowing them to spend more time with patients.</p>
         </article>
       </div> <!-- end column -->  
     </div> <!-- end columns -->
@@ -205,7 +203,7 @@
 </section>
 
 <!-- Reflection -->
-<section class="section is-fullwidth">
+<section class="p-start is-fullwidth">
   <div class="container">
     <div class="columns">
       <div class="column is-offset-1 is-3">
@@ -213,7 +211,6 @@
       </div> <!-- end column -->
       <div class="column is-8">
         <article>
-          <h3>Updates and improvements</h3>
           <p>Since the updated panel filters were released, we worked with the Clinical and Client Services teams to identify and implement necessary updates and improvements. We added new filters, and the system has shown its flexibility by enabling the seamless integration of these additional filters.</p>
           <ul>
             <li>We consulted with the teams to learn what Branch Managers and Care Coaches need.</li>

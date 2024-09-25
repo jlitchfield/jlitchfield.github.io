@@ -41,46 +41,42 @@ section { display: block; width: 100%; }
 
 /* ====
 Google Fonts Installed
-PT Serif: 400, 700
+Inter Variable 100
 Nunito: 300, 400, 700, 900
 ==== */
-.pt-serif-regular { font-family: "PT Serif", serif; font-weight: 400; font-style: normal; }
-
-.pt-serif-bold { font-family: "PT Serif", serif; font-weight: 700; font-style: normal; }
-
-.pt-serif-regular-italic { font-family: "PT Serif", serif; font-weight: 400; font-style: italic; }
-
-.pt-serif-bold-italic { font-family: "PT Serif", serif; font-weight: 700; font-style: italic; }
+/* ==== Inter Font ==== */
+.inter-sans { font-family: "Inter", "Nunito", sans-serif; font-optical-sizing: auto; font-weight: 30; font-style: normal; }
 
 /* ==== Default ==== */
-body { font: 400 16px/1.5 "Nunito", Arial, sans-serif; color: #3d3d3c; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
+body { font: 380 16px/1.6 "Inter", Arial, sans-serif; color: #504f4e; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { line-height: 1.5; margin-bottom: 1rem; /*16px*/ }
+h1, h2, h3, h4, h5, h6 { line-height: 1.3; margin-bottom: 1.3rem; /*16px*/ }
 
-p, pre, ul, ol, dl, figure { font-family: "Nunito", Arial, sans-serif; }
+p, blockquote, pre, ul, ol, dl, figure, .highlight { font-family: "Inter", Arial, sans-serif; line-height: 1.5; margin-bottom: 1.3rem; /*16px*/ }
 
 /* ==== Headings ==== */
-h1, h2, h3, h4, h5, h6, blockquote { font-family: "PT Serif", serif; font-weight: 400; color: #1f1f1e; }
+h1, h2, h3, h4, h5, h6, blockquote { font-family: "Inter", serif; color: #1f1f1e; }
 
-h1 { font-size: 4.125rem; }
+h1 { font-family: "Nunito", Arial, sans-serif; font-size: 4.125rem; font-weight: 600; }
 
-h2 { font-size: 2.25rem; }
+h2 { font-size: 2.25rem; font-weight: 600; }
 
-h3 { font-size: 1.75rem; }
+h3 { font-size: 1.75rem; font-weight: 600; }
 
-h4 { font-size: 1.5rem; }
+h3 { font-size: 2.25rem; font-weight: 520; }
 
-h5 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0; }
+h4 { font-size: 1.5rem; font-weight: 520; }
 
-h6 { font-size: 1rem; }
+h5 { font-size: 1.125rem; font-weight: 520; }
+
+h6 { font-size: 1rem; font-weight: 520; }
 
 .knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6, .knockout p, .knockout span, .knockout blockquote { color: rgba(255, 255, 255, 0.9) !important; }
 
-/* ==== Legacy Styles ==== */
-strong { font-weight: 700; }
+strong { font-weight: 480; color: inherit; }
 
-.highlight-text { padding: .15em 0; font-weight: 700; color: #3d3d3c; background: #FDF3C3; box-shadow: 0.15em 0 0 #FDF3C3, -0.15em 0 0 #FDF3C3; }
+.highlight-text { padding: .15em 0; font-weight: 600; color: inherit; background: #FDF3C3; box-shadow: 0.15em 0 0 #FDF3C3, -0.15em 0 0 #FDF3C3; }
 
 .text-badge { display: inline-block; padding: .25em 0; font-weight: 700; color: #1f1f1e; background: #bdd5ff; box-shadow: 0.15em 0 0 #bdd5ff, -0.15em 0 0 #bdd5ff; }
 
@@ -97,10 +93,10 @@ p.type--medium, span.type--medium { font-size: 1.25rem; }
 
 .type--large { font-size: 1.5rem; }
 
-.has-dropcap:first-letter { font-family: "PT Serif", serif; float: left; font-size: 5.65rem; line-height: 0.65; margin: 0.1em 0.1em 0 0; }
+.has-dropcap:first-letter { font-family: "Inter", serif; float: left; font-size: 5.65rem; line-height: 0.65; margin: 0.1em 0.1em 0 0; }
 
 /* ==== Quote ==== */
-.dropcap { float: left; font-family: "PT Serif", serif; font-size: 6rem; line-height: 1; color: inherit; }
+.dropcap { float: left; font-family: "Inter", serif; font-size: 6rem; line-height: 1; color: inherit; }
 
 .dropcap:before, .dropcap:after { content: ""; display: block; }
 
@@ -113,7 +109,7 @@ ul li, ol li { margin-bottom: .5rem; }
 
 li > ul, li > ol { margin-bottom: 0; }
 
-.project-type { display: block; font-family: "Nunito", Arial, sans-serif; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: #6a7fdb; }
+.project-type { display: block; font-family: "Inter", Arial, sans-serif; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: #6a7fdb; }
 
 .btn, .btn--tertiary, .btn--large--tertiary, .btn--tertiary--on-light, .btn--tertiary--on-dark, .btn--secondary, .btn--primary, .btn--large--primary { box-sizing: border-box; display: inline-block; padding: 0 1em; height: 40px; font-family: "Nunito", Arial, sans-serif; line-height: 40px; font-weight: 700; border-radius: 5px; -webkit-font-smoothing: subpixel-antialiased; -webkit-transition: all .2s linear; transition: all .2s linear; }
 
@@ -2395,63 +2391,51 @@ article h4 + p { margin-bottom: 2rem; }
 
 .dribbble p { color: #2c2c2b; }
 
-/* === Project > Twine Site Redesign ===*/
-.section.twine-site-redesign { background-color: #63bcdd; text-align: center; padding-bottom: 0; }
+/* Padding
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 769px) { .padding--x-small { padding: 1rem 0; } .padding--small { padding: 2rem 0; } .padding--medium { padding: 3rem 0; } .padding--large { padding: 4rem 0; } .padding--x-large { padding: 5rem 0; } }
 
-.section.twine-site-colors { padding-bottom: 0; }
+/* ==== Global > Images ==== */
+img { max-width: 100%; height: auto; vertical-align: middle; }
 
-@media (min-width: 769px) { .twine-site-images { background: #fff url("/images/twine-site-images.jpg") center right no-repeat; background-size: cover; color: #1f1f1e; } }
+img.photo { border: 10px solid #fff; }
 
-@media (max-width: 768px) { .twine-site-images { background: url("/images/twine-site-images.jpg") no-repeat; background-size: cover; } .twine-site-images .hero-body { background-color: rgba(255, 255, 255, 0.75); color: #1f1f1e; } }
+@media (min-width: 769px) { .img--mobile { display: none; } }
+
+@media (max-width: 768px) { .img--mobile { display: block; padding: 1rem 0; } }
+
+/* Grid Flex Overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.columns:last-child { margin-bottom: 0; }
+
+.red { background-color: #3d3d3c; }
 
 /* ==== Project > Vela ==== */
 .vela-panel-hero { padding-bottom: 0; text-align: center; background-color: #D4E3F1; background-color: #356dfc; }
 
-/* ==== Project > Quizzly ==== */
-.quizzly { padding-bottom: 0; background-color: #3b94ff; text-align: center; }
-
-.create-question { background-color: #f9c22e; }
-
-.create-question img { border-radius: 7px; }
-
-/* ==== Project > Solstice ==== */
-.section.solstice { padding-bottom: 0; background-color: #ef3e36; }
-
-.account { background-color: #f6e766; }
-
-.section.news-feed { padding-top: 0; padding-bottom: 0; background-color: #f9f9f9; }
-
-.news-feed .column { padding-top: 0; padding-bottom: 0; }
-
-.news-feed article { padding: 2rem 1.25em; }
-
-.news-feed img:nth-of-type(2) { vertical-align: bottom; }
-
-@media (max-width: 769px) { section.solstice img, section.news-feed img { max-width: 80% !important; display: block; margin: 0 auto; } }
-
-@media (min-width: 769px) { .badge { height: 637px; background: #fff url("/images/solstice-badge.png") center center no-repeat; background-size: cover; } .dashboard { height: 500px; background: #fff url("/images/solstice-dashboard.png") center center no-repeat; background-size: cover; } .badge article h3, .badge article p, .dashboard article h3, .dashboard article p { color: #fff; } }
-
 /* ==== Quote ==== */
 .quote { background-color: #bdd5ff; }
 
-.quote blockquote, .quote cite { font-family: "PT Serif", serif; letter-spacing: .05rem; font-size: 1rem; line-height: 1.6rem; text-align: justify; }
+.quote blockquote, .quote cite { font-family: "Inter", serif; letter-spacing: .05rem; font-size: 1rem; line-height: 1.6rem; text-align: justify; }
 
 .quote blockquote span.highlight-text { font-size: inherit; font-weight: inherit; background-color: #1f1f1e; color: #FDF3C3; box-shadow: 0.25em 0 0 #1f1f1e, -0.25em 0 0 #1f1f1e; }
 
 /* ==== Resume ==== */
-.resume { margin-bottom: 110px; }
+.resume { margin-bottom: 110px; font-size: .875rem; }
 
-.resume h3 { color: #5c95ff; }
+.resume section { margin-bottom: 3rem; }
 
-.resume h4 { font-family: "PT Serif", serif; font-weight: 700; }
+.company img { float: left; }
+
+.company { padding-bottom: 24px; }
+
+.company--position { padding-left: 64px; }
+
+.resume h4 { font-family: "Inter", serif; color: #5c95ff; }
 
 span { padding-left: .05rem; font-weight: normal; }
 
-.resume h6.category { font-family: "Nunito", Arial, sans-serif; font-weight: 700; margin-bottom: 3px; }
-
-.resume p { color: #5f5f5b; }
-
-.resume strong { color: #3d3d3c; }
+.resume strong { font-weight: 520; color: #3d3d3c; }
 
 .resume main a { color: inherit; text-decoration: underline; }
 
@@ -2465,14 +2449,9 @@ span { padding-left: .05rem; font-weight: normal; }
 
 .resume aside ul li { list-style-type: none; }
 
-.resume .mvp.strong { color: inherit; font-weight: 700; }
+.resume aside h6 { margin-bottom: 0.5rem; }
 
-/* ==== Resume > Company ==== */
-.company img { float: left; }
-
-.company { padding-bottom: 24px; }
-
-.company--position { padding-left: 64px; }
+.resume aside ul { margin-bottom: 2rem; }
 
 /* ==== Download Resume ==== */
 .download-resume { z-index: 3; position: fixed; bottom: 0; left: 0; background-color: #f6f6f5; border-top: 1px solid #d1d1d0; }
@@ -2486,8 +2465,10 @@ span { padding-left: .05rem; font-weight: normal; }
 /*800px*/
 @media (min-width: 769px) { .resume main { padding-right: 5%; border-right: 1px dashed #b2b2ae; } .resume aside { padding-left: 3%; } }
 
-/* ==== User Guide ==== */
+/* ==== Resume > User Guide ==== */
 section.user-guide { margin-bottom: 24px; padding: 16px; border-radius: 8px; background-color: #fdf3c8; }
+
+section.user-guide h4 { color: #1f1f1e; }
 
 section.user-guide p { font-size: 0.9rem; color: #1f1f1e; }
 
@@ -2506,7 +2487,6 @@ section.green h3, section.green p { color: #f6f6f5; }
 
 section.green .dash-trailing:after, section.green .dash-trailing-small:after { background: white !important; }
 
-/* ==== User Guide ==== */
 .last-updated { color: #b2b2ae; font-size: 0.9rem; }
 
 /* ==== Global > Header & Footer ==== */
@@ -2532,11 +2512,13 @@ footer.footer { background-color: #f7567c; }
 
 footer nav { margin-top: 1rem; }
 
-footer h4, footer a { font-family: "Nunito", Arial, sans-serif; text-align: center; color: #fff; }
+footer h4, footer a { font-family: "Inter", Arial, sans-serif; text-align: center; color: #fff; }
 
 footer a.contact { display: block; font-size: 1.875rem; line-height: 2.25; }
 
 .bio .dash-trailing:after, .dash-trailing-small:after { background-color: #fff; }
+
+.bio p { font-size: 0.875rem; }
 
 .copyright { height: 60px; text-align: center; background-color: #f52556; }
 
@@ -2560,25 +2542,6 @@ footer a.contact { display: block; font-size: 1.875rem; line-height: 2.25; }
 .footer-nav .last { background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%); background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%); background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%); }
 
 .padding--small { padding: 2rem; }
-
-/* Padding
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 769px) { .padding--x-small { padding: 1rem 0; } .padding--small { padding: 2rem 0; } .padding--medium { padding: 3rem 0; } .padding--large { padding: 4rem 0; } .padding--x-large { padding: 5rem 0; } }
-
-/* ==== Global > Images ==== */
-img { max-width: 100%; height: auto; vertical-align: middle; }
-
-img.photo { border: 10px solid #fff; }
-
-@media (min-width: 769px) { .img--mobile { display: none; } }
-
-@media (max-width: 768px) { .img--mobile { display: block; padding: 1rem 0; } }
-
-/* Grid Flex Overrides
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.columns:last-child { margin-bottom: 0; }
-
-.red { background-color: #3d3d3c; }
 
 /* ==== Code formatting ==== */
 pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }

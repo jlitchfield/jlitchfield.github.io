@@ -201,29 +201,50 @@ article h4 + p {
 .dribbble h3 { color: #ea4c89; } 
 .dribbble p { color: adjust_hue(saturate(lighten($black--950, 5), 0), 0); }
 
+/* Padding
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 769px) {
+  .padding--x-small {
+    padding: 1rem 0; } // 32px
 
-/* === Project > Twine Site Redesign ===*/
-.section.twine-site-redesign {
-  background-color: #63bcdd;
-  text-align: center;
-  padding-bottom: 0; }
+  .padding--small {
+    padding: 2rem 0; } // 32px
 
-.section.twine-site-colors {
-  padding-bottom: 0; }
+  .padding--medium {
+    padding: 3rem 0; } // 48px
+
+  .padding--large {
+    padding: 4rem 0; } // 64px
+
+  .padding--x-large {
+    padding: 5rem 0; } // 80px
+}
+
+/* ==== Global > Images ==== */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+img.photo {
+  border: 10px solid #fff; }
 
 @media (min-width: 769px) {
-  .twine-site-images {
-  background: #fff url("/images/twine-site-images.jpg") center right no-repeat;
-  background-size: cover;
-  color: $black--950; } }
+  .img--mobile {
+    display: none; } }
 
 @media (max-width: 768px) {
-  .twine-site-images {
-  background: url("/images/twine-site-images.jpg") no-repeat;
-  background-size: cover; }
-  .twine-site-images .hero-body {
-    background-color: rgba(255, 255, 255, 0.75);
-    color: $black--950; } }
+  .img--mobile {
+    display: block;
+    padding: 1rem 0; } }
+
+/* Grid Flex Overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.columns:last-child {
+  margin-bottom: 0;
+}
+
+.red { background-color: $black--900; }
 
 /* ==== Project > Vela ==== */
 
@@ -232,62 +253,6 @@ article h4 + p {
   text-align: center;
   background-color: #D4E3F1;
   background-color: $primary--500; }
-
-/* ==== Project > Quizzly ==== */
-.quizzly {
-  padding-bottom: 0;
-  background-color: $bg--primary--light;
-  text-align: center; }
-
-.create-question {
-  background-color: $warning; }
-
-.create-question img {
-  border-radius: 7px; }
-
-/* ==== Project > Solstice ==== */
-.section.solstice { 
-  padding-bottom: 0;
-  background-color: #ef3e36; }
-
-.account { background-color: #f6e766; }
-
-.section.news-feed { 
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #f9f9f9; }
-
-.news-feed .column {
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.news-feed article {
-  padding: 2rem 1.25em; }
-
-.news-feed img:nth-of-type(2) {
-  vertical-align: bottom; }
-
-@media (max-width: 769px) {
-  section.solstice img, section.news-feed img {
-    max-width: 80% !important;
-    display: block;
-    margin: 0 auto; } }
-
-@media (min-width: 769px) {
-  .badge {
-    height: 637px;
-    background: #fff url("/images/solstice-badge.png") center center no-repeat;
-    background-size: cover; }
-
-  .dashboard {
-    height: 500px;
-    background: #fff url("/images/solstice-dashboard.png") center center no-repeat;
-    background-size: cover; } 
-
-  .badge article h3, .badge article p,
-  .dashboard article h3, .dashboard article p {
-    color: #fff; } }
-
 
 /* ==== Quote ==== */
 .quote { 
@@ -306,29 +271,27 @@ article h4 + p {
   box-shadow: .25em 0 0 $black--950, -.25em 0 0 $black--950; } }
 
 /* ==== Resume ==== */
-.resume {
-  margin-bottom: 110px; }
+.resume { 
+  margin-bottom: 110px;
+  font-size: .875rem;
+}
 
-.resume h3 {
-  color: $primary--400; }
+.resume section { margin-bottom: 3rem; }
+
+.company img { float: left }
+.company { padding-bottom: 24px; }
+.company--position { padding-left: 64px; }
 
 .resume h4 {
   font-family: $serif-font-stack;
-  font-weight: 700; }
+  color: $primary--400; }
   span {
     padding-left: .05rem;
     font-weight: normal;
   }
 
-.resume h6.category {
-  font-family: $sans-serif-font-stack;
-  font-weight: 700;
-  margin-bottom: 3px; }
-
-.resume p { 
-  color: $black--600; }
-
 .resume strong {
+  font-weight: 520;
   color: $black--900 ; } 
 
 .resume main a {
@@ -340,28 +303,18 @@ article h4 + p {
   transition: all .3s linear;
   color: $primary--500; }
 
-.resume ul {
-  margin-left: 0;
-  padding-left: 0; }
+.resume ul { margin-left: 0; padding-left: 0; }
+.resume ul ul { margin-left: 16px; }
+.resume ul li { margin-bottom: .5rem; }
+.resume aside ul li { list-style-type: none; }
 
-.resume ul ul {
-  margin-left: 16px; }
-
-.resume ul li {
-  margin-bottom: .5rem;
+.resume aside h6 {
+  margin-bottom: 0.5rem;
 }
 
-.resume aside ul li {
-  list-style-type: none;
+.resume aside ul {
+  margin-bottom: 2rem;
 }
-
-.resume .mvp.strong { color: inherit; font-weight: 700; }
-
-/* ==== Resume > Company ==== */
-.company img { float: left }
-.company { padding-bottom: 24px; }
-.company--position { padding-left: 64px; }
-
 
 /* ==== Download Resume ==== */
 .download-resume {
@@ -384,12 +337,16 @@ article h4 + p {
   .resume aside {
     padding-left: 3%; } }
 
-/* ==== User Guide ==== */
+/* ==== Resume > User Guide ==== */
 section.user-guide { 
   margin-bottom: 24px;
   padding: 16px;
   border-radius: 8px;
   background-color: $secondary--100; }
+
+section.user-guide h4 {
+  color: $black--950;
+}
 
 section.user-guide p {
   font-size: 0.9rem;
@@ -416,7 +373,6 @@ section.green {
   .dash-trailing:after { 
     background: lighten($black--50, 30%) !important; } }
 
-/* ==== User Guide ==== */
 .last-updated {
   color: $black--300; 
   font-size: 0.9rem; }
@@ -424,7 +380,7 @@ section.green {
 /* ==== Global > Header & Footer ==== */
 .site-header h1 {
   margin-bottom: 0;
-  font: 700 1.2rem/41px $sans-serif-font-stack;
+  font: 700 1.2rem/41px $sans-serif-body;
   text-transform: uppercase;
   color: $primary--400; }
 
@@ -477,6 +433,10 @@ footer a.contact {
 .bio .dash-trailing:after, .dash-trailing-small:after { 
   background-color: $white; }
 
+.bio p {
+  font-size: 0.875rem;
+}
+
 .copyright {
   height: 60px;
   text-align: center;
@@ -521,48 +481,3 @@ footer a.contact {
 
 .padding--small {
     padding: 2rem; }
-
-/* Padding
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 769px) {
-  .padding--x-small {
-    padding: 1rem 0; } // 32px
-
-  .padding--small {
-    padding: 2rem 0; } // 32px
-
-  .padding--medium {
-    padding: 3rem 0; } // 48px
-
-  .padding--large {
-    padding: 4rem 0; } // 64px
-
-  .padding--x-large {
-    padding: 5rem 0; } // 80px
-}
-
-/* ==== Global > Images ==== */
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle; }
-
-img.photo {
-  border: 10px solid #fff; }
-
-@media (min-width: 769px) {
-  .img--mobile {
-    display: none; } }
-
-@media (max-width: 768px) {
-  .img--mobile {
-    display: block;
-    padding: 1rem 0; } }
-
-/* Grid Flex Overrides
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.columns:last-child {
-  margin-bottom: 0;
-}
-
-.red { background-color: $black--900; }

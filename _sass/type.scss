@@ -3,42 +3,30 @@
 
 /* ====
 Google Fonts Installed
-PT Serif: 400, 700
+Inter Variable 100
 Nunito: 300, 400, 700, 900
 ==== */
 
-$serif-font-stack: "PT Serif", serif;
-$sans-serif-font-stack: "Nunito", Arial, sans-serif;
+$serif-font-stack: "Inter", serif;
+$sans-serif-font-stack: "Inter", Arial, sans-serif;
+$sans-serif-body: "Nunito", Arial, sans-serif;
 
-.pt-serif-regular {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
+/* ==== Inter Font ==== */
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-sans {
+  font-family: "Inter", "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30;
   font-style: normal;
 }
-
-.pt-serif-bold {
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.pt-serif-regular-italic {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.pt-serif-bold-italic {
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 /* ==== Default ==== */
 
 body {
-  font: 400 16px/1.5 $sans-serif-font-stack;
-  color: $black--900;
+  font: 380 16px/1.6 $sans-serif-font-stack;
+  color: $black--700;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -47,36 +35,63 @@ body {
   font-kerning: normal; }
 
 /* ==== Set `margin-bottom` to maintain vertical rhythm ==== */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { 
-  line-height: 1.5;
-  margin-bottom: 1rem; /*16px*/ }
+h1, h2, h3, h4, h5, h6 { 
+  line-height: 1.3;
+  margin-bottom: 1.3rem; /*16px*/ }
 
-p, pre, ul, ol, dl, figure {
-  font-family: $sans-serif-font-stack; }
+
+p, blockquote, pre, ul, ol, dl, figure, .highlight { 
+  font-family: $sans-serif-font-stack;
+  line-height: 1.5;
+  margin-bottom: 1.3rem; /*16px*/ }
 
 /* ==== Headings ==== */
 h1, h2, h3, h4, h5, h6, blockquote {
   font-family: $serif-font-stack;
-  font-weight: 400;
   color: $black--950; }
 
 // 66px
-h1 { font-size: 4.125rem; }
+h1 { 
+  font-family: $sans-serif-body;
+  font-size: 4.125rem;
+  font-weight: 600;
+}
 
 // 36px
-h2 { font-size: 2.25rem; }
+h2 { 
+  font-size: 2.25rem;
+  font-weight: 600;
+}
 
 // 28
-h3 { font-size: 1.75rem; }
+h3 { 
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+// 36
+h3 { 
+  font-size: 2.25rem;
+  font-weight: 520;
+}
 
 // 24px
-h4 { font-size: 1.5rem; }
+h4 { 
+  font-size: 1.5rem;
+  font-weight: 520;
+}
 
 // 18px
-h5 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0; }
+h5 { 
+  font-size: 1.125rem;
+  font-weight: 520;
+}
 
 // 16px
-h6 { font-size: 1rem; }
+h6 { 
+  font-size: 1rem;
+  font-weight: 520;
+}
 
 .knockout h1,
 .knockout h2,
@@ -89,16 +104,15 @@ h6 { font-size: 1rem; }
 .knockout blockquote {
   color: rgba(255, 255, 255, 0.9) !important; }
 
-/* ==== Legacy Styles ==== */
-
 strong {
-  font-weight: 700;
+  font-weight: 480;
+  color: inherit;
 }
 
 .highlight-text {
   padding: .15em 0;
-  font-weight: 700;
-  color: $black--900;
+  font-weight: 600;
+  color: inherit;
   background: $highlight;
   box-shadow: .15em 0 0 $highlight, -.15em 0 0 $highlight;
 }
@@ -186,3 +200,4 @@ li > ol {
   font-weight: 700;
   text-transform: uppercase;
   color: $blurple; }
+

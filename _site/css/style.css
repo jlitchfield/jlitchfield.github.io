@@ -2378,9 +2378,13 @@ article h4 + p { margin-bottom: 2rem; }
 /* === Integrate Design System ===*/
 .int-ds-hero { text-align: center; background-color: #D4E3F1; }
 
-.ds-principles { padding: 16px 24px; border-radius: 24px; background-color: #F8F8F8; }
+.ds-principles { padding: 16px 24px; border-radius: 24px; background-color: #EEF4FF; }
 
 .ds-principle { margin-bottom: 2rem; }
+
+.ds-principle:last-of-type, .ds-principle p:last-of-type { margin-bottom: 0; }
+
+section.desk-research article { margin-bottom: 1rem; }
 
 /* === Dribbble > All ===*/
 #logo-dribbble { height: 28px; }
